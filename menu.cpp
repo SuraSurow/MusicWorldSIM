@@ -22,7 +22,7 @@ int menu()
     {
         case EXIT :
         {
-            std::cout
+            cout
             << " !!! Exit !!!"
             << "\n Thanks you for use application";
             pressEnter();
@@ -30,7 +30,7 @@ int menu()
         }
         case CREATE :
         {
-            char name[]="CREATE";
+            const string name="CREATE";
             menu(name);
             index(&choiceIndex);
             menu(&choiceIndex,name);
@@ -45,6 +45,11 @@ int menu()
         }
         case PRINT :
         {
+            break;
+        }
+        case ADD :
+        {
+
             break;
         }
         case DELETE :
@@ -68,11 +73,12 @@ int menu()
 
     }
 menu();
+return 0;
 }
 
-void menu(char name[])
+void menu(const string& name)
 {
-    std::cout
+    cout
     << "\nChoice what's object you want "
     << name
     << "\n\n1.Creator"
@@ -80,7 +86,7 @@ void menu(char name[])
     << "\n3.Disc";
 }
 
-void menu (int* ptrNum,char typeMenu[])
+void menu (const int* ptrNum,const string& typeMenu)
 {
 
     switch(*ptrNum)
@@ -89,19 +95,19 @@ void menu (int* ptrNum,char typeMenu[])
         {
             //creator
 
-            creatorsMenu(typeMenu);
+            creator_sMenu(typeMenu);
             break;
         }
         case 2 :
         {
             //album
-            albumsMenu(typeMenu);
+            album_sMenu(typeMenu);
             break;
         }
         case 3 :
         {
             //disc
-            discesMenu(typeMenu);
+            disc_sMenu(typeMenu);
 
             break;
         }
@@ -109,19 +115,48 @@ void menu (int* ptrNum,char typeMenu[])
     }
 }
 
-void creatorsMenu(char  typeMenu)
+int creator_sMenu( const string&  typeMenu)
+{
+
+
+
+    if ( typeMenu == MenuText::create )
+    {
+
+    }
+    else if ( typeMenu == MenuText::initialize )
+    {
+
+
+    }
+    else if (typeMenu == MenuText::print )
+    {
+
+    }
+    else if ( typeMenu == MenuText::add )
+    {
+
+    }
+    else if ( typeMenu == MenuText::del)
+    {
+
+    }
+    else if ( typeMenu == MenuText::data_sheet )
+    {
+
+    }
+    else {return EXIT_FAILURE;}
+
+    return EXIT_SUCCESS;
+}
+
+void album_sMenu ( const string& typeMenu  )
 {
 
 
 }
 
-void albumsMenu ( char typeMenu [] )
-{
-
-
-}
-
-void discesMenu ( char typeMenu [] )
+void disc_sMenu (const  string& typeMenu  )
 {
 
 

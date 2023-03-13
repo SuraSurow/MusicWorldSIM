@@ -85,7 +85,7 @@ int main()
 
 void start ()
 {
-    std::cout
+    cout
     << "\n\tWitaj w Kreatorze Swiata Muzycznego\n"
     << "\n\t( welcome to the app that creates the music world ) "
     << "\n\n\tW naszym sumulatorze mozna:"

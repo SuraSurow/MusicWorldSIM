@@ -3,6 +3,7 @@
 void pressEnter()
 {
     std::cout << "\n\n\t ENTER to continue ";
+
     char c;
     do {
         c=getchar();
@@ -12,8 +13,9 @@ void pressEnter()
 
 int index(int* ptrNum)
 {
-    std::cout << "\nWrite your choice index:";
+    cout << "\nWrite your choice index:";
     int number;
-    std::cin >> number;
+    cin >> number;
     *ptrNum = number;
+    return 0;
 }

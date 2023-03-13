@@ -11,6 +11,29 @@
 #include <locale>
 #include <ctime>
 
+//zamiast using namespace std uzylem tylko tych przestrzeni nazw
+//z ktorych mam zamiar korzystac , uzywanie using namespace std powoduje gdzi
+//ze gdy chcialbym szerzej korzysac z przesteni nazw to moglbym
+//ktoraz zmienna z przestrzeni nazw stardard == std zedytowac i spowodowac
+//mozliwe kompkikacje, dla bezpieczenstwa wymieniam tutaj tylko te
+//zmienne oraz funckje z namespace std ktorych mam zamiar uzyc i nic wiecej
+
+using
+    std::string,
+    std::cout,
+    std:: cin;
+
+namespace MenuText{
+    const string
+        create = "CREATE",
+        initialize = "INITIALIZE",
+        print = "PRINT",
+        add = "ADD",
+        del = "DELETE",
+        sort = "SORT",
+        data_sheet = "DATA_SHEET";
+}
+
 
 struct musicDisc {
     std::string nameMusic;
@@ -25,14 +48,20 @@ struct album {
     struct musicDisc oneTrack[32];
 };
 struct creator {
-    std::string nameCre;
-    std::string surnameCre;
+    string nameCre;
+    string surnameCre;
     size_t ageCre;
     size_t yearCre;
     size_t monthCre;
     size_t dayCre;
     struct album album[4];
 };
+
+
+
+
+
+
 //tworzenie wszelkich obiektow oraz wskaznikow do obiektow
 void create(creator*& _creator);
 void create(album*& _album);
@@ -50,10 +79,10 @@ void start();
 void pressEnter();
 int index(int* ptrNum);
 int menu();//
-void menu(char name[]);//
-void menu(int* ptrNum, char typeMenu[]);
+void menu(const string& name);
+void menu(const int* ptrNum, const string& typeMenu);
 
-void creatorsMenu ( char typeMenu[] );
-void albumsMenu ( char typeMenu [] );
-void discesMenu ( char typeMenu [] );
+int creator_sMenu (const string& typeMenu );
+void album_sMenu (const string& typeMenu );
+void disc_sMenu (const string& typeMenu  );
 #endif //LAB_HEADFILE_H
