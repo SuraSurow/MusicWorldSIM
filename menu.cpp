@@ -14,9 +14,10 @@
 
 
 
-int menu()
+int menu()//2
 {
-    int choiceIndex=0;
+    int choiceIndex;
+    menu_show_content();
     index(&choiceIndex);
     switch ( choiceIndex )
     {
@@ -25,7 +26,6 @@ int menu()
             cout
             << " !!! Exit !!!"
             << "\n Thanks you for use application";
-            pressEnter();
             return EXIT_SUCCESS;
         }
         case CREATE :
@@ -34,9 +34,6 @@ int menu()
             menu(name);
             index(&choiceIndex);
             menu(&choiceIndex,name);
-
-
-
             break;
         }
         case INITIALIZE :
@@ -76,15 +73,7 @@ menu();
 return 0;
 }
 
-void menu(const string& name)
-{
-    cout
-    << "\nChoice what's object you want "
-    << name
-    << "\n\n1.Creator"
-    << "\n2.Album"
-    << "\n3.Disc";
-}
+
 
 void menu (const int* ptrNum,const string& typeMenu)
 {
@@ -117,12 +106,12 @@ void menu (const int* ptrNum,const string& typeMenu)
 
 int creator_sMenu( const string&  typeMenu)
 {
-
-
-
     if ( typeMenu == MenuText::create )
     {
-
+        size_t size;
+        get_size(&size);
+        creator **_creator ;
+        create(_creator,size);
     }
     else if ( typeMenu == MenuText::initialize )
     {
@@ -150,17 +139,91 @@ int creator_sMenu( const string&  typeMenu)
     return EXIT_SUCCESS;
 }
 
-void album_sMenu ( const string& typeMenu  )
+int album_sMenu ( const string& typeMenu  )
 {
+    if ( typeMenu == MenuText::create )
+    {
+        size_t size;
+        get_size(&size);
+        album ** _album;
+        create(_album,size);
+    }
+    else if ( typeMenu == MenuText::initialize )
+    {
 
 
+    }
+    else if (typeMenu == MenuText::print )
+    {
+
+    }
+    else if ( typeMenu == MenuText::add )
+    {
+
+    }
+    else if ( typeMenu == MenuText::del)
+    {
+
+    }
+    else if ( typeMenu == MenuText::data_sheet )
+    {
+
+    }
+    else {return EXIT_FAILURE;}
+    return EXIT_SUCCESS;
 }
 
-void disc_sMenu (const  string& typeMenu  )
+int disc_sMenu (const  string& typeMenu  )
 {
+    if ( typeMenu == MenuText::create )
+    {
+        size_t size;
+        get_size(&size);
+        musicDisc ** _disc;
+        create(_disc,size);
+    }
+    else if ( typeMenu == MenuText::initialize )
+    {
 
 
+    }
+    else if (typeMenu == MenuText::print )
+    {
+
+    }
+    else if ( typeMenu == MenuText::add )
+    {
+
+    }
+    else if ( typeMenu == MenuText::del)
+    {
+
+    }
+    else if ( typeMenu == MenuText::data_sheet )
+    {
+
+    }
+    else {return EXIT_FAILURE;}
+    return EXIT_SUCCESS;
 }
+
+
+
+
+void menu(const string& name)
+{
+    cout
+            << "\nChoice what's object you want "
+            << name
+            << "\n\n1.Creator"
+            << "\n2.Album"
+            << "\n3.Disc";
+}//1
+
+
+
+
+
 //
 //zrob przekazanie tego char name[] ="create'' i za pomoca strcmp
 //wykonaj wybranie danej operacji !!!!!

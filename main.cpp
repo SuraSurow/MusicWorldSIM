@@ -103,5 +103,18 @@ void start ()
     pressEnter();
 }
 
+void menu_show_content()
+{
+    cout
+    << "\n\n\t0. EXIT"
+    << "\n\t1. Tworzyc ( Create ) "
+    << "\n\t2. Inicjowac ( Initialize )"
+    << "\n\t3. Wyswietlic ( Print )"
+    << "\n\t4. Dodac ( add )"
+    << "\n\t5. Usunac ( delete )"
+    << "\n\t6. Sortowac ( sort )"
+    << "\n\t7. Zestawiac Dane ( data sheet )"
+    ;
+}
 
 

@@ -75,14 +75,16 @@ void create(musicDisc**& _musicDisc,size_t size);
 
 //--------------------------------------------------
 
+void get_size( size_t *size);
+void menu_show_content();
 void start();
 void pressEnter();
 int index(int* ptrNum);
-int menu();//
-void menu(const string& name);
+int menu();//2
+void menu(const string& name);//1
 void menu(const int* ptrNum, const string& typeMenu);
 
 int creator_sMenu (const string& typeMenu );
-void album_sMenu (const string& typeMenu );
-void disc_sMenu (const string& typeMenu  );
+int album_sMenu (const string& typeMenu );
+int disc_sMenu (const string& typeMenu  );
 #endif //LAB_HEADFILE_H
