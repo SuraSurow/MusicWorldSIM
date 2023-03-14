@@ -7,7 +7,7 @@ void pressEnter()
     while (enter != '\r' && enter != '\n') enter = getchar();
 }
 
-int index(int* ptrNum)
+int index(size_t * ptrNum)
 {
     cout << "\nWrite your choice index:";
     int number;

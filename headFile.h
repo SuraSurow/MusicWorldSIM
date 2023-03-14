@@ -45,7 +45,6 @@ struct album {
     std::string nameAl;
     std::string typeAl;
     size_t sizeAl;
-    struct musicDisc oneTrack[32];
 };
 struct creator {
     string nameCre;
@@ -54,8 +53,17 @@ struct creator {
     size_t yearCre;
     size_t monthCre;
     size_t dayCre;
-    struct album album[4];
 };
+struct allStruct {
+    creator * _creator;
+    album ** _album;
+    musicDisc ** _musicDisc;
+};
+
+
+
+//globalne zmienne
+
 
 
 
@@ -63,28 +71,37 @@ struct creator {
 
 
 //tworzenie wszelkich obiektow oraz wskaznikow do obiektow
-void create(creator*& _creator);
-void create(album*& _album);
-void create(musicDisc*& _musicDisc);
+//void create(creator*& _creator);
+//void create(album*& _album);
+//void create(musicDisc*& _musicDisc);
 void create(creator*& _creator, size_t size);
-void create(album*& _album, size_t size);
-void create(musicDisc*& _musicDisc, size_t size);
-void create(creator**& _creator,size_t size);
+//void create(album*& _album, size_t size);
+//void create(musicDisc*& _musicDisc, size_t size);
+//void create(creator**& _creator,size_t size);
 void create(album**& _album,size_t size);
 void create(musicDisc**& _musicDisc,size_t size);
 
 //--------------------------------------------------
 
-void get_size( size_t *size);
-void menu_show_content();
-void start();
-void pressEnter();
-int index(int* ptrNum);
-int menu();//2
-void menu(const string& name);//1
-void menu(const int* ptrNum, const string& typeMenu);
+void get_size( size_t *size);//------
+void menu_show_content();//-------
+void start();//-------
+void pressEnter();//---------
+int index(size_t* ptrNum);//---------
 
-int creator_sMenu (const string& typeMenu );
-int album_sMenu (const string& typeMenu );
-int disc_sMenu (const string& typeMenu  );
+
+int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc);//--------
+
+void menu(const string& name);//--------
+
+void menu(creator * _creator,album ** _album, musicDisc ** _musicDisc,
+        const size_t* ptrNum, const string& typeMenu);//do uzycia
+
+void menus(creator * _creator,album ** _album ,musicDisc ** _musicDisc,
+           const string & name , size_t * ptrNum);//#########
+
+
+int creator_sMenu ( creator * _creator , const string& typeMenu );
+int album_sMenu ( album ** _album , const string& typeMenu );
+int disc_sMenu ( musicDisc ** _musicDisc , const string& typeMenu  );
 #endif //LAB_HEADFILE_H

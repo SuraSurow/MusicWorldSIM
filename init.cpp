@@ -3,12 +3,14 @@
 //
 #include "headFile.h"
 
-/*
-void ini(creator osoby, const size_t rozmiar) {
+
+/*void ini(create * const _creator, const size_t size) {
+
+
     int max = 1000;
     int rocznik = 30;
     char string_buf[100];
-    for (size_t ind = 0; ind < rozmiar; ind++) {
+    for (size_t x = 0; x < size; x++) {
         char nazwisko[100];
         osoby[ind].pesel = rand() % max + 10000;
         osoby[ind].rocznik = rand() % rocznik + 20;
@@ -18,20 +20,4 @@ void ini(creator osoby, const size_t rozmiar) {
         strcpy_s(osoby[ind].godnosc, nazwisko);
     }
 }
-
-void gen_data(Osoba* osoba) {
-    size_t max = 1000;
-    size_t rocznik = 30;
-    size_t num = rand() % 100000 + 1;
-    char nazwisko[100];
-    char string_buf[100];
-    osoba->pesel = rand() % max + 10000;
-    osoba->rocznik = rand() % rocznik + 20;
-    sprintf_s(string_buf, "%zd", num);
-    strcpy_s(nazwisko, "Kowalski_");
-    strcat_s(nazwisko, string_buf);
-    strcpy_s(osoba->godnosc, nazwisko);
-}
-
-
-*/
+ */

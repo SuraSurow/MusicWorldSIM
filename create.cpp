@@ -15,7 +15,7 @@
 
 
 //tworzenie pojedynczych objektow
-
+/*
 void create ( creator *& _creator )
 {
     _creator = new creator ;
@@ -30,6 +30,7 @@ void create ( musicDisc *& _musicDisc )
 {
     _musicDisc = new musicDisc ;
 }
+ */
 //tworzenie tablic obiektow
 
 void create ( creator *& _creatorS , const size_t size )
@@ -37,6 +38,7 @@ void create ( creator *& _creatorS , const size_t size )
     _creatorS = new creator [ size ] ;
 }
 
+/*
 void create ( album *& _albumS , const size_t size )
 {
     _albumS = new album [ size ] ;
@@ -56,6 +58,7 @@ void create ( creator **& _creatorS , const size_t size )
         _creatorS [ x ] = new creator ;
     }
 }
+ */
 
 void create ( album **& _albumS , const size_t size )
 {
@@ -74,3 +77,4 @@ void create ( musicDisc **& _musicDiscES , const size_t size )
         _musicDiscES [ x ] = new musicDisc ;
     }
 }
+

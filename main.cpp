@@ -72,11 +72,15 @@ menu robimy
 #include "headFile.h"
 
 
+
 int main()
 {
     pressEnter();
     start();
-    menu();
+    creator * _creator = nullptr;
+    album ** _album = nullptr;
+    musicDisc ** _musicDisc = nullptr;
+    loop(_creator,_album,_musicDisc );
     return EXIT_SUCCESS;
 }
 
