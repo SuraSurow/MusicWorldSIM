@@ -120,8 +120,9 @@ int creator_sMenu(creator * _creator, const string&  typeMenu)
     }
     else if ( typeMenu == MenuText::initialize )
     {
-
-
+        size_t size;
+        get_size(&size);
+        init(_creator,size);
     }
     else if (typeMenu == MenuText::print )
     {

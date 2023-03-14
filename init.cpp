@@ -4,13 +4,22 @@
 #include "headFile.h"
 
 
-/*void ini(create * const _creator, const size_t size) {
+void init( creator * _creatorS , size_t size)
+{
+    _creatorS->nameCre=randName();
+    cout <<_creatorS->nameCre;
+
+}
+//zrob loopa dla wszystkich obiejktow
+//WYWALA PAMIEC !!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
+/*
+void ini(Osoba* const osoby, const size_t rozmiar) {
     int max = 1000;
     int rocznik = 30;
     char string_buf[100];
-    for (size_t x = 0; x < size; x++) {
+    for (size_t ind = 0; ind < rozmiar; ind++) {
         char nazwisko[100];
         osoby[ind].pesel = rand() % max + 10000;
         osoby[ind].rocznik = rand() % rocznik + 20;
