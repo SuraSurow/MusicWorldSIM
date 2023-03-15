@@ -14,7 +14,7 @@
 
 
 
-int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc)//2
+int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc,size_t * pSize)//2
 {
     size_t choiceIndex;
     size_t* ptrChoiceIndex = &choiceIndex;
@@ -32,43 +32,43 @@ int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc)//2
         case CREATE :
         {
             menus(_creator,_album,_musicDisc,
-                    MenuText::create,ptrChoiceIndex);
+                    MenuText::create,ptrChoiceIndex,pSize);
             break;
         }
         case INITIALIZE :
         {
             menus(_creator,_album,_musicDisc,
-                    MenuText::initialize,ptrChoiceIndex);
+                    MenuText::initialize,ptrChoiceIndex,pSize);
             break;
         }
         case PRINT :
         {
             menus(_creator,_album,_musicDisc,
-                    MenuText::print,ptrChoiceIndex);
+                    MenuText::print,ptrChoiceIndex,pSize);
             break;
         }
         case ADD :
         {
             menus(_creator,_album,_musicDisc,
-                    MenuText::add,ptrChoiceIndex);
+                    MenuText::add,ptrChoiceIndex,pSize);
             break;
         }
         case DELETE :
         {
             menus(_creator,_album,_musicDisc,
-                    MenuText::del,ptrChoiceIndex);
+                    MenuText::del,ptrChoiceIndex,pSize);
             break;
         }
         case SORT :
         {
             menus(_creator,_album,_musicDisc,
-                    MenuText::sort,ptrChoiceIndex);
+                    MenuText::sort,ptrChoiceIndex,pSize);
             break;
         }
         case DATA_SHEET :
         {
             menus(_creator,_album,_musicDisc,
-                    MenuText::data_sheet,ptrChoiceIndex);
+                    MenuText::data_sheet,ptrChoiceIndex,pSize);
             break;
         }
         default :
@@ -78,31 +78,54 @@ int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc)//2
         }
 
     }
-loop(_creator,_album,_musicDisc );
+loop(_creator,_album,_musicDisc ,pSize);
 return 0;
 }
 
 
-
-void menu (creator * _creator,album ** _album ,musicDisc ** _musicDisc,
-        const size_t* ptrNum,const string& typeMenu)
+void menus (creator * _creator,album ** _album, musicDisc ** _musicDisc,
+            const string & name , size_t * ptrNum , size_t * pSize)
 {
+    menu(name);
+    index(ptrNum);
+    menu(_creator, _album,_musicDisc,
+         ptrNum,name , pSize);
+}
+
+void menu(const string& name)
+{
+    cout
+            << "\nChoice what's object you want "
+            << name
+            << "\n\n1.Creator"
+            << "\n2.Album"
+            << "\n3.Disc";
+}//1
+
+
+
+
+
+void menu (creator * _creator , album ** _album , musicDisc ** _musicDisc,
+        const size_t* ptrNum , const string& typeMenu , size_t * pSize)
+{
+
 
     switch(*ptrNum)
     {
         case 1 :
         {
-            creator_sMenu(_creator , typeMenu);
+            creator_sMenu(_creator , typeMenu,pSize);
             break;
         }
         case 2 :
         {
-            album_sMenu( _album , typeMenu);
+            album_sMenu( _album , typeMenu,pSize);
             break;
         }
         case 3 :
         {
-            disc_sMenu(_musicDisc , typeMenu);
+            disc_sMenu(_musicDisc , typeMenu,pSize);
 
             break;
         }
@@ -110,19 +133,16 @@ void menu (creator * _creator,album ** _album ,musicDisc ** _musicDisc,
     }
 }
 
-int creator_sMenu(creator * _creator, const string&  typeMenu)
+int creator_sMenu(creator * _creator, const string&  typeMenu , size_t * pSize)
 {
     if ( typeMenu == MenuText::create )
     {
-        size_t size;
-        get_size(&size);
-        create(_creator,size);
+        get_size(pSize);
+        create(_creator,pSize);
     }
     else if ( typeMenu == MenuText::initialize )
     {
-        size_t size;
-        get_size(&size);
-        init(_creator,size);
+        init(_creator,pSize);
     }
     else if (typeMenu == MenuText::print )
     {
@@ -149,7 +169,7 @@ int creator_sMenu(creator * _creator, const string&  typeMenu)
     return EXIT_SUCCESS;
 }
 
-int album_sMenu ( album ** _album , const string& typeMenu  )
+int album_sMenu ( album ** _album , const string& typeMenu , size_t * pSize )
 {
     if ( typeMenu == MenuText::create )
     {
@@ -187,7 +207,7 @@ int album_sMenu ( album ** _album , const string& typeMenu  )
     return EXIT_SUCCESS;
 }
 
-int disc_sMenu ( musicDisc ** _musicDisc ,const  string& typeMenu  )
+int disc_sMenu ( musicDisc ** _musicDisc ,const  string& typeMenu ,size_t * pSize )
 {
     if ( typeMenu == MenuText::create )
     {
@@ -227,25 +247,10 @@ int disc_sMenu ( musicDisc ** _musicDisc ,const  string& typeMenu  )
 
 
 
-void menus (creator * _creator,album ** _album, musicDisc ** _musicDisc,
-        const string & name , size_t * ptrNum)
-{
-    menu(name);
-    index(ptrNum);
-    menu(_creator, _album,_musicDisc,
-            ptrNum,name);
-}
 
 
-void menu(const string& name)
-{
-    cout
-            << "\nChoice what's object you want "
-            << name
-            << "\n\n1.Creator"
-            << "\n2.Album"
-            << "\n3.Disc";
-}//1
+
+
 
 
 

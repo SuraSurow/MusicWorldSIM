@@ -80,7 +80,9 @@ int main()
     creator * _creator = nullptr;
     album ** _album = nullptr;
     musicDisc ** _musicDisc = nullptr;
-    loop(_creator,_album,_musicDisc );
+    size_t size = MIN;
+    size_t* pSize = &size;
+    loop(_creator,_album,_musicDisc ,pSize);
     return EXIT_SUCCESS;
 }
 
