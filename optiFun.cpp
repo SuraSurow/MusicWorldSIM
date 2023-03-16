@@ -19,9 +19,7 @@ int index(size_t * ptrNum)
 void get_size( size_t *size)
 {
     cout
-    <<"\nEnter count of object between "<<MIN << "-"<< MAX
-    << "\nIF you are out of range,\nthe program will automatically assign"
-       "\nvalue of min = "<<MIN
+    <<   "\nvalue of min = "<<MIN
     << "\nvalue of max = "<<MAX<<"\t:";
     cin >> *size;
     if ( *size <= MIN )
@@ -32,8 +30,6 @@ void get_size( size_t *size)
     {
         *size = MAX; //max = 100
     }
-
-
 }
 
 

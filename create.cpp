@@ -11,28 +11,23 @@
 void create ( creator *& _creatorS ,const size_t *size )
 {
     _creatorS = new creator[*size];
-    for (int i=0 ; i < *size ; i++)
-    {
-        _creatorS[i].ageCre=123;
-    }
-    cout <<"wartosc:"<< _creatorS[0].ageCre;
 
 }
 
-void create ( album **& _albumS , const size_t size )
+void create ( album **& _albumS , const size_t *size )
 {
-    _albumS = new album * [ size ] ;
-    for ( size_t x = 0 ; x < size ; x++ )
+    _albumS = new album * [ *size ] ;
+    for ( size_t x = 0 ; x < *size ; x++ )
     {
         _albumS [ x ] = new album ;
     }
     //obiektowi wielkosci danej tablcy obiektow;
 }
 
-void create ( musicDisc **& _musicDiscES , const size_t size )
+void create ( musicDisc **& _musicDiscES , const size_t *size )
 {
-    _musicDiscES = new musicDisc * [ size ] ;
-    for ( size_t x = 0 ; x < size ; x++ )
+    _musicDiscES = new musicDisc * [ *size ] ;
+    for ( size_t x = 0 ; x < *size ; x++ )
     {
         _musicDiscES [ x ] = new musicDisc ;
     }

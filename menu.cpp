@@ -3,8 +3,7 @@
 //
 
 #include "headFile.h"
-#define EXIT 0
-#define CREATE 1
+#define EXIT 1
 #define INITIALIZE 2
 #define PRINT 3
 #define ADD 4
@@ -18,66 +17,52 @@ int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc,size_t * p
 {
     size_t choiceIndex;
     size_t* ptrChoiceIndex = &choiceIndex;
-    menu_show_content();
-    index(ptrChoiceIndex);
-    switch ( choiceIndex )
-    {
-        case EXIT :
-        {
-            cout
-            << " !!! Exit !!!"
-            << "\n Thanks you for use application";
-            return EXIT_SUCCESS;
-        }
-        case CREATE :
-        {
-            menus(_creator,_album,_musicDisc,
-                    MenuText::create,ptrChoiceIndex,pSize);
-            break;
-        }
-        case INITIALIZE :
-        {
-            menus(_creator,_album,_musicDisc,
-                    MenuText::initialize,ptrChoiceIndex,pSize);
-            break;
-        }
-        case PRINT :
-        {
-            menus(_creator,_album,_musicDisc,
-                    MenuText::print,ptrChoiceIndex,pSize);
-            break;
-        }
-        case ADD :
-        {
-            menus(_creator,_album,_musicDisc,
-                    MenuText::add,ptrChoiceIndex,pSize);
-            break;
-        }
-        case DELETE :
-        {
-            menus(_creator,_album,_musicDisc,
-                    MenuText::del,ptrChoiceIndex,pSize);
-            break;
-        }
-        case SORT :
-        {
-            menus(_creator,_album,_musicDisc,
-                    MenuText::sort,ptrChoiceIndex,pSize);
-            break;
-        }
-        case DATA_SHEET :
-        {
-            menus(_creator,_album,_musicDisc,
-                    MenuText::data_sheet,ptrChoiceIndex,pSize);
-            break;
-        }
-        default :
-        {
-            std::cout << "\nERROR, probably you write bad index, try again";
-            pressEnter();
+        menu_show_content();
+        index(ptrChoiceIndex);
+        switch (choiceIndex) {
+            case EXIT : {
+                cout
+                        << " !!! Exit !!!"
+                        << "\n Thanks you for use application";
+                return EXIT_SUCCESS;
+            }
+            case INITIALIZE : {
+                menus(_creator, _album, _musicDisc,
+                      MenuText::initialize, ptrChoiceIndex, pSize);
+                break;
+            }
+            case PRINT : {
+                menus(_creator, _album, _musicDisc,
+                      MenuText::print, ptrChoiceIndex, pSize);
+                break;
+            }
+            case ADD : {
+                menus(_creator, _album, _musicDisc,
+                      MenuText::add, ptrChoiceIndex, pSize);
+                break;
+            }
+            case DELETE : {
+                menus(_creator, _album, _musicDisc,
+                      MenuText::del, ptrChoiceIndex, pSize);
+                break;
+            }
+            case SORT : {
+                menus(_creator, _album, _musicDisc,
+                      MenuText::sort, ptrChoiceIndex, pSize);
+                break;
+            }
+            case DATA_SHEET : {
+                menus(_creator, _album, _musicDisc,
+                      MenuText::data_sheet, ptrChoiceIndex, pSize);
+                break;
+            }
+            default : {
+                std::cout << "\nERROR, probably you write bad index, try again";
+                pressEnter();
+            }
+
         }
 
-    }
 loop(_creator,_album,_musicDisc ,pSize);
 return 0;
 }
@@ -135,12 +120,7 @@ void menu (creator * _creator , album ** _album , musicDisc ** _musicDisc,
 
 int creator_sMenu(creator * _creator, const string&  typeMenu , size_t * pSize)
 {
-    if ( typeMenu == MenuText::create )
-    {
-        get_size(pSize);
-        create(_creator,pSize);
-    }
-    else if ( typeMenu == MenuText::initialize )
+    if ( typeMenu == MenuText::initialize )
     {
         init(_creator,pSize);
     }
@@ -171,16 +151,10 @@ int creator_sMenu(creator * _creator, const string&  typeMenu , size_t * pSize)
 
 int album_sMenu ( album ** _album , const string& typeMenu , size_t * pSize )
 {
-    if ( typeMenu == MenuText::create )
-    {
-        size_t size;
-        get_size(&size);
-        create(_album,size);
-    }
-    else if ( typeMenu == MenuText::initialize )
-    {
 
-
+    if ( typeMenu == MenuText::initialize )
+    {
+        init( _album , pSize );
     }
     else if (typeMenu == MenuText::print )
     {
@@ -209,16 +183,9 @@ int album_sMenu ( album ** _album , const string& typeMenu , size_t * pSize )
 
 int disc_sMenu ( musicDisc ** _musicDisc ,const  string& typeMenu ,size_t * pSize )
 {
-    if ( typeMenu == MenuText::create )
+     if ( typeMenu == MenuText::initialize )
     {
-        size_t size;
-        get_size(&size);
-        create(_musicDisc,size);
-    }
-    else if ( typeMenu == MenuText::initialize )
-    {
-
-
+         init( _musicDisc , pSize );
     }
     else if (typeMenu == MenuText::print )
     {

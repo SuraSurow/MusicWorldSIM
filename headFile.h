@@ -41,18 +41,20 @@ namespace MenuText{
 
 
 struct musicDisc {
-    std::string nameMusic;
-    std::string typeMusic;
-    size_t  minutesMusic;
+    string nameCre; //
+    string surnameCre; //
+    string nameMusic;
+    string typeMusic;
+    size_t  secondMusic;
     size_t yearMusic;
-    size_t countObject;
-
 };
 struct album {
-    std::string nameAl;
-    std::string typeAl;
-    size_t sizeAl;
-    size_t countObject;
+    string nameCre;
+    string surnameCre;
+    string nameAl;
+    string typeAl;
+    size_t yearCre;
+    size_t countSong;
 };
 struct creator {
     string nameCre;
@@ -61,13 +63,8 @@ struct creator {
     size_t yearCre;
     size_t monthCre;
     size_t dayCre;
-    size_t countObject;
 };
-struct allStruct {
-    creator * _creator;
-    album ** _album;
-    musicDisc ** _musicDisc;
-};
+
 
 
 
@@ -81,23 +78,39 @@ struct allStruct {
 
 //tworzenie wszelkich obiektow oraz wskaznikow do obiektow
 
-void create(creator*& _creator, const size_t *size);
-void create(album**& _album,size_t size);
-void create(musicDisc**& _musicDisc,size_t size);
+void create(creator *& _creator, const size_t *size);
+void create(album **& _album,const size_t *size);
+void create(musicDisc **& _musicDisc,const size_t *size);
 //--------------------------------------------------
 void del ( creator *& _creatorS , size_t size );
 void del( album **& _albumS, size_t& size);
 void del( musicDisc **& _musicDiscES, size_t& size);
 //---------------------------------------------------
 void init( creator * _creatorS , size_t * size );
+void init( album * const * const _albumS, size_t * size );
+void init ( musicDisc * const * const _musicDiscES, size_t * size );
+void initAlbum (album * const _albumS);
+void initMusicDisc ( musicDisc * const _musicDiscES);
 //---------------------------------------------------
 
 void get_size( size_t *size);//------
+
 void menu_show_content();//-------
+
 void start();//-------
+
+
 void pressEnter();//---------
+
 int index(size_t* ptrNum);//---------
 string randName();
+string randSurname();
+string randAlbumName();
+string randTypeMusic();
+string randNameMusic();
+void prestart();
+
+size_t randSize_t (int min, int max);
 
 
 int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc,size_t * pSize);

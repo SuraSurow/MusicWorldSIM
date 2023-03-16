@@ -4,58 +4,53 @@
 #include "headFile.h"
 
 
-void init( creator * _creatorS , size_t * pSize)
+void init( creator * _creatorS ,size_t * pSize)
 {
-    cout << *pSize;
-    //PROBLEM Z WSKAZNIKIEM I PRZEKAZANIEM WARTOSCI WIELKOSCI OBIEKTU
-    //Przeanalizuj jak przypisuje sie wartosc wielkosc obiektu
-    //jest tam gdzies jakis problem !!!!!!!!!!!!!!!!!!!!!!!!
-    // problem jest z przypisaniem wartosci z _sizeObject_
-
-
-    //for (size_t x = 0; x < ; x++) {
-    //    _creatorS[x].nameCre = randName();
-    //}
-}
-
-
-    //_creatorS->nameCre=randName();
-    //cout <<_creatorS->nameCre;
-
-
-/*
-void ini(Osoba* const osoby, const size_t rozmiar) {
-    int max = 1000;
-    int rocznik = 30;
-    char string_buf[100];
-    for (size_t ind = 0; ind < rozmiar; ind++) {
-        char nazwisko[100];
-        osoby[ind].pesel = rand() % max + 10000;
-        osoby[ind].rocznik = rand() % rocznik + 20;
-        sprintf_s(string_buf, "%zd", ind);
-        strcpy_s(nazwisko, "Kowalski_");
-        strcat_s(nazwisko, string_buf);
-        strcpy_s(osoby[ind].godnosc, nazwisko);
+    for( int i = 0 ; i < *pSize ; i++)
+    {
+        _creatorS[i].nameCre = randName();
+        _creatorS[i].surnameCre = randSurname();
+        _creatorS[i].ageCre = randSize_t(1,100);
+        _creatorS[i].yearCre = randSize_t(1980,2022);
+        _creatorS[i].monthCre = randSize_t(1,12);
+        _creatorS[i].dayCre = randSize_t(1,28);
     }
 }
-*/
-//zrob loopa dla wszystkich obiejktow
-//WYWALA PAMIEC !!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-/*
-void ini(Osoba* const osoby, const size_t rozmiar) {
-    int max = 1000;
-    int rocznik = 30;
-    char string_buf[100];
-    for (size_t ind = 0; ind < rozmiar; ind++) {
-        char nazwisko[100];
-        osoby[ind].pesel = rand() % max + 10000;
-        osoby[ind].rocznik = rand() % rocznik + 20;
-        sprintf_s(string_buf, "%zd", ind);
-        strcpy_s(nazwisko, "Kowalski_");
-        strcat_s(nazwisko, string_buf);
-        strcpy_s(osoby[ind].godnosc, nazwisko);
+void init ( album * const * const  _albumS , size_t * pSize )
+{
+    for (size_t i = 0 ; i < *pSize; i++ ) {
+        initAlbum(_albumS[i]);
     }
 }
- */
+
+void init (musicDisc * const * const _musicDiscES , size_t * pSize )
+{
+    for (size_t i = 0 ; i < *pSize ; i++ ) {
+        initMusicDisc ( _musicDiscES[i] );
+    }
+}
+
+void initMusicDisc ( musicDisc * const _musicDiscES)
+{
+    _musicDiscES -> nameCre = randName();
+    _musicDiscES -> surnameCre = randSurname();
+    _musicDiscES -> nameMusic = randNameMusic();
+    _musicDiscES -> typeMusic = randTypeMusic();
+    _musicDiscES -> secondMusic = randSize_t(1,600);
+    _musicDiscES -> yearMusic = randSize_t(1980,2022);
+
+
+}
+
+void initAlbum (album * const _albumS)
+{
+    _albumS -> nameAl=randAlbumName();
+    _albumS -> nameCre = randName();
+    _albumS -> surnameCre = randSurname();
+    _albumS -> typeAl = randTypeMusic();
+    _albumS -> yearCre = randSize_t(1990,2022);
+    _albumS -> countSong = randSize_t(8,30);
+
+}
+
