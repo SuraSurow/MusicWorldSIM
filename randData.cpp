@@ -6,7 +6,7 @@
 
 string randName()
 {
-    const char randName [12][15]{
+   const string  randName [12]{
             {"Wojciech"},
             {"Andrzej"},
             {"Antek"},

@@ -11,6 +11,11 @@
 void create ( creator *& _creatorS ,const size_t *size )
 {
     _creatorS = new creator[*size];
+    for (int i=0 ; i < *size ; i++)
+    {
+        _creatorS[i].ageCre=123;
+    }
+    cout <<"wartosc:"<< _creatorS[0].ageCre;
 
 }
 
