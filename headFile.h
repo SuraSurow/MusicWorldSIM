@@ -95,6 +95,11 @@ void initMusicDisc ( musicDisc * const _musicDiscES);
 void print (creator *_creator , size_t *size);
 void print (album **_album , size_t *size);
 void print (musicDisc **_musicDisc , size_t *size);
+//------------------------------------------------
+void add (album **& _album , size_t & size );
+void add (musicDisc **& _musicDisc , size_t & size );
+
+//------------------------------------------------
 
 void get_size( size_t *size);//------
 

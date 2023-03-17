@@ -28,7 +28,7 @@ void print (album ** _album ,size_t * size )
         <<"Name Creator -> " << _album[i]->nameCre << "\n"
         <<"Surname Creator -> " << _album[i]->surnameCre << "\n"
         <<"Name album -> " << _album[i]->nameAl<< "\n"
-        <<"Type Music -> " << _album[i]->yearCre << "\n"
+        <<"Type Music -> " << _album[i]->typeAl << "\n"
         <<"Year create -> " << _album[i]->yearCre << "\n"
         <<"Count of song-> " << _album[i]->countSong << "\n\n";
 

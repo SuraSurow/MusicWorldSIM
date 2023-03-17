@@ -128,6 +128,30 @@ lab/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/build
 .PHONY : lab/fast
 
+add.obj: add.cpp.obj
+.PHONY : add.obj
+
+# target to build an object file
+add.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/add.cpp.obj
+.PHONY : add.cpp.obj
+
+add.i: add.cpp.i
+.PHONY : add.i
+
+# target to preprocess a source file
+add.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/add.cpp.i
+.PHONY : add.cpp.i
+
+add.s: add.cpp.s
+.PHONY : add.s
+
+# target to generate assembly for a file
+add.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/add.cpp.s
+.PHONY : add.cpp.s
+
 create.obj: create.cpp.obj
 .PHONY : create.obj
 
@@ -329,6 +353,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... lab
+	@echo ... add.obj
+	@echo ... add.i
+	@echo ... add.s
 	@echo ... create.obj
 	@echo ... create.i
 	@echo ... create.s

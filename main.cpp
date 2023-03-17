@@ -77,13 +77,13 @@ int main()
 {
     pressEnter();
     start();
-    creator * _creator;
-    album ** _album;
-    musicDisc ** _musicDisc;
     prestart();
     size_t size;
     size_t* pSize = &size;
     get_size(pSize);
+    creator * _creator;
+    album ** _album;
+    musicDisc ** _musicDisc;
     create(_creator,pSize);
     create( _album , pSize);
     create( _musicDisc , pSize );

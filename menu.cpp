@@ -15,9 +15,9 @@
 
 int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc,size_t * pSize)//2
 {
-    size_t choiceIndex;
+    size_t choiceIndex ;
     size_t* ptrChoiceIndex = &choiceIndex;
-    do {
+
         menu_show_content();
         index(ptrChoiceIndex);
         switch (choiceIndex) {
@@ -64,9 +64,8 @@ int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc,size_t * p
 
 
         }
-    }while(choiceIndex =! EXIT);
 
-//loop(_creator,_album,_musicDisc ,pSize);
+loop(_creator,_album,_musicDisc ,pSize);
 return 0;
 }
 
@@ -134,7 +133,7 @@ int creator_sMenu(creator * _creator, const string&  typeMenu , size_t * pSize)
     }
     else if ( typeMenu == MenuText::add )
     {
-
+        get_size(pSize);
     }
     else if ( typeMenu == MenuText::del)
     {
@@ -167,7 +166,8 @@ int album_sMenu ( album ** _album , const string& typeMenu , size_t * pSize )
     }
     else if ( typeMenu == MenuText::add )
     {
-
+        get_size(pSize);
+        add(_album , *pSize);
     }
     else if ( typeMenu == MenuText::del)
     {
@@ -199,7 +199,8 @@ int disc_sMenu ( musicDisc ** _musicDisc ,const  string& typeMenu ,size_t * pSiz
     }
     else if ( typeMenu == MenuText::add )
     {
-
+        get_size(pSize);
+        add ( _musicDisc , *pSize);
     }
     else if ( typeMenu == MenuText::del)
     {

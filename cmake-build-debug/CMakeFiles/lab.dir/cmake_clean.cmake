@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lab.dir/add.cpp.obj"
+  "CMakeFiles/lab.dir/add.cpp.obj.d"
   "CMakeFiles/lab.dir/create.cpp.obj"
   "CMakeFiles/lab.dir/create.cpp.obj.d"
   "CMakeFiles/lab.dir/delete.cpp.obj"

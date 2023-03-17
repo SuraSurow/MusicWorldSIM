@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/schollLab/MusicWorldSIM/add.cpp">
+			<Option target="lab"/>
+		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/create.cpp">
 			<Option target="lab"/>
 		</Unit>
