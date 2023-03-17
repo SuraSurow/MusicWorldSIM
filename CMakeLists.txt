@@ -3,4 +3,4 @@ project(lab)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(lab main.cpp headFile.h init.cpp optiFun.cpp menu.cpp)
+add_executable(lab main.cpp headFile.h init.cpp optiFun.cpp menu.cpp create.cpp create.cpp randData.cpp delete.cpp print.cpp print.cpp)

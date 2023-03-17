@@ -1,4 +1,4 @@
-# Install script for directory: C:/schollLab/lab
+# Install script for directory: C:/schollLab/MusicWorldSIM
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/schollLab/lab/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/schollLab/MusicWorldSIM/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

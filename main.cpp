@@ -72,11 +72,22 @@ menu robimy
 #include "headFile.h"
 
 
+
 int main()
 {
     pressEnter();
     start();
-    menu();
+    creator * _creator;
+    album ** _album;
+    musicDisc ** _musicDisc;
+    prestart();
+    size_t size;
+    size_t* pSize = &size;
+    get_size(pSize);
+    create(_creator,pSize);
+    create( _album , pSize);
+    create( _musicDisc , pSize );
+    loop(_creator,_album,_musicDisc ,pSize);
     return EXIT_SUCCESS;
 }
 
@@ -85,7 +96,7 @@ int main()
 
 void start ()
 {
-    std::cout
+    cout
     << "\n\tWitaj w Kreatorze Swiata Muzycznego\n"
     << "\n\t( welcome to the app that creates the music world ) "
     << "\n\n\tW naszym sumulatorze mozna:"
@@ -101,6 +112,33 @@ void start ()
     << "\n\t!!! Albumy Muzyczne ( music album's )\t\t!!!"
     << "\n\t!!! Utwory Muzyczne ( music song's )\t\t!!!";
     pressEnter();
+}
+
+
+void menu_show_content()
+{
+    cout
+    << "\n\n\t1. EXIT"
+    << "\n\t2. Inicjowac ( Initialize )"
+    << "\n\t3. Wyswietlic ( Print )"
+    << "\n\t4. Dodac ( add )"
+    << "\n\t5. Usunac ( delete )"
+    << "\n\t6. Sortowac ( sort )"
+    << "\n\t7. Zestawiac Dane ( data sheet )"
+    ;
+}
+
+void prestart()
+{
+    cout
+    << "\nPrzed uzytkowaniem oprogramowania nalezy stworzyc obiekty"
+    << "( Objects must be created before using the software ) "
+    << "\n\n-Creator"
+    << "\n-Album"
+    << "\n-Disc"
+    << "\nWprowadz Liczbe obiektow"
+    << "\n(Enter count of object)\n"
+    ;
 }
 
 

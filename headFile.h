@@ -11,49 +11,136 @@
 #include <locale>
 #include <ctime>
 
+#define ZERO 0
+#define MIN 1
+#define MAX 100
+
+
+//zamiast using namespace std uzylem tylko tych przestrzeni nazw
+//z ktorych mam zamiar korzystac , uzywanie using namespace std powoduje gdzi
+//ze gdy chcialbym szerzej korzysac z przesteni nazw to moglbym
+//ktoraz zmienna z przestrzeni nazw stardard == std zedytowac i spowodowac
+//mozliwe kompkikacje, dla bezpieczenstwa wymieniam tutaj tylko te
+//zmienne oraz funckje z namespace std ktorych mam zamiar uzyc i nic wiecej
+
+using
+    std::string,
+    std::cout,
+    std:: cin;
+
+namespace MenuText{
+    const string
+        create = "CREATE",
+        initialize = "INITIALIZE",
+        print = "PRINT",
+        add = "ADD",
+        del = "DELETE",
+        sort = "SORT",
+        data_sheet = "DATA_SHEET";
+}
+
 
 struct musicDisc {
-    std::string nameMusic;
-    std::string typeMusic;
-    size_t  minutesMusic;
+    string nameCre; //
+    string surnameCre; //
+    string nameMusic;
+    string typeMusic;
+    size_t  secondMusic;
     size_t yearMusic;
 };
 struct album {
-    std::string nameAl;
-    std::string typeAl;
-    size_t sizeAl;
-    struct musicDisc oneTrack[32];
+    string nameCre;
+    string surnameCre;
+    string nameAl;
+    string typeAl;
+    size_t yearCre;
+    size_t countSong;
 };
 struct creator {
-    std::string nameCre;
-    std::string surnameCre;
+    string nameCre;
+    string surnameCre;
     size_t ageCre;
     size_t yearCre;
     size_t monthCre;
     size_t dayCre;
-    struct album album[4];
 };
+
+
+
+
+//globalne zmienne
+
+
+
+
+
+
+
 //tworzenie wszelkich obiektow oraz wskaznikow do obiektow
-void create(creator*& _creator);
-void create(album*& _album);
-void create(musicDisc*& _musicDisc);
-void create(creator*& _creator, size_t size);
-void create(album*& _album, size_t size);
-void create(musicDisc*& _musicDisc, size_t size);
-void create(creator**& _creator,size_t size);
-void create(album**& _album,size_t size);
-void create(musicDisc**& _musicDisc,size_t size);
 
+void create(creator *& _creator, const size_t *size);
+void create(album **& _album,const size_t *size);
+void create(musicDisc **& _musicDisc,const size_t *size);
 //--------------------------------------------------
+void del ( creator *& _creatorS , size_t size );
+void del( album **& _albumS, size_t& size);
+void del( musicDisc **& _musicDiscES, size_t& size);
+//---------------------------------------------------
+void init( creator * _creatorS , size_t * size );
+void init( album * const * const _albumS, size_t * size );
+void init ( musicDisc * const * const _musicDiscES, size_t * size );
+void initAlbum (album * const _albumS);
+void initMusicDisc ( musicDisc * const _musicDiscES);
+//---------------------------------------------------
+void print (creator *_creator , size_t *size);
+void print (album **_album , size_t *size);
+void print (musicDisc **_musicDisc , size_t *size);
 
-void start();
-void pressEnter();
-int index(int* ptrNum);
-int menu();//
-void menu(char name[]);//
-void menu(int* ptrNum, char typeMenu[]);
+void get_size( size_t *size);//------
 
-void creatorsMenu ( char typeMenu[] );
-void albumsMenu ( char typeMenu [] );
-void discesMenu ( char typeMenu [] );
+void menu_show_content();//-------
+
+void start();//-------
+
+
+void pressEnter();//---------
+
+int index(size_t* ptrNum);//---------
+string randName();
+string randSurname();
+string randAlbumName();
+string randTypeMusic();
+string randNameMusic();
+void prestart();
+
+size_t randSize_t (int min, int max);
+
+
+int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc,size_t * pSize);
+
+void menu(const string& name);//--------
+
+void menu(creator * _creator,album ** _album, musicDisc ** _musicDisc,
+        const size_t* ptrNum, const string& typeMenu , size_t * pSize);//do uzycia
+
+void menus(creator * _creator,album ** _album ,musicDisc ** _musicDisc,
+           const string & name , size_t * ptrNum , size_t * pSize);//#########
+
+
+int creator_sMenu ( creator * _creator , const string& typeMenu ,size_t * pSize);
+int album_sMenu ( album ** _album , const string& typeMenu,size_t * pSize );
+int disc_sMenu ( musicDisc ** _musicDisc , const string& typeMenu ,size_t * pSize );
+
+
+
+/*
+ //void create(creator*& _creator);
+//void create(album*& _album);
+//void create(musicDisc*& _musicDisc);
+ //void create(album*& _album, size_t size);
+//void create(musicDisc*& _musicDisc, size_t size);
+//void create(creator**& _creator,size_t size);
+ */
+
+
 #endif //LAB_HEADFILE_H
