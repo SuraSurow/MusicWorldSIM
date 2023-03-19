@@ -32,4 +32,9 @@ void get_size( size_t *size)
     }
 }
 
+void print_size (size_t *size)
+{
+    cout
+    << "\n Actual cout of object:"<<*size;
+}
 

@@ -1,73 +1,4 @@
 
-/*
- *
- * instrukje do zadania
- *
-Napisać program w ramach wybranego tematu, który demonstruje  zarządzanie pamięcią pod czas wykonania,
- tworząc tablice obiektów struktur oraz tablice wskaźników do obiektów struktur.
-Tablice mogą być zarówno  jednowymiarowe, jak i dwuwymiarowe.
-Program ma składać się z plików nagłówkowych z definicjami struktur i prototypami (*.h)  oraz plików (*.cpp) z implementacjami funkcji.
- Wartości atrybutów struktur generować losowo, w tym rozmiary tablic.
-
-menu robimy
-///////////////////////////
-1.tworz samolot
- minimalnie 2 structy
-
- Tworz tablice obiektow;
- samolot* sam;
- rand() size;
-
-
- struct samolot {
- int predkosc;
- char typ;
- };
- struct Przeszkody{
- int pozx;
- int pozy;
- };
- ////////////////////////
- 2.inicjalizacja samolotow
-
- /////////////////////
- 3. pokaz samoloty
-
- ////////////////
- 4. dodaj samolot
-
- ///////////////
- 5. usun losowo wybrany samolot z tablicy
-
- //////////////////dotad sa do samolotow
-
- potem te same 5 funcje tylko ze do zurawia
-
- roznica jest taka:
- zuraw zadeklarowany jako tablica wskaznikow
-
- /////////////////////
- 11. jakas funckja z przetwarzaniem informacji
- 12. jedno dla samolotu drugi dla zurawia
-
- przyklad przetwarzania:
- --sortowanie
- --filtrowanie
- --zestawienia danych
- --zmiana stanu obiektow
- -------------------------
-
- !!!!!!przeladowanie, referencja, przydzielanie pamieci i zarzadanie pamieci
-
-
-
- ////////////////
- 13 wyjscie z programu
-
- skasowac cala pamiec ktora zostala przydzielona do programu
-
-
- */
 
 #include "headFile.h"
 
@@ -77,17 +8,89 @@ int main()
 {
     pressEnter();
     start();
-    prestart();
+    preestart();
     size_t size;
     size_t* pSize = &size;
     get_size(pSize);
-    creator * _creator;
-    album ** _album;
-    musicDisc ** _musicDisc;
-    create(_creator,pSize);
-    create( _album , pSize);
-    create( _musicDisc , pSize );
-    loop(_creator,_album,_musicDisc ,pSize);
+    creator * _creator = nullptr;
+    album ** _album = nullptr;
+    musicDisc ** _musicDisc = nullptr;
+    size_t choiceIndex;
+    do{
+        menu_show_content();
+        index(&choiceIndex);
+        switch ( choiceIndex ) {
+            case EXIT : {
+                cout
+                        << " !!! Exit !!!"
+                        << "\n Thanks you for use application";
+                return EXIT_SUCCESS;
+            }
+            case CREATE : {
+                cout <<"tutaj";
+                //create(_creator,pSize);
+                cout << "\nalbumy";
+                create(_album,pSize);
+                cout << "\nmusicDisc";
+                create(_musicDisc,pSize);
+                break;
+            }
+            case INITIALIZE : {
+                //init(_creator,pSize);
+                init(_album,pSize);
+                init(_musicDisc,pSize);
+                break;
+            }
+            case PRINT : {
+                //print(_creator,pSize);
+                cout << "\nalbumy\n";
+
+                print(_album,pSize);
+                cout << "\nmusicDisc\n";
+
+                print(_musicDisc,pSize);
+                break;
+            }
+            case ADD : {
+
+                //dd(_creator,)
+                //cout <<"\n!!!debug!!!\n"<< sizeof(**_album);
+                add(_album,pSize);
+                add(_musicDisc ,pSize);
+                //cout <<"\n!!!debug!!!\n"<< sizeof(**_album);
+                size_t fcalkowityRozmiar = sizeof(album) * (*pSize);
+
+                std::cout << "Rozmiar tablicy obiektow: " << fcalkowityRozmiar << " bajtow\n";
+
+                break;
+            }
+            case DELETE : {
+                //del(_creator,*pSize);
+                del(_album,*pSize);
+                del(_musicDisc,*pSize);
+;
+                break;
+            }
+            /*case SORT : {
+;
+                break;
+            }
+            case DATA_SHEET : {
+;
+                break;
+            }*/
+            default : {
+                std::cout << "\nERROR, probably you write bad index, try again";
+                pressEnter();
+            }
+        }
+
+
+    }while(choiceIndex != 0);
+
+
+
+    //loop(_creator,_album,_musicDisc ,pSize);
     return EXIT_SUCCESS;
 }
 
@@ -118,7 +121,8 @@ void start ()
 void menu_show_content()
 {
     cout
-    << "\n\n\t1. EXIT"
+    << "\n\n\t0. EXIT"
+    << "\n\t1. Tworzyc ( create )"
     << "\n\t2. Inicjowac ( Initialize )"
     << "\n\t3. Wyswietlic ( Print )"
     << "\n\t4. Dodac ( add )"
@@ -128,7 +132,7 @@ void menu_show_content()
     ;
 }
 
-void prestart()
+void preestart()
 {
     cout
     << "\nPrzed uzytkowaniem oprogramowania nalezy stworzyc obiekty"

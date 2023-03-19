@@ -14,14 +14,15 @@
 #define ZERO 0
 #define MIN 1
 #define MAX 100
+#define EXIT 0
+#define CREATE 1
+#define INITIALIZE 2
+#define PRINT 3
+#define ADD 4
+#define DELETE 5
+#define SORT 6
+#define DATA_SHEET 7
 
-
-//zamiast using namespace std uzylem tylko tych przestrzeni nazw
-//z ktorych mam zamiar korzystac , uzywanie using namespace std powoduje gdzi
-//ze gdy chcialbym szerzej korzysac z przesteni nazw to moglbym
-//ktoraz zmienna z przestrzeni nazw stardard == std zedytowac i spowodowac
-//mozliwe kompkikacje, dla bezpieczenstwa wymieniam tutaj tylko te
-//zmienne oraz funckje z namespace std ktorych mam zamiar uzyc i nic wiecej
 
 using
     std::string,
@@ -87,8 +88,8 @@ void del( album **& _albumS, size_t& size);
 void del( musicDisc **& _musicDiscES, size_t& size);
 //---------------------------------------------------
 void init( creator * _creatorS , size_t * size );
-void init( album * const * const _albumS, size_t * size );
-void init ( musicDisc * const * const _musicDiscES, size_t * size );
+void init( album ** _albumS, size_t * size );
+void init ( musicDisc ** _musicDiscES, size_t * size );
 void initAlbum (album * const _albumS);
 void initMusicDisc ( musicDisc * const _musicDiscES);
 //---------------------------------------------------
@@ -96,9 +97,9 @@ void print (creator *_creator , size_t *size);
 void print (album **_album , size_t *size);
 void print (musicDisc **_musicDisc , size_t *size);
 //------------------------------------------------
-void add (album **& _album , size_t & size );
-void add (musicDisc **& _musicDisc , size_t & size );
-
+void add (album **& _album , size_t * size );
+void add (musicDisc **& _musicDisc , size_t * size );
+int add (creator *& _creator , size_t * size_old ,size_t * size_new);
 //------------------------------------------------
 
 void get_size( size_t *size);//------
@@ -106,6 +107,8 @@ void get_size( size_t *size);//------
 void menu_show_content();//-------
 
 void start();//-------
+
+void print_size (size_t *size);
 
 
 void pressEnter();//---------
@@ -116,7 +119,7 @@ string randSurname();
 string randAlbumName();
 string randTypeMusic();
 string randNameMusic();
-void prestart();
+void preestart();
 
 size_t randSize_t (int min, int max);
 
@@ -138,14 +141,7 @@ int disc_sMenu ( musicDisc ** _musicDisc , const string& typeMenu ,size_t * pSiz
 
 
 
-/*
- //void create(creator*& _creator);
-//void create(album*& _album);
-//void create(musicDisc*& _musicDisc);
- //void create(album*& _album, size_t size);
-//void create(musicDisc*& _musicDisc, size_t size);
-//void create(creator**& _creator,size_t size);
- */
+
 
 
 #endif //LAB_HEADFILE_H

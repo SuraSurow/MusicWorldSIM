@@ -6,8 +6,12 @@
 
 void init( creator * _creatorS ,size_t * pSize)
 {
+    cout << "creator"<< _creatorS;
+    cout << "psize" << pSize;
+    cout <<"przed"<< *pSize;
     for( int i = 0 ; i < *pSize ; i++)
     {
+        cout <<"wsrodku"<< *pSize << "\n";
         _creatorS[i].nameCre = randName();
         _creatorS[i].surnameCre = randSurname();
         _creatorS[i].ageCre = randSize_t(1,100);
@@ -17,14 +21,14 @@ void init( creator * _creatorS ,size_t * pSize)
     }
 }
 
-void init ( album * const * const  _albumS , size_t * pSize )
+void init ( album ** _albumS , size_t * pSize )
 {
     for (size_t i = 0 ; i < *pSize; i++ ) {
         initAlbum(_albumS[i]);
     }
 }
 
-void init (musicDisc * const * const _musicDiscES , size_t * pSize )
+void init (musicDisc ** _musicDiscES , size_t * pSize )
 {
     for (size_t i = 0 ; i < *pSize ; i++ ) {
         initMusicDisc ( _musicDiscES[i] );
