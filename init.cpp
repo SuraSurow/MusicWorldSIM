@@ -6,7 +6,7 @@
 
 void init( creator * _creatorS ,size_t * pSize)
 {
-    for( int i = 0 ; i < *pSize ; i++)
+    for( int i = 0 ; i < (*pSize) ; i++)
     {
         _creatorS[i].nameCre = randName();
         _creatorS[i].surnameCre = randSurname();
@@ -17,21 +17,21 @@ void init( creator * _creatorS ,size_t * pSize)
     }
 }
 
-void init ( album * const * const  _albumS , size_t * pSize )
+void init ( album ** _albumS , size_t * pSize )
 {
     for (size_t i = 0 ; i < *pSize; i++ ) {
         initAlbum(_albumS[i]);
     }
 }
 
-void init (musicDisc * const * const _musicDiscES , size_t * pSize )
+void init (musicDisc ** _musicDiscES , size_t * pSize )
 {
     for (size_t i = 0 ; i < *pSize ; i++ ) {
         initMusicDisc ( _musicDiscES[i] );
     }
 }
 
-void initMusicDisc ( musicDisc * const _musicDiscES)
+void initMusicDisc ( musicDisc *& _musicDiscES)
 {
     _musicDiscES -> nameCre = randName();
     _musicDiscES -> surnameCre = randSurname();
@@ -43,7 +43,7 @@ void initMusicDisc ( musicDisc * const _musicDiscES)
 
 }
 
-void initAlbum (album * const _albumS)
+void initAlbum (album *& _albumS)
 {
     _albumS -> nameAl=randAlbumName();
     _albumS -> nameCre = randName();

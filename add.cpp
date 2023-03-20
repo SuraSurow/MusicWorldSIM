@@ -4,29 +4,94 @@
 
 
 #include "headFile.h"
-void add (album **& _album , size_t & size ) {
-    album **temp = new album *[size + 1] ;
-    if (size == 0) {
-        temp[size] = new album;
-    } else {
-        for (size_t i= 0; i < size; i++)
-            temp[i] = _album[i];
-        temp[size] = new album;
-        delete[] _album;
+int add (creator *& _creator , size_t * size , size_t * size_new)
+{
+    if ( *size_new >= *size) {
+        auto *temp = new creator[*size_new];
+        int i;
+        for ( i=0; i < *size ; i++)
+        {
+            temp[i].ageCre = _creator[i].ageCre;
+            temp[i].yearCre = _creator[i].yearCre;
+            temp[i].dayCre = _creator[i].dayCre;
+            temp[i].monthCre = _creator[i].monthCre;
+            temp[i].surnameCre = _creator[i].surnameCre;
+            temp[i].nameCre = _creator[i].nameCre;
+        }
+        for (  ; i < *size_new ; i++)
+        {
+            temp[i].nameCre = randName();
+            temp[i].surnameCre = randSurname();
+            temp[i].ageCre = randSize_t(1,100);
+            temp[i].yearCre = randSize_t(1980,2022);
+            temp[i].monthCre = randSize_t(1,12);
+            temp[i].dayCre = randSize_t(1,28);
+        }
+        delete[] _creator;
+        _creator = nullptr;
+        _creator = temp;
+        *size=*size_new;
+        return 0;
     }
-    _album = temp;
-    ++size;
+
+    return EXIT_FAILURE;
+
 }
-void add (musicDisc **& _musicDisc , size_t & size ) {
-    musicDisc ** temp = new musicDisc *[size + 1] ;
-    if (size == 0) {
-        temp[size] = new musicDisc;
-    } else {
-        for (size_t i= 0; i < size; i++)
-            temp[i] = _musicDisc[i];
-        temp[size] = new musicDisc;
-        delete[] _musicDisc;
+
+
+
+
+int add (album **& _album , size_t * size ,size_t *size_new) {
+
+
+    if(*size_new>=*size) {
+        auto **temp = new album *[*size_new];
+        int i = 0;
+        for ( ; i < *size ; i++ ) {
+            temp[ i ] = new album;
+            temp[ i ]->surnameCre = _album[ i ]->surnameCre;
+            temp[ i ]->nameCre = _album[ i ]->nameCre;
+            temp[ i ]->yearCre = _album[ i ]->yearCre;
+            temp[ i ]->typeAl = _album[ i ]->typeAl;
+            temp[ i ]->countSong = _album[ i ]->countSong;
+            temp[ i ]->nameAl = _album[ i ]->nameAl;
+        }
+        for ( ; i < *size_new ; i++ ) {
+            temp[ i ] = new album;
+            initAlbum(temp[ i ]);
+        }
+        delete[] _album;
+        _album = nullptr;
+        _album = temp;
+        *size = *size_new;
+        return EXIT_SUCCESS;
     }
+    return EXIT_FAILURE;
+}
+int add (musicDisc **& _musicDisc , size_t * size,size_t *size_new ) {
+
+
+if(*size_new>=*size) {
+    auto **temp = new musicDisc *[*size_new];
+    int i = 0;
+    for ( ; i < *size ; i++ ) {
+        temp[ i ] = new musicDisc;
+        temp[ i ]->surnameCre = _musicDisc[ i ]->surnameCre;
+        temp[ i ]->nameCre = _musicDisc[ i ]->nameCre;
+        temp[ i ]->nameMusic = _musicDisc[ i ]->nameMusic;
+        temp[ i ]->typeMusic = _musicDisc[ i ]->typeMusic;
+        temp[ i ]->secondMusic = _musicDisc[ i ]->secondMusic;
+        temp[ i ]->yearMusic = _musicDisc[ i ]->yearMusic;
+    }
+    for ( ; i < *size_new ; i++ ) {
+        temp[ i ] = new musicDisc;
+        initMusicDisc(temp[ i ]);
+    }
+    delete[] _musicDisc;
+    _musicDisc = nullptr;
     _musicDisc = temp;
-    ++size;
+    *size = *size_new;
+    return EXIT_SUCCESS;
+}
+return EXIT_FAILURE;
 }

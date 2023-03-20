@@ -20,7 +20,6 @@ string randName()
             {"Kazimierz"},
             {"Radoslaw"}
     };
-    srand(time(nullptr));
     int _return = rand() % (sizeof(randName)/sizeof(randName[0])) ;
     string ret = randName[_return];
     return ret;
