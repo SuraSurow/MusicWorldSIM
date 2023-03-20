@@ -1,3 +1,0 @@
-C:/schollLab/MusicWorldSIM/cmake-build-debug/CMakeFiles/lab.dir
-C:/schollLab/MusicWorldSIM/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/schollLab/MusicWorldSIM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
