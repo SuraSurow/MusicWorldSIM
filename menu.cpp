@@ -12,7 +12,7 @@
 #define SORT 6
 #define DATA_SHEET 7
 
-
+/*
 
 int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc,size_t * pSize)//2
 {
@@ -70,6 +70,77 @@ int loop( creator * _creator,album ** _album, musicDisc ** _musicDisc,size_t * p
 //loop(_creator,_album,_musicDisc ,pSize);
 return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
 
 
 void menus (creator * _creator,album ** _album, musicDisc ** _musicDisc,
@@ -144,7 +215,7 @@ int creator_sMenu(creator * _creator, const string&  typeMenu , size_t * pSize)
     }
     else if ( typeMenu == MenuText::del)
     {
-        del(_creator,*pSize);
+
 
     }
     else if ( typeMenu == MenuText:: sort)
@@ -235,6 +306,9 @@ int disc_sMenu ( musicDisc ** _musicDisc ,const  string& typeMenu ,size_t * pSiz
 
 
 
+
+
+ */
 
 
 //

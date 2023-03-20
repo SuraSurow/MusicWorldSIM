@@ -161,4 +161,8 @@ CMakeFiles/lab.dir/menu.cpp.obj: C:\schollLab\MusicWorldSIM\menu.cpp \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tuple \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/array \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uses_allocator.h \
- C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h
+ C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h \
+ C:\schollLab\MusicWorldSIM\create.h C:\schollLab\MusicWorldSIM\struct.h \
+ C:\schollLab\MusicWorldSIM\add.h C:\schollLab\MusicWorldSIM\delete.h \
+ C:\schollLab\MusicWorldSIM\init.h C:\schollLab\MusicWorldSIM\optiFun.h \
+ C:\schollLab\MusicWorldSIM\print.h C:\schollLab\MusicWorldSIM\randData.h
