@@ -87,16 +87,28 @@
 		<Unit filename="C:/schollLab/MusicWorldSIM/add.cpp">
 			<Option target="lab"/>
 		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/add.h">
+			<Option target="lab"/>
+		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/create.cpp">
 			<Option target="lab"/>
 		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/create.h">
+			<Option target="lab"/>
+		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/delete.cpp">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/delete.h">
 			<Option target="lab"/>
 		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/headFile.h">
 			<Option target="lab"/>
 		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/init.cpp">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/init.h">
 			<Option target="lab"/>
 		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/main.cpp">
@@ -108,10 +120,22 @@
 		<Unit filename="C:/schollLab/MusicWorldSIM/optiFun.cpp">
 			<Option target="lab"/>
 		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/optiFun.h">
+			<Option target="lab"/>
+		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/print.cpp">
 			<Option target="lab"/>
 		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/print.h">
+			<Option target="lab"/>
+		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/randData.cpp">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/randData.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/struct.h">
 			<Option target="lab"/>
 		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/CMakeLists.txt">

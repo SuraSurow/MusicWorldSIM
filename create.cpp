@@ -12,6 +12,7 @@ void create ( creator *& _creatorS ,const size_t *size )
 {
     _creatorS = new creator[*size];
 
+
 }
 
 void create ( album **& _albumS , const size_t *size )
@@ -21,10 +22,6 @@ void create ( album **& _albumS , const size_t *size )
     {
         _albumS [ x ] = new album ;
     }
-    size_t calkowityRozmiar = sizeof(album*) * (*size);
-
-    std::cout << "Rozmiar tablicy obiektow: " << calkowityRozmiar << " bajtow\n";
-    //obiektowi wielkosci danej tablcy obiektow;
 }
 
 void create ( musicDisc **& _musicDiscES , const size_t *size )
@@ -34,7 +31,6 @@ void create ( musicDisc **& _musicDiscES , const size_t *size )
     {
         _musicDiscES [ x ] = new musicDisc ;
     }
-    //obiektowi wielkosci danej tablcy obiektow;
 }
 
 
