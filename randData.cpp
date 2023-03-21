@@ -20,9 +20,10 @@ string randName()
             {"Kazimierz"},
             {"Radoslaw"}
     };
-    int _return = rand() % (sizeof(randName)/sizeof(randName[0])) ;
-    string ret = randName[_return];
-    return ret;
+    static size_t random = 0;
+    random +=1;
+    if(random >= 12 ){random =0;}
+    return randName[random];
 }
 string randSurname () {
 
@@ -40,10 +41,10 @@ string randSurname () {
             {"Kopernik"},
             {"Piast"}
     };
-    srand(time(nullptr));
-    int _return = rand() % (sizeof(randSurname)/sizeof(randSurname[0])) ;
-        string ret = randSurname[_return];
-    return ret;
+    static size_t random = 0;
+    random +=1;
+    if(random >= 12 ){random =0;}
+    return randSurname[random];
 
 }
 string randAlbumName ()
@@ -60,10 +61,10 @@ string randAlbumName ()
             {"Warszawa"},
             {"Park_Nicosci"},
             };
-    srand(time(nullptr));
-    int _return = rand() % (sizeof(albumName)/sizeof(albumName[0])) ;
-    string ret = albumName[_return];
-    return ret;
+    static size_t random = 0;
+    random +=1;
+    if(random >= 10 ){random =0;}
+    return albumName[random];
 }
 
 string randTypeMusic()
@@ -80,10 +81,10 @@ string randTypeMusic()
             {"Reggae"},
             {"Disco"},
             };
-    srand(time(nullptr));
-    int _return = rand() % (sizeof(musicType)/sizeof(musicType[0])) ;
-    string ret = musicType[_return];
-    return ret;
+    static size_t random = 0;
+    random +=1;
+    if(random >= 10 ){random =0;}
+    return musicType[random];
 }
 
 string randNameMusic ()
@@ -97,10 +98,10 @@ string randNameMusic ()
             {"shirt"},{"grocery"},{"church"},{"appointment"},{"association"},
 
     };
-    srand(time(nullptr));
-    int _return = rand() % (sizeof(randNameMusic)/sizeof(randNameMusic[0])) ;
-    string ret = randNameMusic[_return];
-    return ret;
+    static size_t random = 0;
+    random +=1;
+    if(random >= 29 ){random =0;}
+    return randNameMusic[random];
 
 }
 
@@ -108,12 +109,11 @@ string randNameMusic ()
 
 size_t randSize_t (int min, int max)
 {
-    srand(time(nullptr));
-    size_t _return;
-    int a;
-    a=(max-min);
-    _return = rand() % a + min;
-    return _return;
+    static int number = 0;
+    number +=min+1;
+    if (number >= max ){number = min;};
+    return number;
+
 }
 
 

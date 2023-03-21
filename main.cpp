@@ -26,31 +26,34 @@ int main()
                 return EXIT_SUCCESS;
             }
             case CREATE : {
-                //create (_creator , &size);
+                create (_creator , &size);
                 create ( _album  , &size);
-                //create ( _musicDisc  , &size);
+                create ( _musicDisc  , &size);
 
                 break;
             }
             case INITIALIZE : {
-                //init(_creator,&size);
+                init(_creator,&size);
                 init(_album,&size);
-                //init(_musicDisc,&size);
+                init(_musicDisc,&size);
                 break;
             }
             case PRINT : {
-                //print(_creator,&size);
+                cout << "\n\n\tWYKONAWCY (CREATORS)\n\n";
+                print(_creator,&size);
+                cout << "\n\n\tALBUMY (ALBUMS)\n\n";
                 print(_album,&size);
-                //print(_musicDisc,&size);
+                cout << "\n\n\tPLYTY MUZYCZNE (SONG DISCS)\n\n";
+                print(_musicDisc,&size);
                 break;
 
             }
             case ADD : {
                 size_t size_new=0;
                 get_size(&size_new);
-                //add ( _creator , &size, &size_new );
+                add ( _creator , &size, &size_new );
                 add( _album ,&size ,&size_new);
-                //add(_musicDisc,&size,&size_new);
+                add(_musicDisc,&size,&size_new);
                 break;
 
 
@@ -58,17 +61,42 @@ int main()
             case DELETE : {
                 size_t size_new = 0;
                 get_size(&size_new);
-                //del(_creator,&size,&size_new);
+                del(_creator,&size,&size_new);
                 del(_album,&size,&size_new);
-                //del(_musicDisc,&size,&size_new);
+                del(_musicDisc,&size,&size_new);
                 break;
             }
             case SORT : {
-;
+
+                int choiceSort = 0;
+                sortMenu();
+                index(&choiceIndex);
+                switch (choiceSort)
+                {
+                    case sortName::creator : {
+                        sort (_creator ,&size);
+                        break;
+                    }
+                    case sortName::album : {
+                        sort ( _album,&size);
+                        break;
+
+                    }
+                    case sortName::musicDisc : {
+                        sort ( _musicDisc,&size);
+                        break;
+                    }
+                    default : {
+
+                        break;
+                    }
+                }
+
+
+
                 break;
             }
-            case DATA_SHEET : {
-;
+            case DATA_SHEET : {;
                 break;
             }
             default : {

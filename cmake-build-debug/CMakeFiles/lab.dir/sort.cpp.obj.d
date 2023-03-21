@@ -1,4 +1,4 @@
-CMakeFiles/lab.dir/add.cpp.obj: C:\schollLab\MusicWorldSIM\add.cpp \
+CMakeFiles/lab.dir/sort.cpp.obj: C:\schollLab\MusicWorldSIM\sort.cpp \
  C:\schollLab\MusicWorldSIM\headFile.h \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \

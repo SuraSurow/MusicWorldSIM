@@ -12,6 +12,8 @@
 #include <cstdlib>
 #include <locale>
 #include <ctime>
+#include <random>
+#include <type_traits>
 
 //own header
 
@@ -127,6 +129,7 @@ struct album {
     size_t countSong;
 };
  */
+#include "sort.h"
 
 
 #endif //LAB_HEADFILE_H

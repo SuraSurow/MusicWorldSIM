@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/lab.dir/print.cpp.obj.d"
   "CMakeFiles/lab.dir/randData.cpp.obj"
   "CMakeFiles/lab.dir/randData.cpp.obj.d"
+  "CMakeFiles/lab.dir/sort.cpp.obj"
+  "CMakeFiles/lab.dir/sort.cpp.obj.d"
   "lab.exe"
   "lab.exe.manifest"
   "lab.pdb"
