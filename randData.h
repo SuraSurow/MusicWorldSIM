@@ -9,7 +9,7 @@ string randSurname();
 string randAlbumName();
 string randTypeMusic();
 string randNameMusic();
-size_t randSize_t (int min, int max);
+void randSize_t (size_t * temp ,int min, int max);
 
 
 #endif //LAB_RANDDATA_H

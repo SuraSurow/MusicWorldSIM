@@ -68,9 +68,9 @@ int main()
             }
             case SORT : {
 
-                int choiceSort = 0;
+                size_t choiceSort = 0;
                 sortMenu();
-                index(&choiceIndex);
+                index(&choiceSort);
                 switch (choiceSort)
                 {
                     case sortName::creator : {

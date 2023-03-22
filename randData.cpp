@@ -20,10 +20,10 @@ string randName()
             {"Kazimierz"},
             {"Radoslaw"}
     };
-    static size_t random = 0;
-    random +=1;
-    if(random >= 12 ){random =0;}
-    return randName[random];
+    std::default_random_engine randomGenerator(std::chrono::system_clock::now().time_since_epoch().count());
+    std::uniform_int_distribution<size_t> _rand_(0, 11);
+    size_t temp = _rand_(randomGenerator);
+    return randName[temp];
 }
 string randSurname () {
 
@@ -41,10 +41,10 @@ string randSurname () {
             {"Kopernik"},
             {"Piast"}
     };
-    static size_t random = 0;
-    random +=1;
-    if(random >= 12 ){random =0;}
-    return randSurname[random];
+    std::default_random_engine randomGenerator(std::chrono::system_clock::now().time_since_epoch().count());
+    std::uniform_int_distribution<size_t> _rand_(0, 11);
+    size_t temp = _rand_(randomGenerator);
+    return randSurname[temp];
 
 }
 string randAlbumName ()
@@ -61,10 +61,10 @@ string randAlbumName ()
             {"Warszawa"},
             {"Park_Nicosci"},
             };
-    static size_t random = 0;
-    random +=1;
-    if(random >= 10 ){random =0;}
-    return albumName[random];
+    std::default_random_engine randomGenerator(std::chrono::system_clock::now().time_since_epoch().count());
+    std::uniform_int_distribution<size_t> _rand_(0, 9);
+    size_t temp = _rand_(randomGenerator);
+    return albumName[temp];
 }
 
 string randTypeMusic()
@@ -81,10 +81,10 @@ string randTypeMusic()
             {"Reggae"},
             {"Disco"},
             };
-    static size_t random = 0;
-    random +=1;
-    if(random >= 10 ){random =0;}
-    return musicType[random];
+    std::default_random_engine randomGenerator(std::chrono::system_clock::now().time_since_epoch().count());
+    std::uniform_int_distribution<size_t> _rand_(0, 9);
+    size_t temp = _rand_(randomGenerator);
+    return musicType[temp];
 }
 
 string randNameMusic ()
@@ -98,22 +98,21 @@ string randNameMusic ()
             {"shirt"},{"grocery"},{"church"},{"appointment"},{"association"},
 
     };
-    static size_t random = 0;
-    random +=1;
-    if(random >= 29 ){random =0;}
-    return randNameMusic[random];
+    std::default_random_engine randomGenerator(std::chrono::system_clock::now().time_since_epoch().count());
+    std::uniform_int_distribution<size_t> _rand_(0, 29);
+    size_t temp = _rand_(randomGenerator);
+    return randNameMusic[temp];
+
 
 }
 
 
 
-size_t randSize_t (int min, int max)
+void randSize_t(size_t * temp, int min, int max)
 {
-    static int number = 0;
-    number +=min+1;
-    if (number >= max ){number = min;};
-    return number;
-
+    std::default_random_engine randomGenerator(std::chrono::system_clock::now().time_since_epoch().count());
+    std::uniform_int_distribution<size_t> _rand_(min, max);
+    *temp = _rand_(randomGenerator);
 }
 
 

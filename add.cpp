@@ -22,10 +22,15 @@ int add (creator *& _creator , size_t * size , size_t * size_new)
         {
             temp[i].nameCre = randName();
             temp[i].surnameCre = randSurname();
-            temp[i].ageCre = randSize_t(1,100);
-            temp[i].yearCre = randSize_t(1980,2022);
-            temp[i].monthCre = randSize_t(1,12);
-            temp[i].dayCre = randSize_t(1,28);
+            size_t temp_size_t = 0;
+            randSize_t(&temp_size_t,20,60);
+            temp[i].ageCre = temp_size_t;
+            randSize_t(&temp_size_t,1980,2022);
+            temp[i].yearCre = temp_size_t;
+            randSize_t(&temp_size_t,1,12);
+            temp[i].monthCre = temp_size_t;
+            randSize_t(&temp_size_t,1,28);
+            temp[i].dayCre = temp_size_t;
         }
         delete[] _creator;
         _creator = nullptr;

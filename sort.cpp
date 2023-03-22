@@ -10,7 +10,6 @@ int sort (creator * _creator ,size_t *size)
         temp[ i ].ageCre = _creator[ i ].ageCre;
     }
     size_t bubble = *size;
-
     while ( bubble != 0)
     {
 
@@ -19,17 +18,19 @@ int sort (creator * _creator ,size_t *size)
             if(temp[i].ageCre > temp[i+1].ageCre)
             {
                 cout << "\n przedtemp[i] = " << temp[i].ageCre;
-                cout << "\n przedtemp[i+1] = " << temp[i+1].ageCre;
+                cout << "\n przedtemp[i+1] = " << temp[(i+1)].ageCre;
                 size_t _temp;
                 _temp = temp[i].ageCre;
-                temp[i].ageCre=temp[i+1].ageCre;
-                temp[i+1].ageCre=_temp;
+                temp[i].ageCre=temp[(i+1)].ageCre;
+                temp[(i+1)].ageCre=_temp;
                 cout << "\n potemp[i] = " << temp[i].ageCre;
-                cout << "\n potemp[i+1] = " << temp[i+1].ageCre;
+                cout << "\n potemp[i+1] = " << temp[(i+1)].ageCre;
             }
+            cout << "\npetla";
         }
         bubble--;
     }
+
 
 
 return 0;
