@@ -51,3 +51,53 @@ void print (musicDisc  ** _musicDisc , size_t * size )
     }
 
 }
+
+
+void start ()
+{
+    cout
+            << "\n\tWitaj w Kreatorze Swiata Muzycznego\n"
+            << "\n\t( welcome to the app that creates the music world ) "
+            << "\n\n\tW naszym sumulatorze mozna:"
+            << "\n\t( In our simulation can: )"
+            << "\n\n\t-Tworzyc ( Create ) (please use first!!!)"
+            << "\n\t-Inicjowac ( Initialize ) (please use second!!!)"
+            << "\n\t-Wyswietlic ( Print )"
+            << "\n\t-Dodac ( add )"
+            << "\n\t-Usunac ( delete )"
+            << "\n\t-Sortowac ( sort )"
+            << "\n\t-Zestawiac Dane ( data sheet )"
+            << "\n\n\t!!! Tworcow Muzycznych ( music artist's )\t!!!"
+            << "\n\t!!! Albumy Muzyczne ( music album's )\t\t!!!"
+            << "\n\t!!! Utwory Muzyczne ( music song's )\t\t!!!";
+    pressEnter();
+}
+
+
+void menu_show_content()
+{
+    cout
+            << "\n\n\t0. EXIT"
+            << "\n\t1. Tworzyc ( create ) (please use first!!!)"
+            << "\n\t2. Inicjowac ( Initialize ) (please use second!!!)"
+            << "\n\t3. Wyswietlic ( Print )"
+            << "\n\t4. Dodac ( add )"
+            << "\n\t5. Usunac ( delete )"
+            << "\n\t6. Sortowac ( sort )"
+            << "\n\t7. Zestawiac Dane ( data sheet ) (!!!NIE SKONCZONE!!!)"
+            ;
+}
+
+void preestart()
+{
+    cout
+            << "\nPrzed uzytkowaniem oprogramowania nalezy stworzyc obiekty"
+            << "( Objects must be created before using the software ) "
+            << "\n\n-Creator"
+            << "\n-Album"
+            << "\n-Disc"
+            << "\nWprowadz Liczbe obiektow"
+            << "\n(Enter count of object)\n"
+            ;
+}
+

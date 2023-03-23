@@ -131,6 +131,7 @@ struct album {
 };
  */
 #include "sort.h"
-
-
+/*
+int sort (creator * _creator ,size_t *size);
+*/
 #endif //LAB_HEADFILE_H

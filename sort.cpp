@@ -9,48 +9,26 @@ int sort (creator * _creator ,size_t *size)
     for (int i=0; i < *size ; i++) {
         temp[ i ].ageCre = _creator[ i ].ageCre;
     }
-    size_t bubble = *size;
-    while ( bubble != 0)
+    size_t bubble = *size ;
+    for ( int i = 0 ; i < --bubble ; i++ )
     {
-
-        for (int i = 0 ; i < bubble ; i++ )
+        for ( int j = 0 ; j < *size - 1 ; j ++  )
         {
-            if(temp[i].ageCre > temp[i+1].ageCre)
-            {
-                cout << "\n przedtemp[i] = " << temp[i].ageCre;
-                cout << "\n przedtemp[i+1] = " << temp[(i+1)].ageCre;
-                size_t _temp;
+            if(temp[ i ].ageCre > temp[ i + 1 ].ageCre ){
+                size_t _temp = 0;
                 _temp = temp[i].ageCre;
-                temp[i].ageCre=temp[(i+1)].ageCre;
-                temp[(i+1)].ageCre=_temp;
-                cout << "\n potemp[i] = " << temp[i].ageCre;
-                cout << "\n potemp[i+1] = " << temp[(i+1)].ageCre;
+                temp[i + 1].ageCre = temp[i].ageCre;
+                temp[i].ageCre=_temp;
             }
-            cout << "\npetla";
         }
-        bubble--;
+
     }
-
-
-
+    for ( int  i = 0 ; i < *size ; i ++ )
+    {
+       _creator [ i ].ageCre = temp [ i ].ageCre;
+    }
 return 0;
 }
-int sort (album ** _album ,size_t *size)
-{
-    return 0;
-}
-
-int sort (musicDisc ** _musicDisc ,size_t *size)
-{
-    return 0;
-}
 
 
-void sortMenu ()
-{
-    cout << "\nChoice what's do you want sort?"
-    <<"\n1.Creator"
-    <<"\n2.Album"
-    <<"\n3.MusicDisc";
 
-}
