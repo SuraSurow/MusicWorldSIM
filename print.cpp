@@ -84,7 +84,7 @@ void menu_show_content()
             << "\n\t4. Dodac ( add )"
             << "\n\t5. Usunac ( delete )"
             << "\n\t6. Sortowac ( sort )"
-            << "\n\t7. Zestawiac Dane ( data sheet ) (!!!NIE SKONCZONE!!!)"
+            << "\n\t7. Edytowac ( edit )"
             ;
 }
 

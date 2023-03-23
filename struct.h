@@ -12,7 +12,7 @@
 #define ADD 4
 #define DELETE 5
 #define SORT 6
-#define DATA_SHEET 7
+#define EDIT 7
 #define MIN 1
 #define MAX 100
 
@@ -36,7 +36,8 @@ namespace MenuText{
 }
 
 
-struct creator {
+class creator {
+public:
     string nameCre;
     string surnameCre;
     size_t ageCre;
@@ -44,7 +45,8 @@ struct creator {
     size_t monthCre;
     size_t dayCre;
 };
-struct musicDisc {
+class musicDisc {
+public:
     string nameCre; //
     string surnameCre; //
     string nameMusic;
@@ -52,7 +54,8 @@ struct musicDisc {
     size_t  secondMusic;
     size_t yearMusic;
 };
-struct album {
+class album {
+public:
     string nameCre;
     string surnameCre;
     string nameAl;

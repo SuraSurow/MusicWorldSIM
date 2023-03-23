@@ -69,11 +69,12 @@ int main()
             case SORT : {
 
                 sort (_creator ,&size);
-                //nie mialem czasu na wiecej :D
+                sort(_album,&size);
+                sort(_musicDisc,&size);
 
                 break;
             }
-            case DATA_SHEET : {;
+            case EDIT: {;
                 break;
             }
             default : {

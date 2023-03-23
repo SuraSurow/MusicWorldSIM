@@ -9,7 +9,9 @@
 
 
 
-int sort (creator *_creator , size_t *size );
+void sort (creator *_creator , size_t *size );
+void sort (album ** _album ,size_t *size);
+void sort (musicDisc ** _musicDisc ,size_t *size);
 
 
 #endif //LAB_SORT_H
