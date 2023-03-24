@@ -8,9 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/schollLab/MusicWorldSIM/edit.c" "CMakeFiles/lab.dir/edit.c.obj" "gcc" "CMakeFiles/lab.dir/edit.c.obj.d"
   "C:/schollLab/MusicWorldSIM/add.cpp" "CMakeFiles/lab.dir/add.cpp.obj" "gcc" "CMakeFiles/lab.dir/add.cpp.obj.d"
   "C:/schollLab/MusicWorldSIM/create.cpp" "CMakeFiles/lab.dir/create.cpp.obj" "gcc" "CMakeFiles/lab.dir/create.cpp.obj.d"
   "C:/schollLab/MusicWorldSIM/delete.cpp" "CMakeFiles/lab.dir/delete.cpp.obj" "gcc" "CMakeFiles/lab.dir/delete.cpp.obj.d"
+  "C:/schollLab/MusicWorldSIM/edit.cpp" "CMakeFiles/lab.dir/edit.cpp.obj" "gcc" "CMakeFiles/lab.dir/edit.cpp.obj.d"
   "C:/schollLab/MusicWorldSIM/init.cpp" "CMakeFiles/lab.dir/init.cpp.obj" "gcc" "CMakeFiles/lab.dir/init.cpp.obj.d"
   "C:/schollLab/MusicWorldSIM/main.cpp" "CMakeFiles/lab.dir/main.cpp.obj" "gcc" "CMakeFiles/lab.dir/main.cpp.obj.d"
   "C:/schollLab/MusicWorldSIM/menu.cpp" "CMakeFiles/lab.dir/menu.cpp.obj" "gcc" "CMakeFiles/lab.dir/menu.cpp.obj.d"

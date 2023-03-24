@@ -74,7 +74,8 @@ int main()
 
                 break;
             }
-            case EDIT: {;
+            case EDIT: {
+
                 break;
             }
             default : {

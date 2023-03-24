@@ -134,4 +134,6 @@ struct album {
 /*
 int sort (creator * _creator ,size_t *size);
 */
+#include "edit.h"
+
 #endif //LAB_HEADFILE_H
