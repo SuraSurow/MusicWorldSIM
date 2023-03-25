@@ -9,12 +9,12 @@ int del ( creator *& _creator , size_t *size ,size_t *size_new ) {
         auto *temp = new creator[*size_new];
         int i;
         for ( i = 0 ; i < *size_new ; i++ ) {
-            temp[ i ].ageCre = _creator[ i ].ageCre;
-            temp[ i ].yearCre = _creator[ i ].yearCre;
-            temp[ i ].dayCre = _creator[ i ].dayCre;
-            temp[ i ].monthCre = _creator[ i ].monthCre;
-            temp[ i ].surnameCre = _creator[ i ].surnameCre;
-            temp[ i ].nameCre = _creator[ i ].nameCre;
+            temp[ i ].set_ageCre(_creator[ i ].gets_ageCre());
+            temp[ i ].set_yearCre(_creator[ i ].gets_yearCre());
+            temp[ i ].set_dayCre(_creator[ i ].gets_dayCre());
+            temp[ i ].set_monthCre(_creator[ i ].gets_monthCre());
+            temp[ i ].set_surnameCre(_creator[ i ].gets_surnameCre());
+            temp[ i ].set_nameCre(_creator[ i ].gets_nameCre()) ;
         }
         delete[] _creator;
         _creator = nullptr;
@@ -31,12 +31,12 @@ int del( album **& _album, size_t * size ,size_t * size_new) {
         int i = 0;
         for ( ; i < *size ; i++ ) {
             temp[ i ] = new album;
-            temp[ i ]->surnameCre = _album[ i ]->surnameCre;
-            temp[ i ]->nameCre = _album[ i ]->nameCre;
-            temp[ i ]->yearCre = _album[ i ]->yearCre;
-            temp[ i ]->typeAl = _album[ i ]->typeAl;
-            temp[ i ]->countSong = _album[ i ]->countSong;
-            temp[ i ]->nameAl = _album[ i ]->nameAl;
+            temp[ i ]->set_surnameCre(_album[ i ]->gets_surnameCre());
+            temp[ i ]->set_nameCre( _album[ i ]->gets_nameCre());
+            temp[ i ]->set_yearCre(_album[ i ]->gets_yearCre());
+            temp[ i ]->set_typeAl(_album[ i ]->gets_typeAl());
+            temp[ i ]->set_countSong(_album[ i ]->gets_countSong());
+            temp[ i ]->set_nameAl(_album[ i ]->gets_nameAl());
         }
         delete[] _album;
         _album = nullptr;
@@ -53,16 +53,12 @@ int del( musicDisc **& _musicDisc, size_t * size ,size_t * size_new) {
         int i = 0;
         for ( ; i < *size ; i++ ) {
             temp[ i ] = new musicDisc;
-            temp[ i ]->surnameCre = _musicDisc[ i ]->surnameCre;
-            temp[ i ]->nameCre = _musicDisc[ i ]->nameCre;
-            temp[ i ]->nameMusic = _musicDisc[ i ]->nameMusic;
-            temp[ i ]->typeMusic = _musicDisc[ i ]->typeMusic;
-            temp[ i ]->secondMusic = _musicDisc[ i ]->secondMusic;
-            temp[ i ]->yearMusic = _musicDisc[ i ]->yearMusic;
-        }
-        for ( ; i < *size_new ; i++ ) {
-            temp[ i ] = new musicDisc;
-            initMusicDisc(temp[ i ]);
+            temp[ i ]->set_surnameCre(_musicDisc[ i ]->gets_surnameCre());
+            temp[ i ]->set_nameCre(_musicDisc[ i ]->gets_nameCre());
+            temp[ i ]->set_nameMusic( _musicDisc[ i ]->gets_nameMusic());
+            temp[ i ]->set_typeMusic(_musicDisc[ i ]->gets_typeMusic());
+            temp[ i ]->set_secondMusic(_musicDisc[ i ]->gets_secondMusic());
+            temp[ i ]->set_yearMusic( _musicDisc[ i ]->gets_yearMusic());
         }
         delete[] _musicDisc;
         _musicDisc = nullptr;

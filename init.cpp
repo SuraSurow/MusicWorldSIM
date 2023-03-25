@@ -8,17 +8,17 @@ void init( creator * _creatorS ,size_t * pSize)
 {
     for( int i = 0 ; i < (*pSize) ; i++)
     {
-        _creatorS[i].nameCre = randName();
-        _creatorS[i].surnameCre = randSurname();
+        _creatorS[i].set_nameCre(randName());
+        _creatorS[i].set_surnameCre(randSurname());
         size_t temp=0;
         randSize_t(&temp,20,60);
-        _creatorS[i].ageCre = temp;
+        _creatorS[i].set_ageCre(temp);
         randSize_t(&temp,1980,2022);
-        _creatorS[i].yearCre = temp;
+        _creatorS[i].set_yearCre(temp);
         randSize_t(&temp,1,12);
-        _creatorS[i].monthCre = temp;
+        _creatorS[i].set_monthCre(temp);
         randSize_t(&temp,1,28);
-        _creatorS[i].dayCre = temp;
+        _creatorS[i].set_dayCre(temp);
 
     }
 }
@@ -39,27 +39,27 @@ void init (musicDisc ** _musicDiscES , size_t * pSize )
 
 void initMusicDisc ( musicDisc *& _musicDiscES)
 {
-    _musicDiscES -> nameCre = randName();
-    _musicDiscES -> surnameCre = randSurname();
-    _musicDiscES -> nameMusic = randNameMusic();
-    _musicDiscES -> typeMusic = randTypeMusic();
+    _musicDiscES->set_nameCre(randName());
+    _musicDiscES -> set_surnameCre(randSurname());
+    _musicDiscES -> set_nameMusic(randNameMusic());
+    _musicDiscES -> set_typeMusic(randTypeMusic());
     size_t temp=0;
     randSize_t(&temp,1,600);
-    _musicDiscES -> secondMusic = temp;
+    _musicDiscES -> set_secondMusic(temp);
     randSize_t(&temp,1980,2022);
-    _musicDiscES -> yearMusic = temp;
+    _musicDiscES -> set_yearMusic(temp);
 }
 
 void initAlbum (album *& _albumS)
 {
-    _albumS -> nameAl=randAlbumName();
-    _albumS -> nameCre = randName();
-    _albumS -> surnameCre = randSurname();
-    _albumS -> typeAl = randTypeMusic();
+    _albumS -> set_nameAl(randAlbumName());
+    _albumS -> set_nameCre(randName());
+    _albumS -> set_surnameCre(randSurname());
+    _albumS -> set_typeAl(randTypeMusic());
     size_t temp = 0;
     randSize_t(&temp,1990,2022);
-    _albumS -> yearCre = temp;
+    _albumS -> set_yearCre(temp);
     randSize_t(&temp,8,30);
-    _albumS -> countSong = temp;
+    _albumS -> set_countSong(temp);
 }
 

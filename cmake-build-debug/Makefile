@@ -200,30 +200,6 @@ delete.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/delete.cpp.s
 .PHONY : delete.cpp.s
 
-edit.obj: edit.c.obj
-.PHONY : edit.obj
-
-# target to build an object file
-edit.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/edit.c.obj
-.PHONY : edit.c.obj
-
-edit.i: edit.c.i
-.PHONY : edit.i
-
-# target to preprocess a source file
-edit.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/edit.c.i
-.PHONY : edit.c.i
-
-edit.s: edit.c.s
-.PHONY : edit.s
-
-# target to generate assembly for a file
-edit.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/edit.c.s
-.PHONY : edit.c.s
-
 edit.obj: edit.cpp.obj
 .PHONY : edit.obj
 
@@ -434,9 +410,6 @@ help:
 	@echo ... delete.obj
 	@echo ... delete.i
 	@echo ... delete.s
-	@echo ... edit.obj
-	@echo ... edit.i
-	@echo ... edit.s
 	@echo ... edit.obj
 	@echo ... edit.i
 	@echo ... edit.s

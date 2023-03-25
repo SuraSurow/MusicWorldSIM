@@ -199,4 +199,4 @@ CMakeFiles/lab.dir/delete.cpp.obj: C:\schollLab\MusicWorldSIM\delete.cpp \
  C:\schollLab\MusicWorldSIM\add.h C:\schollLab\MusicWorldSIM\delete.h \
  C:\schollLab\MusicWorldSIM\init.h C:\schollLab\MusicWorldSIM\optiFun.h \
  C:\schollLab\MusicWorldSIM\print.h C:\schollLab\MusicWorldSIM\randData.h \
- C:\schollLab\MusicWorldSIM\sort.h
+ C:\schollLab\MusicWorldSIM\sort.h C:\schollLab\MusicWorldSIM\edit.h

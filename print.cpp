@@ -8,12 +8,12 @@ void print (creator * _creator , size_t *size)
     for (int i = 0 ; i < *size ; i++)
     {
         cout
-        <<"Name -> " << _creator[i].nameCre << "\n"
-        <<"Surname -> " << _creator[i].surnameCre << "\n"
-        <<"Age -> " << _creator[i].ageCre << "\n"
-        <<"Year -> " << _creator[i].yearCre << "\n"
-        <<"Month -> " << _creator[i].monthCre << "\n"
-        <<"Day-> " << _creator[i].dayCre << "\n\n";
+        <<"Name -> " << _creator[i].gets_nameCre() << "\n"
+        <<"Surname -> " << _creator[i].gets_surnameCre() << "\n"
+        <<"Age -> " << _creator[i].gets_ageCre() << "\n"
+        <<"Year -> " << _creator[i].gets_yearCre() << "\n"
+        <<"Month -> " << _creator[i].gets_monthCre() << "\n"
+        <<"Day-> " << _creator[i].gets_dayCre() << "\n\n";
     }
 
 
@@ -25,12 +25,12 @@ void print (album ** _album ,size_t * size )
     for (int i = 0 ; i < *size ; i++)
     {
         cout
-        <<"Name Creator -> " << _album[i]->nameCre << "\n"
-        <<"Surname Creator -> " << _album[i]->surnameCre << "\n"
-        <<"Name album -> " << _album[i]->nameAl<< "\n"
-        <<"Type Music -> " << _album[i]->typeAl << "\n"
-        <<"Year create -> " << _album[i]->yearCre << "\n"
-        <<"Count of song-> " << _album[i]->countSong << "\n\n";
+        <<"Name Creator -> " << _album[i]->gets_nameCre() << "\n"
+        <<"Surname Creator -> " << _album[i]->gets_surnameCre() << "\n"
+        <<"Name album -> " << _album[i]->gets_nameAl()<< "\n"
+        <<"Type Music -> " << _album[i]->gets_typeAl() << "\n"
+        <<"Year create -> " << _album[i]->gets_yearCre() << "\n"
+        <<"Count of song-> " << _album[i]->gets_countSong() << "\n\n";
 
     }
 
@@ -41,12 +41,12 @@ void print (musicDisc  ** _musicDisc , size_t * size )
     for (int i = 0 ; i < *size ; i++)
     {
         cout
-                <<"Name Creator -> " << _musicDisc[i]->nameCre << "\n"
-                <<"Surname Creator -> " << _musicDisc[i]->surnameCre << "\n"
-                <<"Name album -> " << _musicDisc[i]->nameMusic<< "\n"
-                <<"Type Music -> " << _musicDisc[i]->typeMusic << "\n"
-                <<"Year create -> " << _musicDisc[i]->secondMusic << "\n"
-                <<"Count of song-> " << _musicDisc[i]->yearMusic<< "\n\n";
+                <<"Name Creator -> " << _musicDisc[i]->gets_nameCre() << "\n"
+                <<"Surname Creator -> " << _musicDisc[i]->gets_surnameCre() << "\n"
+                <<"Name album -> " << _musicDisc[i]->gets_nameMusic()<< "\n"
+                <<"Type Music -> " << _musicDisc[i]->gets_typeMusic() << "\n"
+                <<"Year create -> " << _musicDisc[i]->gets_secondMusic() << "\n"
+                <<"Count of song-> " << _musicDisc[i]->gets_yearMusic()<< "\n\n";
 
     }
 

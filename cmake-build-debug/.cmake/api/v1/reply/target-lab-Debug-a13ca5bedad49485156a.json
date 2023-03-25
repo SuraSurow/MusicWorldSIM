@@ -65,19 +65,6 @@
 				8,
 				9,
 				19,
-				22
-			]
-		},
-		{
-			"compileCommandFragments" : 
-			[
-				{
-					"fragment" : "-g -fdiagnostics-color=always"
-				}
-			],
-			"language" : "C",
-			"sourceIndexes" : 
-			[
 				21
 			]
 		}
@@ -125,8 +112,7 @@
 				8,
 				9,
 				19,
-				21,
-				22
+				21
 			]
 		},
 		{
@@ -263,12 +249,6 @@
 			"backtrace" : 1,
 			"path" : "edit.h",
 			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "edit.c",
-			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,

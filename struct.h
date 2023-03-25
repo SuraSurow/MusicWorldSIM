@@ -37,6 +37,7 @@ namespace MenuText{
             start_path = "START_PATH";
 }
 
+
 class musicDisc {
 private:
     string nameCre; //
@@ -56,6 +57,18 @@ public:
             yearMusic(yearMusic) {}
 
     musicDisc ( const musicDisc & anotherOne) = default;
+
+    musicDisc ()
+    {
+        nameCre = "none";
+        surnameCre = "none";
+        nameMusic = "none";
+        typeMusic = "none";
+        secondMusic = 0;
+        yearMusic = 0;
+    }
+
+
     //----------set------------
     void set_nameCre ( string _str ) { nameCre = std::move(_str);}
     void set_surnameCre ( string _str ) { surnameCre = std::move(_str);}
@@ -96,6 +109,14 @@ public:
         {
             musicDisc_obj[i] = new  musicDisc(nameCre ,surnameCre , nameMusic , typeMusic ,  secondMusic ,yearMusic );
         }
+    }
+    album(){
+        nameCre = "none";
+        surnameCre = "none";
+        nameAl = "none";
+        typeAl = "none";
+        yearCre = 0;
+        countSong = 0;
     }
     ~album() {
         for (int i = 0 ; i < 10 ; i++)
@@ -158,6 +179,15 @@ public:
              dayCre(dayCre) {}
     creator(const creator& anotherOne) = default;
 
+    creator ()
+    {
+        nameCre = "none";
+        surnameCre = "none";
+        ageCre = 0;
+        yearCre = 0;
+        monthCre = 0 ;
+        dayCre = 0 ;
+    }
     //----------set------------
     void set_nameCre ( string _str ) { nameCre = std::move(_str);}
     void set_surnameCre ( string _str ) { surnameCre = std::move(_str);}
@@ -172,6 +202,8 @@ public:
     auto gets_yearCre () { return yearCre ;}
     auto gets_monthCre () { return monthCre ;}
     auto gets_dayCre () { return dayCre ;}
+    //create
+
 };
 //
 

@@ -11,8 +11,6 @@
 void create ( creator *& _creatorS ,const size_t *size )
 {
     _creatorS = new creator[*size];
-
-
 }
 
 void create ( album **& _albumS , const size_t *size )

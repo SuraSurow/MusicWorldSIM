@@ -102,9 +102,6 @@
 		<Unit filename="C:/schollLab/MusicWorldSIM/delete.h">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/edit.c">
-			<Option target="lab"/>
-		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/edit.cpp">
 			<Option target="lab"/>
 		</Unit>
