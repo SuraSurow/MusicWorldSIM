@@ -69,6 +69,7 @@ public:
     }
 
 
+
     //----------set------------
     void set_nameCre ( string _str ) { nameCre = std::move(_str);}
     void set_surnameCre ( string _str ) { surnameCre = std::move(_str);}
@@ -81,8 +82,8 @@ public:
     auto gets_surnameCre () { return surnameCre ;}
     auto gets_nameMusic () { return nameMusic ;}
     auto gets_typeMusic () { return typeMusic ;}
-    auto gets_yearMusic () { return yearMusic ;}
-    auto gets_secondMusic () { return secondMusic ;}
+    auto gets_yearMusic () const { return yearMusic ;}
+    auto gets_secondMusic () const { return secondMusic ;}
 };
 //
 
@@ -104,8 +105,8 @@ public:
             yearCre(yearCre),
             countSong(countSong) {}
     album ( const album & anotherOne) = default;
-    album (string & nameCre , const string & surnameCre , const string & nameMusic , const string & typeMusic , size_t secondMusic , size_t yearMusic ){
-        for (int i = 0 ; i < 10 ; i++)
+    album (string & nameCre , const string & surnameCre , const string & nameMusic , const string & typeMusic , size_t secondMusic , size_t yearMusic,size_t sizeMusicList ){
+        for (int i = 0 ; i < sizeMusicList ; i++)
         {
             musicDisc_obj[i] = new  musicDisc(nameCre ,surnameCre , nameMusic , typeMusic ,  secondMusic ,yearMusic );
         }
@@ -155,8 +156,8 @@ public:
     auto gets_surnameCre () { return surnameCre ;}
     auto gets_nameAl () { return nameAl ;}
     auto gets_typeAl () { return typeAl ;}
-    auto gets_yearCre () { return yearCre ;}
-    auto gets_countSong () { return countSong ;}
+    auto gets_yearCre () const { return yearCre ;}
+    auto gets_countSong () const { return countSong ;}
 
 };
 
@@ -188,6 +189,7 @@ public:
         monthCre = 0 ;
         dayCre = 0 ;
     }
+
     //----------set------------
     void set_nameCre ( string _str ) { nameCre = std::move(_str);}
     void set_surnameCre ( string _str ) { surnameCre = std::move(_str);}
@@ -198,10 +200,10 @@ public:
     //----------gets---------------
     auto gets_nameCre () { return nameCre ;}
     auto gets_surnameCre () { return surnameCre ;}
-    auto gets_ageCre () { return ageCre ;}
-    auto gets_yearCre () { return yearCre ;}
-    auto gets_monthCre () { return monthCre ;}
-    auto gets_dayCre () { return dayCre ;}
+    auto gets_ageCre () const { return ageCre ;}
+    auto gets_yearCre () const { return yearCre ;}
+    auto gets_monthCre () const { return monthCre ;}
+    auto gets_dayCre () const { return dayCre ;}
     //create
 
 };

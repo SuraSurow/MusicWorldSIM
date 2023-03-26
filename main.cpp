@@ -11,7 +11,7 @@ int main()
     preestart();
     size_t size = 0;
     get_size(&size);
-    creator *_creator = nullptr;
+    creator * _creator = nullptr;
     album ** _album = nullptr;
     musicDisc ** _musicDisc = nullptr;
     size_t choiceIndex;
@@ -26,23 +26,23 @@ int main()
                 return EXIT_SUCCESS;
             }
             case CREATE : {
-                create (_creator , &size);
-                create ( _album  , &size);
+                //create (_creator , &size);
+                //create ( _album  , &size);
                 create ( _musicDisc  , &size);
 
                 break;
             }
             case INITIALIZE : {
-                init(_creator,&size);
-                init(_album,&size);
+                //init(_creator,&size);
+                //init(_album,&size);
                 init(_musicDisc,&size);
                 break;
             }
             case PRINT : {
-                cout << "\n\n\tWYKONAWCY (CREATORS)\n\n";
-                print(_creator,&size);
-                cout << "\n\n\tALBUMY (ALBUMS)\n\n";
-                print(_album,&size);
+                //cout << "\n\n\tWYKONAWCY (CREATORS)\n\n";
+                //print(_creator,&size);
+                //cout << "\n\n\tALBUMY (ALBUMS)\n\n";
+                //print(_album,&size);
                 cout << "\n\n\tPLYTY MUZYCZNE (SONG DISCS)\n\n";
                 print(_musicDisc,&size);
                 break;
@@ -51,8 +51,9 @@ int main()
             case ADD : {
                 size_t size_new=0;
                 get_size(&size_new);
-                add ( _creator , &size, &size_new );
-                add( _album ,&size ,&size_new);
+                //add ( _creator , &size, &size_new );
+
+                //add( _album ,&size ,&size_new);
                 add(_musicDisc,&size,&size_new);
                 break;
 
@@ -61,16 +62,17 @@ int main()
             case DELETE : {
                 size_t size_new = 0;
                 get_size(&size_new);
-                del(_creator,&size,&size_new);
-                del(_album,&size,&size_new);
+                //del(_creator,&size,&size_new);
+                //del(_album,&size,&size_new);
                 del(_musicDisc,&size,&size_new);
                 break;
             }
             case SORT : {
 
-                sort (_creator ,&size);
-                sort(_album,&size);
+                //sort (_creator ,&size);
+                //sort(_album,&size);
                 sort(_musicDisc,&size);
+
 
                 break;
             }
@@ -86,6 +88,7 @@ int main()
 
 
     }while(choiceIndex != 0);
+
     return EXIT_SUCCESS;
 }
 

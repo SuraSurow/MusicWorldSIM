@@ -108,11 +108,13 @@ string randNameMusic ()
 
 
 
-void randSize_t(size_t * temp, int min, int max)
+size_t randSize_t(int min, int max)
 {
     std::default_random_engine randomGenerator(std::chrono::system_clock::now().time_since_epoch().count());
     std::uniform_int_distribution<size_t> _rand_(min, max);
-    *temp = _rand_(randomGenerator);
+    size_t temp;
+    temp = _rand_(randomGenerator);
+    return temp;
 }
 
 

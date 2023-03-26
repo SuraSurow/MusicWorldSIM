@@ -45,8 +45,8 @@ void print (musicDisc  ** _musicDisc , size_t * size )
                 <<"Surname Creator -> " << _musicDisc[i]->gets_surnameCre() << "\n"
                 <<"Name album -> " << _musicDisc[i]->gets_nameMusic()<< "\n"
                 <<"Type Music -> " << _musicDisc[i]->gets_typeMusic() << "\n"
-                <<"Year create -> " << _musicDisc[i]->gets_secondMusic() << "\n"
-                <<"Count of song-> " << _musicDisc[i]->gets_yearMusic()<< "\n\n";
+                <<"Year create -> " <<  _musicDisc[i]->gets_yearMusic() << "\n"
+                <<"Count of song-> " <<_musicDisc[i]->gets_secondMusic()<< "\n\n";
 
     }
 

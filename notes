@@ -1,0 +1,25 @@
+
+ CREATOR
+tworzenie wskaznika do tablicy obiektow na start nullptr
+tworzenie tablicy obiektow
+initializacna
+wyswietlanie
+dodawanie
+usuwanie
+sort
+
+ALBUM
+tworzenie tablicy wskaznikow do obiektow
+initializacja
+wyswietlanie
+dodawanie
+usuwanie
+
+MUSICDISC
+tworzenie tablicy wskaznikow do obiektow
+initializacja
+wyswietlanie
+dodawanie
+usuwanie
+
+

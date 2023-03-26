@@ -29,7 +29,7 @@ int del( album **& _album, size_t * size ,size_t * size_new) {
     if(*size_new<=*size) {
         auto **temp = new album *[*size_new];
         int i = 0;
-        for ( ; i < *size ; i++ ) {
+        for ( ; i < *size_new ; i++ ) {
             temp[ i ] = new album;
             temp[ i ]->set_surnameCre(_album[ i ]->gets_surnameCre());
             temp[ i ]->set_nameCre( _album[ i ]->gets_nameCre());
@@ -51,7 +51,7 @@ int del( musicDisc **& _musicDisc, size_t * size ,size_t * size_new) {
     if(*size_new<=*size) {
         auto **temp = new musicDisc *[*size_new];
         int i = 0;
-        for ( ; i < *size ; i++ ) {
+        for ( ; i < *size_new ; i++ ) {
             temp[ i ] = new musicDisc;
             temp[ i ]->set_surnameCre(_musicDisc[ i ]->gets_surnameCre());
             temp[ i ]->set_nameCre(_musicDisc[ i ]->gets_nameCre());
