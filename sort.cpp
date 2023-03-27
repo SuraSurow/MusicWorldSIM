@@ -5,83 +5,60 @@
 void sort (creator * _creator ,size_t *size){
     cout << "\n WYKONAWCY\nSortuje wg wieku od najmiejszego do najwiekszego\n";
     size_t array[*size];
-    for (int i = 0 ; i < *size ; i++ ) {
-         array[i] = _creator[i].gets_ageCre();
-    }
+    creator * _array = _creator;
     bool sort;
     do {
         sort = false;
         for (int i = 0; i < (*size - 1); i++) {
-            if (array[i] > array[i + 1]) {
+            if ( _array[i].gets_ageCre() > _array[i+1].gets_ageCre() ) {
                 sort = true;
-                for (; i < (*size - 1); i++) {
-                    if (array[i] > array[i + 1]) {
-                        std::swap(array[i], array[i + 1]);
+                for (int j = 0; i < (*size - 1); j++) {
+                    if (_array[j].gets_ageCre() > _array[j+1].gets_ageCre()) {
+                        std::swap(array[j], array[j + 1]);
                     }
                 }
             }
         }
     } while (sort);
-        for ( int i = 0 ; i < *size ; i++ ) {
-            _creator[i].set_ageCre(array[i]);
-            //_creator[i].ageCre=array[i];
-        }
-
 }
 void sort (album ** _album ,size_t *size){
     cout << "\nALBUMY\nSortuje wg roku urodzenia wykonawcy od najmiejszego do najwiekszego\n";
     size_t array[*size];
-    for (int i = 0 ; i < *size ; i++ ) {
-        array[i] = _album[i]->gets_yearCre();
-        //array[i] = _album[i]->yearCre;
-    }
+    album ** _array = _album;
     bool sort;
     do {
         sort = false;
         for (int i = 0; i < (*size - 1); i++) {
-            if (array[i] > array[i + 1]) {
+            if (_array[i]->gets_yearCre() > _array[i+1]->gets_yearCre() ) {
                 sort = true;
-                for (; i < (*size - 1); i++) {
-                    if (array[i] > array[i + 1]) {
-                        std::swap(array[i], array[i + 1]);
+                for (int  j= 0 ;j < (*size - 1); j++) {
+                    if (_array[j]->gets_yearCre() > _array[j+1]->gets_yearCre()) {
+                        std::swap(_array[j], _array[j+1]);
                     }
                 }
             }
         }
     } while (sort);
-    for ( int i = 0 ; i < *size ; i++ ) {
-        _album[i]->set_yearCre(array[i]);
-        //_album[i]->yearCre=array[i];
-    }
-
 }
 
 void sort (musicDisc ** _musicDisc ,size_t *size){
     cout << "\nMUZYCZNE UTWORY\nSortuje wg roku wydania piosenka od najmiejszego do najwiekszego\n";
     size_t array[*size];
-    for (int i = 0 ; i < *size ; i++ ) {
-        array[i] = _musicDisc[i]->gets_yearMusic();
-        //array[i] = _musicDisc[i]->yearMusic;
-    }
+    musicDisc ** _array = _musicDisc;
     bool sort;
     do {
         sort = false;
         for (int i = 0; i < (*size - 1); i++) {
-            if (array[i] > array[i + 1]) {
+            if (_array[i]->gets_yearMusic() > _array[i+1]->gets_yearMusic()) {
                 sort = true;
-                for (; i < (*size - 1); i++) {
-                    if (array[i] > array[i + 1]) {
-                        std::swap(array[i], array[i + 1]);
+                for (int j = 0 ;j < (*size - 1); j++) {
+                    if (_array[j]->gets_yearMusic() > _array[j+1]->gets_yearMusic()) {
+                        std::swap(_array[j],_array[j+1]);
                     }
                 }
             }
         }
     } while (sort);
-    for ( int i = 0 ; i < *size ; i++ ) {
-        _musicDisc[i]->set_yearMusic(array[i]);
-        //_musicDisc[i]->yearMusic=array[i];
-    }
-
 }
 
 

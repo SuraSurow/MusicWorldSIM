@@ -19,7 +19,6 @@ int del ( creator *& _creator , size_t *size ,size_t *size_new ) {
         delete[] _creator;
         _creator = nullptr;
         _creator = temp;
-        *size = *size_new;
         return 0;
     }
     return EXIT_FAILURE;
@@ -41,7 +40,6 @@ int del( album **& _album, size_t * size ,size_t * size_new) {
         delete[] _album;
         _album = nullptr;
         _album = temp;
-        *size = *size_new;
         return EXIT_SUCCESS;
     }
     return EXIT_FAILURE;
@@ -63,7 +61,6 @@ int del( musicDisc **& _musicDisc, size_t * size ,size_t * size_new) {
         delete[] _musicDisc;
         _musicDisc = nullptr;
         _musicDisc = temp;
-        *size = *size_new;
         return EXIT_SUCCESS;
     }
     return EXIT_FAILURE;

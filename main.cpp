@@ -26,23 +26,23 @@ int main()
                 return EXIT_SUCCESS;
             }
             case CREATE : {
-                //create (_creator , &size);
-                //create ( _album  , &size);
+                create (_creator , &size);
+                create ( _album  , &size);
                 create ( _musicDisc  , &size);
 
                 break;
             }
             case INITIALIZE : {
-                //init(_creator,&size);
-                //init(_album,&size);
+                init(_creator,&size);
+                init(_album,&size);
                 init(_musicDisc,&size);
                 break;
             }
             case PRINT : {
-                //cout << "\n\n\tWYKONAWCY (CREATORS)\n\n";
-                //print(_creator,&size);
-                //cout << "\n\n\tALBUMY (ALBUMS)\n\n";
-                //print(_album,&size);
+                cout << "\n\n\tWYKONAWCY (CREATORS)\n\n";
+                print(_creator,&size);
+                cout << "\n\n\tALBUMY (ALBUMS)\n\n";
+                print(_album,&size);
                 cout << "\n\n\tPLYTY MUZYCZNE (SONG DISCS)\n\n";
                 print(_musicDisc,&size);
                 break;
@@ -51,29 +51,27 @@ int main()
             case ADD : {
                 size_t size_new=0;
                 get_size(&size_new);
-                //add ( _creator , &size, &size_new );
-
-                //add( _album ,&size ,&size_new);
-                add(_musicDisc,&size,&size_new);
+                size_t size_temp = size;
+                add ( _creator , &size_temp, &size_new );
+                add( _album ,&size_temp ,&size_new);
+                add(_musicDisc,&size_temp,&size_new);
+                size = size_new;
                 break;
-
-
             }
             case DELETE : {
                 size_t size_new = 0;
                 get_size(&size_new);
-                //del(_creator,&size,&size_new);
-                //del(_album,&size,&size_new);
+                size_t size_temp = size;
+                del(_creator,&size,&size_new);
+                del(_album,&size,&size_new);
                 del(_musicDisc,&size,&size_new);
+                size = size_new;
                 break;
             }
             case SORT : {
-
-                //sort (_creator ,&size);
-                //sort(_album,&size);
+                sort (_creator ,&size);
+                sort(_album,&size);
                 sort(_musicDisc,&size);
-
-
                 break;
             }
             case EDIT: {

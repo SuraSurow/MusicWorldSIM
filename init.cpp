@@ -21,18 +21,18 @@ void init( creator * _creatorS ,size_t * pSize)
 void init ( album ** _albumS , size_t * pSize )
 {
     for (size_t i = 0 ; i < *pSize; i++ ) {
-        initAlbum(_albumS[i]);
+        init(_albumS[i]);
     }
 }
 
 void init (musicDisc ** _musicDiscES , size_t * pSize )
 {
     for (size_t i = 0 ; i < *pSize ; i++ ) {
-        initMusicDisc ( _musicDiscES[i] );
+        init( _musicDiscES[i] );
     }
 }
 
-void initMusicDisc ( musicDisc *& _musicDiscES)
+void init ( musicDisc *& _musicDiscES)
 {
     _musicDiscES->set_nameCre(randName());
     _musicDiscES -> set_surnameCre(randSurname());
@@ -42,7 +42,7 @@ void initMusicDisc ( musicDisc *& _musicDiscES)
     _musicDiscES -> set_yearMusic(randSize_t(1980,2022));
 }
 
-void initAlbum (album *& _albumS)
+void init (album *& _albumS)
 {
     _albumS -> set_nameAl(randAlbumName());
     _albumS -> set_nameCre(randName());
@@ -50,5 +50,14 @@ void initAlbum (album *& _albumS)
     _albumS -> set_typeAl(randTypeMusic());
     _albumS -> set_yearCre(randSize_t(1990,2022));
     _albumS -> set_countSong(randSize_t(8,30));
+}
+void init (creator & _creator)
+{
+    _creator.set_surnameCre(randSurname());
+    _creator.set_nameCre(randName());
+    _creator.set_ageCre(randSize_t(20,60));
+    _creator.set_yearCre(randSize_t(1980,2022));
+    _creator.set_monthCre(randSize_t(1,12));
+    _creator.set_dayCre(randSize_t(1,28));
 }
 
