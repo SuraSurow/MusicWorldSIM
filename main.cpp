@@ -40,7 +40,7 @@ int main()
             }
             case PRINT : {
                 cout << "\n\n\tWYKONAWCY (CREATORS)\n\n";
-                print(_creator,&size);
+                print(_creator,&size);//print zmieniony!!!!!
                 cout << "\n\n\tALBUMY (ALBUMS)\n\n";
                 print(_album,&size);
                 cout << "\n\n\tPLYTY MUZYCZNE (SONG DISCS)\n\n";
