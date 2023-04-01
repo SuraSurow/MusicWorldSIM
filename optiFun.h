@@ -8,5 +8,7 @@
 void get_size( size_t *size);
 int index(size_t* ptrNum);
 void pressEnter();
+int index(int * ptrNum);
+int index(size_t * ptrNum,size_t maxVal);
 
 #endif //LAB_OPTIFUN_H

@@ -15,6 +15,35 @@ int index(size_t * ptrNum)
     *ptrNum = number;
     return 0;
 }
+int index(int * ptrNum)
+{
+    cout << "\nWrite your choice index:";
+    int number;
+    cin >> number;
+    *ptrNum = number;
+    return 0;
+}
+int index(size_t * ptrNum,size_t maxVal)
+{
+    cout << "\nWrite your choice index:";
+   size_t number;
+    cin >> number;
+    maxVal = maxVal - 1;
+    int minVal = 0;
+    if (number >= maxVal){
+        number = maxVal;
+        *ptrNum = number;
+    }
+    else if (number <= minVal)
+    {
+        number = minVal;
+        *ptrNum = number;
+    }
+    else {
+        *ptrNum = number;
+    }
+    return 0;
+}
 
 void get_size( size_t *size)
 {

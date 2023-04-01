@@ -10,5 +10,10 @@ void print (musicDisc **_musicDisc , size_t *size);
 void preestart();
 void menu_show_content();
 void start();
+void printEditMenu();
+void printChoiceObj();
+void printClass(creator * _creator);
+void printClass(album ** _album);
+void printClass(musicDisc ** _musicDisc);
 
 #endif //LAB_PRINT_H

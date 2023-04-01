@@ -75,7 +75,7 @@ int main()
                 break;
             }
             case EDIT: {
-
+                edit(_creator,_album,_musicDisc,size);
                 break;
             }
             default : {

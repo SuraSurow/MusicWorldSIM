@@ -8,12 +8,14 @@ void print (creator * _creator , size_t *size)
     for (int i = 0 ; i < *size ; i++)
     {
         cout
+        <<"\nNo. "<<i<<"\n"
         <<"Name -> " << _creator[i].gets_nameCre() << "\n"
         <<"Surname -> " << _creator[i].gets_surnameCre() << "\n"
         <<"Age -> " << _creator[i].gets_ageCre() << "\n"
         <<"Year -> " << _creator[i].gets_yearCre() << "\n"
         <<"Month -> " << _creator[i].gets_monthCre() << "\n"
-        <<"Day-> " << _creator[i].gets_dayCre() << "\n\n";
+        <<"Day-> " << _creator[i].gets_dayCre() << "\n"
+        <<"----------------------------------";
     }
 
 
@@ -21,16 +23,19 @@ void print (creator * _creator , size_t *size)
 
 void print (album ** _album ,size_t * size )
 
+
 {
     for (int i = 0 ; i < *size ; i++)
     {
         cout
+        <<"\nNo. "<<i<<"\n"
         <<"Name Creator -> " << _album[i]->gets_nameCre() << "\n"
         <<"Surname Creator -> " << _album[i]->gets_surnameCre() << "\n"
         <<"Name album -> " << _album[i]->gets_nameAl()<< "\n"
         <<"Type Music -> " << _album[i]->gets_typeAl() << "\n"
         <<"Year create -> " << _album[i]->gets_yearCre() << "\n"
-        <<"Count of song-> " << _album[i]->gets_countSong() << "\n\n";
+        <<"Count of song-> " << _album[i]->gets_countSong() << "\n"
+        <<"----------------------------------";
 
     }
 
@@ -40,14 +45,16 @@ void print (musicDisc  ** _musicDisc , size_t * size )
 {
     for (int i = 0 ; i < *size ; i++)
     {
-        cout
-                <<"Name Creator -> " << _musicDisc[i]->gets_nameCre() << "\n"
-                <<"Surname Creator -> " << _musicDisc[i]->gets_surnameCre() << "\n"
-                <<"Name album -> " << _musicDisc[i]->gets_nameMusic()<< "\n"
-                <<"Type Music -> " << _musicDisc[i]->gets_typeMusic() << "\n"
-                <<"Year create -> " <<  _musicDisc[i]->gets_yearMusic() << "\n"
-                <<"Count of song-> " <<_musicDisc[i]->gets_secondMusic()<< "\n\n";
 
+        cout
+        <<"\nNo. "<<i<<"\n"
+        <<"Name Creator -> " << _musicDisc[i]->gets_nameCre() << "\n"
+        <<"Surname Creator -> " << _musicDisc[i]->gets_surnameCre() << "\n"
+        <<"Name album -> " << _musicDisc[i]->gets_nameMusic()<< "\n"
+        <<"Type Music -> " << _musicDisc[i]->gets_typeMusic() << "\n"
+        <<"Year create -> " <<  _musicDisc[i]->gets_yearMusic() << "\n"
+        <<"Count of song-> " <<_musicDisc[i]->gets_secondMusic() << "\n"
+        <<"----------------------------------";
     }
 
 }
@@ -100,4 +107,53 @@ void preestart()
             << "\n(Enter count of object)\n"
             ;
 }
+
+void printEditMenu()
+{
+    cout
+    << "\nChoice what's type do you wanna edit?"
+    << "\n1.Creator"
+    << "\n2.Album"
+    << "\n3.Music disc"
+    << "\n4.All";
+}
+
+void printChoiceObj()
+{
+    cout << "\nChoice object's index do you wanna change";
+}
+void printClass(creator * _creator)
+{
+    cout
+    <<"\n1.Name Creator"
+    <<"\n2.Surname Creator"
+    <<"\n3.Age Creator"
+    <<"\n4.Year of Brith"
+    <<"\n5.Month of Brith"
+    <<"\n6.Day of Brith";
+}
+void printClass(album ** _album)
+{
+    cout
+            <<"\n1.Name Creator"
+            <<"\n2.Surname Creator"
+            <<"\n3.Name Album"
+            <<"\n4.Type of Album"
+            <<"\n5.Year of Album"
+            <<"\n6.Count of Song";
+
+}
+void printClass(musicDisc ** _musicDisc)
+{
+    cout
+            <<"\n1.Name Creator"
+            <<"\n2.Surname Creator"
+            <<"\n3.Name of Song "
+            <<"\n4.Type of Music"
+            <<"\n5.Second of Song"
+            <<"\n6.Year of create Song";
+}
+
+
+
 
