@@ -41,14 +41,17 @@ int del( musicDisc **& _musicDiscES , size_t * size , size_t * size_new);
 void init( creator * _creatorS , size_t * size );
 void init( album ** _albumS , size_t * size );
 void init ( musicDisc ** _musicDiscES , size_t * size );
-void initAlbum ( album *&  _albumS );
-void initMusicDisc ( musicDisc *&  _musicDiscES );
+void init( album *&  _albumS );
+void init ( musicDisc *&  _musicDiscES );
+void init(creator & _creator);
 */
 #include "optiFun.h"
 /*
 void get_size( size_t *size);
 int index(size_t* ptrNum);
 void pressEnter();
+int index(int * ptrNum);
+int index(size_t * ptrNum,size_t maxVal);
  */
 #include "print.h"
 /*
@@ -58,6 +61,11 @@ void print (musicDisc **_musicDisc , size_t *size);
 void preestart();
 void menu_show_content();
 void start();
+void printEditMenu();
+void printChoiceObj();
+void printClass(creator * _creator);
+void printClass(album ** _album);
+void printClass(musicDisc ** _musicDisc);
 
  */
 #include "randData.h"
@@ -68,6 +76,24 @@ string randAlbumName();
 string randTypeMusic();
 string randNameMusic();
 size_t randSize_t (int min, int max);
+ */
+#include "edit.h"
+/*
+void edit(creator* _creator , album ** _album , musicDisc ** _musicDisc , size_t &size);
+void edit (creator * _creator,size_t &size,size_t &choiceObj);
+void edit (album ** _album,size_t &size,size_t &choiceObj);
+void edit (musicDisc ** _musicDisc,size_t &size,size_t &choiceObj);
+void edit (creator * _creator,size_t &size,size_t &choiceObj,int &choiceProperties);
+void edit (album ** _album,size_t &size,size_t &choiceObj,int &choiceProperties);
+void edit (musicDisc ** _musicDisc,size_t &size,size_t &choiceObj,int &choiceProperties);
+
+
+ */
+#include "sort.h"
+/*
+void sort (creator *_creator , size_t *size );
+void sort (album ** _album ,size_t *size);
+void sort (musicDisc ** _musicDisc ,size_t *size);
  */
 
 //struct,namespace,macro!!!
@@ -130,10 +156,5 @@ struct album {
     size_t countSong;
 };
  */
-#include "sort.h"
-/*
-int sort (creator * _creator ,size_t *size);
-*/
-#include "edit.h"
 
 #endif //LAB_HEADFILE_H
