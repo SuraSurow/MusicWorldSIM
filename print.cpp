@@ -154,6 +154,33 @@ void printClass(musicDisc ** _musicDisc)
             <<"\n6.Year of create Song";
 }
 
+void printHowEdit (creator * _creator)
+{
+    printHowEdit();
+    printClass(_creator);
+}
+
+void printHowEdit (album ** _album)
+{
+    printHowEdit();
+    printClass(_album);
+
+}
+void printHowEdit (musicDisc ** _musicDisc)
+{
+    printHowEdit();
+    printClass(_musicDisc);
+
+}
+void printHowEdit(){
+    cout << "\nIf you wanna change data in object you have to listen simple principle";
+    cout << "\nThis is example, you have object Person";
+    cout << "\nList of data: 1.name , 2.age";
+    cout << "\nfor a change rules you must write for examples ";
+    cout << "\n\n\t <name><X><age>";
+    cout << "\n\n\t X is what ever you want (space , semicolon , multiplication , nevermind but NOT number and char alphabet!!!)";
+    cout << "\n\nSecond , this is object's list";
+}
 
 
 

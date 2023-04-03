@@ -57,230 +57,89 @@ void edit(creator* _creator , album ** _album , musicDisc ** _musicDisc , size_t
 }
 void edit (creator * _creator,size_t &size,size_t &choiceObj)
 {
-    printClass(_creator);
-    int choiceProperties;
-    index(&choiceProperties);
-    edit (_creator,size,choiceObj,choiceProperties);
+    printHowEdit(_creator);
+    cout << "\n\nenter:";
+    editPressing (_creator,size,choiceObj);
 }
 
 void edit (album ** _album,size_t &size,size_t &choiceObj)
 {
-    printClass(_album);
-    int choiceProperties;
-    index(&choiceProperties);
-    edit (_album,size,choiceObj,choiceProperties);
+    printHowEdit(_album);
+    cout << "\n\nenter:";
+    editPressing(_album,size,choiceObj);
 }
 
 void edit (musicDisc ** _musicDisc,size_t &size,size_t &choiceObj)
 {
-    printClass(_musicDisc);
-    int choiceProperties;
-    index(&choiceProperties);
-    edit (_musicDisc,size,choiceObj,choiceProperties);
+    printHowEdit(_musicDisc);
+    cout << "\n\nenter:";
+    editPressing (_musicDisc,size,choiceObj);
 }
 
-void edit (creator * _creator,size_t &size,size_t &choiceObj,int &choiceProperties)
-{
-    cout << "edittttttttttttttttttttttttttttttttttttt";
-    switch(choiceProperties)
-    {
-        case 1:
-        {
-            cout << "\nEnter new Name:";
-            string str;
-            cin.ignore();
-            getline(cin,str);
-            _creator[choiceObj].set_nameCre(str);
-            break;
-        }
-        case 2:
-        {
-            cout << "\nEnter new Surname:";
-            cin.ignore();
-            string str;
-            getline(cin,str);
-            _creator[choiceObj].set_surnameCre(str);
-            break;
-        }
-        case 3:
-        {
-            cout << "\nEnter new Age:";
-            size_t num;
-            cin.ignore();
-            cin >> num;
-            _creator[choiceObj].set_ageCre(num);
-            break;
-        }
-        case 4:
-        {
-            cout << "\nEnter new Year:";
-            size_t num;
-            cin.ignore();
-            cin >> num;
-            _creator[choiceObj].set_yearCre(num);
-            break;
-        }
-        case 5:
-        {
-            cout << "\nEnter new Month:";
-            size_t num;
-            cin.ignore();
-            cin >> num;
-            _creator[choiceObj].set_monthCre(num);
-            break;
-        }
-        case 6:
-        {
-            cout << "\nEnter new Day:";
-            size_t num;
-            cin.ignore();
-            cin >> num;
-            _creator[choiceObj].set_dayCre(num);
-            break;
-        }
-        default : {
-            cout << "\nERROR, probably you write bad index, try again";
-            pressEnter();
-        }
 
+
+void editPressing (creator * _creator,size_t &size,size_t &choiceObj)
+{
+    string str;
+    cin.ignore();
+    getline(cin, str);
+    static int countDetail = 1;
+    int ActuaLenght = 0;
+    int  i = 0;
+    for (;i < str.length()+1;i++){
+        bool text = false , num = false ;
+        if( std::isalnum(str[i]) != 0) { ActuaLenght++;}
+        else
+        {
+            if( std::isdigit(str[i-1]) != 0){num= true;}
+            if( std::isalpha(str[i-1]) != 0){text = true;}
+            if( num ) {
+                string substrString;
+                substrString=str.substr(i-ActuaLenght,ActuaLenght);
+                size_t bufNum;
+                std::stringstream stream(substrString);
+                stream >> bufNum;
+                switch(countDetail) {
+                    case 3: {_creator[choiceObj].set_ageCre(bufNum);break;}
+                    case 4: {_creator[choiceObj].set_yearCre(bufNum);break;}
+                    case 5: {_creator[choiceObj].set_monthCre(bufNum);break;}
+                    case 6: {_creator[choiceObj].set_dayCre(bufNum);break;}
+                    default : {cout <<std::endl<<"ERROR";break;}
+                }
+            }
+            if( text ) {
+                string substrString;
+                substrString=str.substr(i-ActuaLenght,ActuaLenght);
+                switch(countDetail){
+                    case 1:{_creator[choiceObj].set_nameCre(substrString);break;}
+                    case 2:{_creator[choiceObj].set_surnameCre(substrString);break;}
+                    default : {cout <<std::endl<<"ERROR";break;}
+                }
+            }
+            countDetail++;
+            ActuaLenght = 0;
+        }
     }
 
 
+// napisz jakos pobranie z inputu liczb z tabicy do jednego variable!!!
+
+
 }
-void edit (album ** _album,size_t &size,size_t &choiceObj,int &choiceProperties)
+void editPressing (album ** _album,size_t &size,size_t &choiceObj)
 {
-    switch(choiceProperties)
-    {
-        case 1:
-        {
-            cout << "\nEnter new Name:";
-            cin.ignore();
-            string str;
-            getline(cin,str);
-            _album[choiceObj]->set_nameCre(str);
-            break;
-        }
-        case 2:
-        {
-            cout << "\nEnter new Surname:";
-            cin.ignore();
-            string str;
-            getline(cin,str);
-            _album[choiceObj]->set_surnameCre(str);
-            break;
-        }
-        case 3:
-        {
-            cout << "\nEnter new Name Album:";
-            cin.ignore();
-            string str;
-            getline(cin,str);
-            _album[choiceObj]->set_nameAl(str);
-            break;
-        }
-        case 4:
-        {
-            cout << "\nEnter new Type Album:";
-            cin.ignore();
-            string str;
-            getline(cin,str);
-            _album[choiceObj]->set_typeAl(str);
-            break;
-        }
-        case 5:
-        {
-            cout << "\nEnter new Year:";
-            cin.ignore();
-            size_t num;
-            cin >> num;
-            _album[choiceObj]->set_yearCre(num);
-            break;
-        }
-        case 6:
-        {
-            cout << "\nEnter new Count:";
-            cin.ignore();
-            size_t num;
-            cin >> num;
-            _album[choiceObj]->set_countSong(num);
-            break;
-        }
-        default : {
-            cout << "\nERROR, probably you write bad index, try again";
-            pressEnter();
-        }
+    string str;
+    cin.ignore();
+    getline(cin, str);
 
-    }
 
 }
-void edit (musicDisc ** _musicDisc,size_t &size,size_t &choiceObj,int &choiceProperties)
+void editPressing (musicDisc ** _musicDisc,size_t &size,size_t &choiceObj)
 {
-    switch(choiceProperties)
-    {
-        case 1:
-        {
-            cout << "\nEnter new Name:";
-            cin.ignore();
-            string str;
-            getline(cin,str);
-            _musicDisc[choiceObj]->set_nameCre(str);
-            break;
-        }
-        case 2:
-        {
-            cout << "\nEnter new Surname:";
-            cin.ignore();
-            string str;
-            getline(cin,str);
-            _musicDisc[choiceObj]->set_surnameCre(str);
-            break;
-        }
-        case 3:
-        {
-            cout << "\nEnter new Name Song:";
-            cin.ignore();
-            string str;
-            getline(cin,str);
-            _musicDisc[choiceObj]->set_nameMusic(str);
-            break;
-        }
-        case 4:
-        {
-            cout << "\nEnter new Type Song:";
-            cin.ignore();
-            string str;
-            getline(cin,str);
-            _musicDisc[choiceObj]->set_typeMusic(str);
-            break;
-        }
-        case 5:
-        {
-            cout << "\nEnter new Second of Song:";
-            cin.ignore();
-            size_t num;
-            cin >> num;
-            _musicDisc[choiceObj]->set_secondMusic(num);
-            break;
-        }
-        case 6:
-        {
-            cout << "\nEnter new Year of Create Song:";
-            cin.ignore();
-            size_t num;
-            cin >> num;
-            _musicDisc[choiceObj]->set_yearMusic(num);
-            break;
-        }
-        default : {
-            cout << "\nERROR, probably you write bad index, try again";
-            pressEnter();
-        }
+    string str;
+    cin.ignore();
+    getline(cin, str);
 
-    }
 
 }
-
-
-
-
 

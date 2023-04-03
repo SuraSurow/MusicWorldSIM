@@ -67,3 +67,19 @@ void print_size (size_t *size)
     << "\n Actual cout of object:"<<*size;
 }
 
+int joinArray(const int arr[], int size, int &result)
+{
+    result = 0;
+    for (int i = 0; i < size; i++) {
+        result = result * 10 + arr[i];
+    }
+    return 0;
+}
+void joinArray(const size_t arr[], int size, size_t &result)
+{
+    result = 0;
+    for (int i = 0; i < size; i++) {
+        result = result * 10 + arr[i];
+    }
+}
+

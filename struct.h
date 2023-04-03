@@ -44,8 +44,8 @@ private:
     string surnameCre; //
     string nameMusic;
     string typeMusic;
-    size_t  secondMusic ;
-    size_t yearMusic ;
+    size_t  secondMusic{} ;
+    size_t yearMusic{} ;
 
 public:
     musicDisc ( const string & nameCre , const string & surnameCre , const string & nameMusic , const string & typeMusic , size_t secondMusic , size_t yearMusic ):
@@ -165,10 +165,10 @@ class creator {
 private:
     string nameCre ;
     string surnameCre;
-    size_t ageCre ;
-    size_t yearCre ;
-    size_t monthCre ;
-    size_t dayCre ;
+    size_t ageCre{} ;
+    size_t yearCre{} ;
+    size_t monthCre{} ;
+    size_t dayCre{} ;
 public:
     //kostruktor init
     creator( const string & nameCre ,const string & surnameCre,size_t  ageCre , size_t  yearCre, size_t  monthCre , size_t  dayCre)

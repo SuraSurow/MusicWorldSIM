@@ -15,6 +15,8 @@
 #include <random>
 #include <type_traits>
 #include <chrono>
+#include <algorithm>
+#include <sstream>
 
 //own header
 

@@ -15,5 +15,9 @@ void printChoiceObj();
 void printClass(creator * _creator);
 void printClass(album ** _album);
 void printClass(musicDisc ** _musicDisc);
+void printHowEdit(creator * _creator);
+void printHowEdit (album ** _album);
+void printHowEdit(musicDisc ** _musicDisc);
+void printHowEdit();
 
 #endif //LAB_PRINT_H
