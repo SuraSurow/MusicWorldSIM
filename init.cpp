@@ -4,7 +4,7 @@
 #include "headFile.h"
 
 
-void init( creator * _creatorS ,size_t * pSize)
+void init( creator * _creatorS ,const size_t * pSize)
 {
     for( int i = 0 ; i < (*pSize) ; i++)
     {
@@ -18,14 +18,14 @@ void init( creator * _creatorS ,size_t * pSize)
     }
 }
 
-void init ( album ** _albumS , size_t * pSize )
+void init ( album ** _albumS , const size_t * pSize )
 {
     for (size_t i = 0 ; i < *pSize; i++ ) {
         init(_albumS[i]);
     }
 }
 
-void init (musicDisc ** _musicDiscES , size_t * pSize )
+void init (musicDisc ** _musicDiscES , const size_t * pSize )
 {
     for (size_t i = 0 ; i < *pSize ; i++ ) {
         init( _musicDiscES[i] );

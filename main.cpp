@@ -61,7 +61,6 @@ int main()
             case DELETE : {
                 size_t size_new = 0;
                 get_size(&size_new);
-                size_t size_temp = size;
                 del(_creator,&size,&size_new);
                 del(_album,&size,&size_new);
                 del(_musicDisc,&size,&size_new);

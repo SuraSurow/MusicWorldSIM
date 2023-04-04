@@ -4,9 +4,9 @@
 #ifndef LAB_PRINT_H
 #define LAB_PRINT_H
 
-void print (creator *_creator , size_t *size);
-void print (album **_album , size_t *size);
-void print (musicDisc **_musicDisc , size_t *size);
+void print (creator *_creator ,const  size_t *size);
+void print (album **_album ,const  size_t *size);
+void print (musicDisc **_musicDisc ,const  size_t *size);
 void preestart();
 void menu_show_content();
 void start();

@@ -3,7 +3,7 @@
 //
 #include "headFile.h"
 
-void print (creator * _creator , size_t *size)
+void print (creator * _creator ,const  size_t *size)
 {
     for (int i = 0 ; i < *size ; i++)
     {
@@ -21,7 +21,7 @@ void print (creator * _creator , size_t *size)
 
 }
 
-void print (album ** _album ,size_t * size )
+void print (album ** _album ,const size_t * size )
 
 
 {
@@ -41,7 +41,7 @@ void print (album ** _album ,size_t * size )
 
 }
 
-void print (musicDisc  ** _musicDisc , size_t * size )
+void print (musicDisc  ** _musicDisc ,const  size_t * size )
 {
     for (int i = 0 ; i < *size ; i++)
     {

@@ -32,7 +32,7 @@ void create ( musicDisc **& _musicDiscES , const size_t *size )
 }
 
 
-/*s
+
 
 //tworzenie pojedynczych objektow
 /*

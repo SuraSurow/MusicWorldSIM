@@ -4,7 +4,7 @@
 
 
 #include "headFile.h"
-int add (creator *& _creator , size_t * size , size_t * size_new)
+int add (creator *& _creator , const size_t * size , const size_t * size_new)
 {
     if ( *size_new >= *size) {
         auto *temp = new creator[*size_new];
@@ -27,9 +27,9 @@ int add (creator *& _creator , size_t * size , size_t * size_new)
     return EXIT_FAILURE;
 }
 
-int add (album **& _album , size_t * size ,size_t *size_new) {
+int add (album **& _album , const size_t * size ,const size_t *size_new) {
     if(*size_new>=*size) {
-        album ** temp = new album * [ *size_new ] ;
+        auto ** temp = new album * [ *size_new ] ;
         for ( size_t x = 0 ; x < *size_new ; x++ )
         {
             temp [ x ] = new album ;
@@ -48,7 +48,7 @@ int add (album **& _album , size_t * size ,size_t *size_new) {
     }
     return EXIT_FAILURE;
 }
-int add (musicDisc **& _musicDisc , size_t * size,size_t *size_new ) {
+int add (musicDisc **& _musicDisc , const size_t * size,const size_t *size_new ) {
 if(*size_new>=*size) {
     auto ** temp = new musicDisc * [ *size_new ] ;
     for ( size_t x = 0 ; x < *size_new ; x++ )

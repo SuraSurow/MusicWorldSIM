@@ -61,7 +61,9 @@ void get_size( size_t *size)
     }
 }
 
-void print_size (size_t *size)
+
+/*
+ void print_size (size_t *size)
 {
     cout
     << "\n Actual cout of object:"<<*size;
@@ -82,4 +84,6 @@ void joinArray(const size_t arr[], int size, size_t &result)
         result = result * 10 + arr[i];
     }
 }
+
+ */
 

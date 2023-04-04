@@ -25,17 +25,7 @@ using
         std:: cin;
 
 
-namespace MenuText{
-    const string
-            create = "CREATE",
-            initialize = "INITIALIZE",
-            print = "PRINT",
-            add = "ADD",
-            del = "DELETE",
-            sort = "SORT",
-            data_sheet = "DATA_SHEET",
-            start_path = "START_PATH";
-}
+
 
 
 class musicDisc {
@@ -46,13 +36,13 @@ private:
     string typeMusic;
     size_t  secondMusic{} ;
     size_t yearMusic{} ;
-
+//( const string & nameCre , const string & surnameCre , const string & nameMusic , const string & typeMusic , size_t secondMusic , size_t yearMusic ):
 public:
-    musicDisc ( const string & nameCre , const string & surnameCre , const string & nameMusic , const string & typeMusic , size_t secondMusic , size_t yearMusic ):
-            nameCre(nameCre),
-            surnameCre(surnameCre),
-            nameMusic(nameMusic) ,
-            typeMusic(typeMusic),
+    musicDisc ( string  nameCre , string  surnameCre , string  nameMusic , string  typeMusic , size_t secondMusic , size_t yearMusic ):
+            nameCre(std::move(nameCre)),
+            surnameCre(std::move(surnameCre)),//surnameCre
+            nameMusic(std::move(nameMusic)) ,
+            typeMusic(std::move(typeMusic)),
             secondMusic(secondMusic),
             yearMusic(yearMusic) {}
 
@@ -82,8 +72,8 @@ public:
     auto gets_surnameCre () { return surnameCre ;}
     auto gets_nameMusic () { return nameMusic ;}
     auto gets_typeMusic () { return typeMusic ;}
-    auto gets_yearMusic () const { return yearMusic ;}
-    auto gets_secondMusic () const { return secondMusic ;}
+    [[nodiscard]] auto gets_yearMusic () const { return yearMusic ;}
+    [[nodiscard]] auto gets_secondMusic () const { return secondMusic ;}
 };
 //
 
@@ -97,11 +87,11 @@ private:
     size_t countSong{} ;
     musicDisc ** musicDisc_obj{};
 public:
-    album ( const string & nameCre , const string & surnameCre , const string & nameAl , const string & typeAl , size_t yearCre , size_t countSong ) :
-            nameCre(nameCre),
-            surnameCre(surnameCre),
-            nameAl(nameAl) ,
-            typeAl(typeAl),
+    album ( string  nameCre , string  surnameCre , string  nameAl , string  typeAl , size_t yearCre , size_t countSong ) :
+            nameCre(std::move(nameCre)),
+            surnameCre(std::move(surnameCre)),
+            nameAl(std::move(nameAl)) ,
+            typeAl(std::move(typeAl)),
             yearCre(yearCre),
             countSong(countSong) {}
     album ( const album & anotherOne) = default;
@@ -125,6 +115,7 @@ public:
            delete musicDisc_obj[i];
         }
     }
+    /*
     void resetArray() {
         for (int i = 0; i < 10; i++) {
             delete musicDisc_obj[i];
@@ -142,6 +133,7 @@ public:
             musicDisc_obj[i] = nullptr;
         }
     }
+     */
 
 
     //----------set------------
@@ -156,8 +148,8 @@ public:
     auto gets_surnameCre () { return surnameCre ;}
     auto gets_nameAl () { return nameAl ;}
     auto gets_typeAl () { return typeAl ;}
-    auto gets_yearCre () const { return yearCre ;}
-    auto gets_countSong () const { return countSong ;}
+    [[nodiscard]] auto gets_yearCre () const { return yearCre ;}
+    [[nodiscard]] auto gets_countSong () const { return countSong ;}
 
 };
 
@@ -171,9 +163,9 @@ private:
     size_t dayCre{} ;
 public:
     //kostruktor init
-    creator( const string & nameCre ,const string & surnameCre,size_t  ageCre , size_t  yearCre, size_t  monthCre , size_t  dayCre)
-             : nameCre(nameCre) ,
-             surnameCre(surnameCre),
+    creator( string  nameCre ,string  surnameCre,size_t  ageCre , size_t  yearCre, size_t  monthCre , size_t  dayCre)
+             : nameCre(std::move(nameCre)) ,
+             surnameCre(std::move(surnameCre)),
              ageCre(ageCre) ,
              yearCre(yearCre),
              monthCre(monthCre) ,
@@ -200,10 +192,10 @@ public:
     //----------gets---------------
     auto gets_nameCre () { return nameCre ;}
     auto gets_surnameCre () { return surnameCre ;}
-    auto gets_ageCre () const { return ageCre ;}
-    auto gets_yearCre () const { return yearCre ;}
-    auto gets_monthCre () const { return monthCre ;}
-    auto gets_dayCre () const { return dayCre ;}
+    [[nodiscard]] auto gets_ageCre () const { return ageCre ;}
+    [[nodiscard]] auto gets_yearCre () const { return yearCre ;}
+    [[nodiscard]] auto gets_monthCre () const { return monthCre ;}
+    [[nodiscard]] auto gets_dayCre () const { return dayCre ;}
     //create
 
 };

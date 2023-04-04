@@ -4,8 +4,8 @@
 #ifndef LAB_ADD_H
 #define LAB_ADD_H
 
-int add (album **& _album , size_t * size ,size_t *size_new);
-int add (musicDisc **& _musicDisc , size_t * size ,size_t *size_new);
-int add (creator *& _creator , size_t * size , size_t * size_new);
+int add (album **& _album , const size_t * size ,const size_t *size_new);
+int add (musicDisc **& _musicDisc , const size_t * size ,const size_t *size_new);
+int add (creator *& _creator , const size_t * size , const size_t * size_new);
 
 #endif //LAB_ADD_H

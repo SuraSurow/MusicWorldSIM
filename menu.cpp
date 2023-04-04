@@ -2,15 +2,7 @@
 // Created by surow on 12/03/2023.
 //
 
-#include "headFile.h"
-#define EXIT 0
-#define CREATE 1
-#define INITIALIZE 2
-#define PRINT 3
-#define ADD 4
-#define DELETE 5
-#define SORT 6
-#define DATA_SHEET 7
+
 
 /*
 

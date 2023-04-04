@@ -4,7 +4,7 @@
 
 #include "headFile.h"
 //                                     20              10
-int del ( creator *& _creator , size_t *size ,size_t *size_new ) {
+int del ( creator *& _creator , const size_t *size ,const size_t *size_new ) {
     if ( *size_new <= *size ) {
         auto *temp = new creator[*size_new];
         int i;
@@ -24,7 +24,7 @@ int del ( creator *& _creator , size_t *size ,size_t *size_new ) {
     return EXIT_FAILURE;
 }
 
-int del( album **& _album, size_t * size ,size_t * size_new) {
+int del( album **& _album, const size_t * size ,const size_t * size_new) {
     if(*size_new<=*size) {
         auto **temp = new album *[*size_new];
         int i = 0;
@@ -45,7 +45,7 @@ int del( album **& _album, size_t * size ,size_t * size_new) {
     return EXIT_FAILURE;
 }
 
-int del( musicDisc **& _musicDisc, size_t * size ,size_t * size_new) {
+int del( musicDisc **& _musicDisc, const size_t * size ,const size_t * size_new) {
     if(*size_new<=*size) {
         auto **temp = new musicDisc *[*size_new];
         int i = 0;

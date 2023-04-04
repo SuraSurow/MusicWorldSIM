@@ -3,7 +3,7 @@
 //
 #include "headFile.h"
 
-void edit(creator* _creator , album ** _album , musicDisc ** _musicDisc , size_t &size)
+void edit(creator* _creator , album ** _album , musicDisc ** _musicDisc ,const size_t &size)
 {
 
     printEditMenu();
@@ -15,7 +15,7 @@ void edit(creator* _creator , album ** _album , musicDisc ** _musicDisc , size_t
             size_t choiceObj;
             printChoiceObj();
             index(&choiceObj,size);
-            edit(_creator,size,choiceObj);
+            edit(_creator,choiceObj);
             break;
         }
         case 2:{
@@ -23,7 +23,7 @@ void edit(creator* _creator , album ** _album , musicDisc ** _musicDisc , size_t
             printChoiceObj();
             size_t choiceObj;
             index(&choiceObj,size);
-            edit(_creator,size,choiceObj);
+            edit(_album,choiceObj);
 
             break;
         }
@@ -32,7 +32,7 @@ void edit(creator* _creator , album ** _album , musicDisc ** _musicDisc , size_t
             printChoiceObj();
             size_t choiceObj;
             index(&choiceObj,size);
-            edit(_creator,size,choiceObj);
+            edit(_musicDisc,choiceObj);
 
             break;
         }
@@ -43,9 +43,9 @@ void edit(creator* _creator , album ** _album , musicDisc ** _musicDisc , size_t
             printChoiceObj();
             size_t choiceObj;
             index(&choiceObj,size);
-            edit(_creator,size,choiceObj);
-            edit(_album,size,choiceObj);
-            edit(_musicDisc,size,choiceObj);
+            edit(_creator,choiceObj);
+            edit(_album,choiceObj);
+            edit(_musicDisc,choiceObj);
             break;
         }
         default:{
@@ -55,30 +55,30 @@ void edit(creator* _creator , album ** _album , musicDisc ** _musicDisc , size_t
     }
 
 }
-void edit (creator * _creator,size_t &size,size_t &choiceObj)
+void edit (creator * _creator,const size_t &choiceObj)
 {
     printHowEdit(_creator);
     cout << "\n\nenter:";
-    editPressing (_creator,size,choiceObj);
+    editPressing (_creator,choiceObj);
 }
 
-void edit (album ** _album,size_t &size,size_t &choiceObj)
+void edit (album ** _album,const size_t &choiceObj)
 {
     printHowEdit(_album);
     cout << "\n\nenter:";
-    editPressing(_album,size,choiceObj);
+    editPressing(_album,choiceObj);
 }
 
-void edit (musicDisc ** _musicDisc,size_t &size,size_t &choiceObj)
+void edit (musicDisc ** _musicDisc,const size_t &choiceObj)
 {
     printHowEdit(_musicDisc);
     cout << "\n\nenter:";
-    editPressing (_musicDisc,size,choiceObj);
+    editPressing (_musicDisc,choiceObj);
 }
 
 
 
-void editPressing (creator * _creator,size_t &size,size_t &choiceObj)
+void editPressing (creator * _creator,const size_t &choiceObj)
 {
     string str;
     cin.ignore();
@@ -126,20 +126,89 @@ void editPressing (creator * _creator,size_t &size,size_t &choiceObj)
 
 
 }
-void editPressing (album ** _album,size_t &size,size_t &choiceObj)
+void editPressing (album ** _album,const size_t &choiceObj)
 {
+    cout << "weszlo";
     string str;
     cin.ignore();
     getline(cin, str);
-
-
+    static int countDetail = 1;
+    int ActuaLenght = 0, i = 0;
+    for (;i < str.length()+1;i++){
+        bool text = false , num = false ;
+        if( std::isalnum(str[i]) != 0) { ActuaLenght++;}
+        else
+        {
+            if( std::isdigit(str[i-1]) != 0){num= true;}
+            if( std::isalpha(str[i-1]) != 0){text = true;}
+            if( num ) {
+                string substrString;
+                substrString=str.substr(i-ActuaLenght,ActuaLenght);
+                size_t bufNum;
+                std::stringstream stream(substrString);
+                stream >> bufNum;
+                switch(countDetail) {
+                    case 5: {_album[choiceObj]->set_yearCre(bufNum);break;}
+                    case 6: {_album[choiceObj]->set_countSong(bufNum);break;}
+                    default : {cout <<std::endl<<"ERROR";break;}
+                }
+            }
+            if( text ) {
+                string substrString;
+                substrString=str.substr(i-ActuaLenght,ActuaLenght);
+                switch(countDetail){
+                    case 1: {_album[choiceObj]->set_nameCre(substrString);break;}
+                    case 2: {_album[choiceObj]->set_surnameCre(substrString);break;}
+                    case 3:{_album[choiceObj]->set_nameAl(substrString);break;}
+                    case 4:{_album[choiceObj]->set_typeAl(substrString);break;}
+                    default : {cout <<std::endl<<"ERROR";break;}
+                }
+            }
+            countDetail++;
+            ActuaLenght = 0;
+        }
+    }
 }
-void editPressing (musicDisc ** _musicDisc,size_t &size,size_t &choiceObj)
+void editPressing (musicDisc ** _musicDisc,const size_t &choiceObj)
 {
     string str;
     cin.ignore();
     getline(cin, str);
-
-
+    static int countDetail = 1;
+    int ActuaLenght = 0, i = 0;
+    for (;i < str.length()+1;i++){
+        bool text = false , num = false ;
+        if( std::isalnum(str[i]) != 0) { ActuaLenght++;}
+        else
+        {
+            if( std::isdigit(str[i-1]) != 0){num= true;}
+            if( std::isalpha(str[i-1]) != 0){text = true;}
+            if( num ) {
+                string substrString;
+                substrString=str.substr(i-ActuaLenght,ActuaLenght);
+                size_t bufNum;
+                std::stringstream stream(substrString);
+                stream >> bufNum;
+                switch(countDetail) {
+                    case 5: {_musicDisc[choiceObj]->set_secondMusic(bufNum);break;}
+                    case 6: {_musicDisc[choiceObj]->set_yearMusic(bufNum);break;}
+                    default : {cout <<std::endl<<"ERROR";break;}
+                }
+            }
+            if( text ) {
+                string substrString;
+                substrString=str.substr(i-ActuaLenght,ActuaLenght);
+                switch(countDetail){
+                    case 1: {_musicDisc[choiceObj]->set_nameCre(substrString);break;}
+                    case 2: {_musicDisc[choiceObj]->set_surnameCre(substrString);break;}
+                    case 3:{_musicDisc[choiceObj]->set_nameMusic(substrString);break;}
+                    case 4:{_musicDisc[choiceObj]->set_typeMusic(substrString);break;}
+                    default : {cout <<std::endl<<"ERROR";break;}
+                }
+            }
+            countDetail++;
+            ActuaLenght = 0;
+        }
+    }
 }
 
