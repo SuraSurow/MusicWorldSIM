@@ -214,8 +214,13 @@ CMakeFiles/lab.dir/print.cpp.obj: C:\schollLab\MusicWorldSIM\print.cpp \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
- C:\schollLab\MusicWorldSIM\create.h C:\schollLab\MusicWorldSIM\struct.h \
+ C:\schollLab\MusicWorldSIM\funCreate.h \
+ C:\schollLab\MusicWorldSIM\struct.h \
+ C:\schollLab\MusicWorldSIM\ClassMusicDisc.h \
+ C:\schollLab\MusicWorldSIM\ClassAlbum.h \
+ C:\schollLab\MusicWorldSIM\ClassCreator.h \
  C:\schollLab\MusicWorldSIM\add.h C:\schollLab\MusicWorldSIM\delete.h \
- C:\schollLab\MusicWorldSIM\init.h C:\schollLab\MusicWorldSIM\optiFun.h \
- C:\schollLab\MusicWorldSIM\print.h C:\schollLab\MusicWorldSIM\randData.h \
- C:\schollLab\MusicWorldSIM\edit.h C:\schollLab\MusicWorldSIM\sort.h
+ C:\schollLab\MusicWorldSIM\funInit.h \
+ C:\schollLab\MusicWorldSIM\optiFun.h C:\schollLab\MusicWorldSIM\print.h \
+ C:\schollLab\MusicWorldSIM\randData.h C:\schollLab\MusicWorldSIM\edit.h \
+ C:\schollLab\MusicWorldSIM\sort.h

@@ -68,193 +68,257 @@ include CMakeFiles/lab.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lab.dir/flags.make
 
-CMakeFiles/lab.dir/main.cpp.obj: CMakeFiles/lab.dir/flags.make
-CMakeFiles/lab.dir/main.cpp.obj: C:/schollLab/MusicWorldSIM/main.cpp
-CMakeFiles/lab.dir/main.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab.dir/main.cpp.obj"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/main.cpp.obj -MF CMakeFiles\lab.dir\main.cpp.obj.d -o CMakeFiles\lab.dir\main.cpp.obj -c C:\schollLab\MusicWorldSIM\main.cpp
+CMakeFiles/lab.dir/base/baseMain.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/base/baseMain.cpp.obj: C:/schollLab/MusicWorldSIM/base/baseMain.cpp
+CMakeFiles/lab.dir/base/baseMain.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab.dir/base/baseMain.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/base/baseMain.cpp.obj -MF CMakeFiles\lab.dir\base\baseMain.cpp.obj.d -o CMakeFiles\lab.dir\base\baseMain.cpp.obj -c C:\schollLab\MusicWorldSIM\base\baseMain.cpp
 
-CMakeFiles/lab.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/main.cpp.i"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\main.cpp > CMakeFiles\lab.dir\main.cpp.i
+CMakeFiles/lab.dir/base/baseMain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/base/baseMain.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\base\baseMain.cpp > CMakeFiles\lab.dir\base\baseMain.cpp.i
 
-CMakeFiles/lab.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/main.cpp.s"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\main.cpp -o CMakeFiles\lab.dir\main.cpp.s
+CMakeFiles/lab.dir/base/baseMain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/base/baseMain.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\base\baseMain.cpp -o CMakeFiles\lab.dir\base\baseMain.cpp.s
 
-CMakeFiles/lab.dir/init.cpp.obj: CMakeFiles/lab.dir/flags.make
-CMakeFiles/lab.dir/init.cpp.obj: C:/schollLab/MusicWorldSIM/init.cpp
-CMakeFiles/lab.dir/init.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab.dir/init.cpp.obj"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/init.cpp.obj -MF CMakeFiles\lab.dir\init.cpp.obj.d -o CMakeFiles\lab.dir\init.cpp.obj -c C:\schollLab\MusicWorldSIM\init.cpp
+CMakeFiles/lab.dir/Fun/funInit.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Fun/funInit.cpp.obj: C:/schollLab/MusicWorldSIM/Fun/funInit.cpp
+CMakeFiles/lab.dir/Fun/funInit.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab.dir/Fun/funInit.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Fun/funInit.cpp.obj -MF CMakeFiles\lab.dir\Fun\funInit.cpp.obj.d -o CMakeFiles\lab.dir\Fun\funInit.cpp.obj -c C:\schollLab\MusicWorldSIM\Fun\funInit.cpp
 
-CMakeFiles/lab.dir/init.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/init.cpp.i"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\init.cpp > CMakeFiles\lab.dir\init.cpp.i
+CMakeFiles/lab.dir/Fun/funInit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Fun/funInit.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Fun\funInit.cpp > CMakeFiles\lab.dir\Fun\funInit.cpp.i
 
-CMakeFiles/lab.dir/init.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/init.cpp.s"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\init.cpp -o CMakeFiles\lab.dir\init.cpp.s
+CMakeFiles/lab.dir/Fun/funInit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Fun/funInit.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Fun\funInit.cpp -o CMakeFiles\lab.dir\Fun\funInit.cpp.s
 
-CMakeFiles/lab.dir/optiFun.cpp.obj: CMakeFiles/lab.dir/flags.make
-CMakeFiles/lab.dir/optiFun.cpp.obj: C:/schollLab/MusicWorldSIM/optiFun.cpp
-CMakeFiles/lab.dir/optiFun.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab.dir/optiFun.cpp.obj"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/optiFun.cpp.obj -MF CMakeFiles\lab.dir\optiFun.cpp.obj.d -o CMakeFiles\lab.dir\optiFun.cpp.obj -c C:\schollLab\MusicWorldSIM\optiFun.cpp
+CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj: C:/schollLab/MusicWorldSIM/Fun/funOptiFun.cpp
+CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj -MF CMakeFiles\lab.dir\Fun\funOptiFun.cpp.obj.d -o CMakeFiles\lab.dir\Fun\funOptiFun.cpp.obj -c C:\schollLab\MusicWorldSIM\Fun\funOptiFun.cpp
 
-CMakeFiles/lab.dir/optiFun.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/optiFun.cpp.i"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\optiFun.cpp > CMakeFiles\lab.dir\optiFun.cpp.i
+CMakeFiles/lab.dir/Fun/funOptiFun.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Fun/funOptiFun.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Fun\funOptiFun.cpp > CMakeFiles\lab.dir\Fun\funOptiFun.cpp.i
 
-CMakeFiles/lab.dir/optiFun.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/optiFun.cpp.s"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\optiFun.cpp -o CMakeFiles\lab.dir\optiFun.cpp.s
+CMakeFiles/lab.dir/Fun/funOptiFun.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Fun/funOptiFun.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Fun\funOptiFun.cpp -o CMakeFiles\lab.dir\Fun\funOptiFun.cpp.s
 
-CMakeFiles/lab.dir/menu.cpp.obj: CMakeFiles/lab.dir/flags.make
-CMakeFiles/lab.dir/menu.cpp.obj: C:/schollLab/MusicWorldSIM/menu.cpp
-CMakeFiles/lab.dir/menu.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lab.dir/menu.cpp.obj"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/menu.cpp.obj -MF CMakeFiles\lab.dir\menu.cpp.obj.d -o CMakeFiles\lab.dir\menu.cpp.obj -c C:\schollLab\MusicWorldSIM\menu.cpp
+CMakeFiles/lab.dir/Fun/funCreate.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Fun/funCreate.cpp.obj: C:/schollLab/MusicWorldSIM/Fun/funCreate.cpp
+CMakeFiles/lab.dir/Fun/funCreate.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lab.dir/Fun/funCreate.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Fun/funCreate.cpp.obj -MF CMakeFiles\lab.dir\Fun\funCreate.cpp.obj.d -o CMakeFiles\lab.dir\Fun\funCreate.cpp.obj -c C:\schollLab\MusicWorldSIM\Fun\funCreate.cpp
 
-CMakeFiles/lab.dir/menu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/menu.cpp.i"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\menu.cpp > CMakeFiles\lab.dir\menu.cpp.i
+CMakeFiles/lab.dir/Fun/funCreate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Fun/funCreate.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Fun\funCreate.cpp > CMakeFiles\lab.dir\Fun\funCreate.cpp.i
 
-CMakeFiles/lab.dir/menu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/menu.cpp.s"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\menu.cpp -o CMakeFiles\lab.dir\menu.cpp.s
+CMakeFiles/lab.dir/Fun/funCreate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Fun/funCreate.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Fun\funCreate.cpp -o CMakeFiles\lab.dir\Fun\funCreate.cpp.s
 
-CMakeFiles/lab.dir/create.cpp.obj: CMakeFiles/lab.dir/flags.make
-CMakeFiles/lab.dir/create.cpp.obj: C:/schollLab/MusicWorldSIM/create.cpp
-CMakeFiles/lab.dir/create.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lab.dir/create.cpp.obj"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/create.cpp.obj -MF CMakeFiles\lab.dir\create.cpp.obj.d -o CMakeFiles\lab.dir\create.cpp.obj -c C:\schollLab\MusicWorldSIM\create.cpp
+CMakeFiles/lab.dir/Fun/funRandData.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Fun/funRandData.cpp.obj: C:/schollLab/MusicWorldSIM/Fun/funRandData.cpp
+CMakeFiles/lab.dir/Fun/funRandData.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lab.dir/Fun/funRandData.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Fun/funRandData.cpp.obj -MF CMakeFiles\lab.dir\Fun\funRandData.cpp.obj.d -o CMakeFiles\lab.dir\Fun\funRandData.cpp.obj -c C:\schollLab\MusicWorldSIM\Fun\funRandData.cpp
 
-CMakeFiles/lab.dir/create.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/create.cpp.i"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\create.cpp > CMakeFiles\lab.dir\create.cpp.i
+CMakeFiles/lab.dir/Fun/funRandData.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Fun/funRandData.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Fun\funRandData.cpp > CMakeFiles\lab.dir\Fun\funRandData.cpp.i
 
-CMakeFiles/lab.dir/create.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/create.cpp.s"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\create.cpp -o CMakeFiles\lab.dir\create.cpp.s
+CMakeFiles/lab.dir/Fun/funRandData.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Fun/funRandData.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Fun\funRandData.cpp -o CMakeFiles\lab.dir\Fun\funRandData.cpp.s
 
-CMakeFiles/lab.dir/randData.cpp.obj: CMakeFiles/lab.dir/flags.make
-CMakeFiles/lab.dir/randData.cpp.obj: C:/schollLab/MusicWorldSIM/randData.cpp
-CMakeFiles/lab.dir/randData.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lab.dir/randData.cpp.obj"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/randData.cpp.obj -MF CMakeFiles\lab.dir\randData.cpp.obj.d -o CMakeFiles\lab.dir\randData.cpp.obj -c C:\schollLab\MusicWorldSIM\randData.cpp
+CMakeFiles/lab.dir/Fun/funDelete.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Fun/funDelete.cpp.obj: C:/schollLab/MusicWorldSIM/Fun/funDelete.cpp
+CMakeFiles/lab.dir/Fun/funDelete.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lab.dir/Fun/funDelete.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Fun/funDelete.cpp.obj -MF CMakeFiles\lab.dir\Fun\funDelete.cpp.obj.d -o CMakeFiles\lab.dir\Fun\funDelete.cpp.obj -c C:\schollLab\MusicWorldSIM\Fun\funDelete.cpp
 
-CMakeFiles/lab.dir/randData.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/randData.cpp.i"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\randData.cpp > CMakeFiles\lab.dir\randData.cpp.i
+CMakeFiles/lab.dir/Fun/funDelete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Fun/funDelete.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Fun\funDelete.cpp > CMakeFiles\lab.dir\Fun\funDelete.cpp.i
 
-CMakeFiles/lab.dir/randData.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/randData.cpp.s"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\randData.cpp -o CMakeFiles\lab.dir\randData.cpp.s
+CMakeFiles/lab.dir/Fun/funDelete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Fun/funDelete.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Fun\funDelete.cpp -o CMakeFiles\lab.dir\Fun\funDelete.cpp.s
 
-CMakeFiles/lab.dir/delete.cpp.obj: CMakeFiles/lab.dir/flags.make
-CMakeFiles/lab.dir/delete.cpp.obj: C:/schollLab/MusicWorldSIM/delete.cpp
-CMakeFiles/lab.dir/delete.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lab.dir/delete.cpp.obj"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/delete.cpp.obj -MF CMakeFiles\lab.dir\delete.cpp.obj.d -o CMakeFiles\lab.dir\delete.cpp.obj -c C:\schollLab\MusicWorldSIM\delete.cpp
+CMakeFiles/lab.dir/Fun/funPrint.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Fun/funPrint.cpp.obj: C:/schollLab/MusicWorldSIM/Fun/funPrint.cpp
+CMakeFiles/lab.dir/Fun/funPrint.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lab.dir/Fun/funPrint.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Fun/funPrint.cpp.obj -MF CMakeFiles\lab.dir\Fun\funPrint.cpp.obj.d -o CMakeFiles\lab.dir\Fun\funPrint.cpp.obj -c C:\schollLab\MusicWorldSIM\Fun\funPrint.cpp
 
-CMakeFiles/lab.dir/delete.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/delete.cpp.i"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\delete.cpp > CMakeFiles\lab.dir\delete.cpp.i
+CMakeFiles/lab.dir/Fun/funPrint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Fun/funPrint.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Fun\funPrint.cpp > CMakeFiles\lab.dir\Fun\funPrint.cpp.i
 
-CMakeFiles/lab.dir/delete.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/delete.cpp.s"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\delete.cpp -o CMakeFiles\lab.dir\delete.cpp.s
+CMakeFiles/lab.dir/Fun/funPrint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Fun/funPrint.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Fun\funPrint.cpp -o CMakeFiles\lab.dir\Fun\funPrint.cpp.s
 
-CMakeFiles/lab.dir/print.cpp.obj: CMakeFiles/lab.dir/flags.make
-CMakeFiles/lab.dir/print.cpp.obj: C:/schollLab/MusicWorldSIM/print.cpp
-CMakeFiles/lab.dir/print.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lab.dir/print.cpp.obj"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/print.cpp.obj -MF CMakeFiles\lab.dir\print.cpp.obj.d -o CMakeFiles\lab.dir\print.cpp.obj -c C:\schollLab\MusicWorldSIM\print.cpp
+CMakeFiles/lab.dir/Fun/funAdd.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Fun/funAdd.cpp.obj: C:/schollLab/MusicWorldSIM/Fun/funAdd.cpp
+CMakeFiles/lab.dir/Fun/funAdd.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lab.dir/Fun/funAdd.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Fun/funAdd.cpp.obj -MF CMakeFiles\lab.dir\Fun\funAdd.cpp.obj.d -o CMakeFiles\lab.dir\Fun\funAdd.cpp.obj -c C:\schollLab\MusicWorldSIM\Fun\funAdd.cpp
 
-CMakeFiles/lab.dir/print.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/print.cpp.i"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\print.cpp > CMakeFiles\lab.dir\print.cpp.i
+CMakeFiles/lab.dir/Fun/funAdd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Fun/funAdd.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Fun\funAdd.cpp > CMakeFiles\lab.dir\Fun\funAdd.cpp.i
 
-CMakeFiles/lab.dir/print.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/print.cpp.s"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\print.cpp -o CMakeFiles\lab.dir\print.cpp.s
+CMakeFiles/lab.dir/Fun/funAdd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Fun/funAdd.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Fun\funAdd.cpp -o CMakeFiles\lab.dir\Fun\funAdd.cpp.s
 
-CMakeFiles/lab.dir/add.cpp.obj: CMakeFiles/lab.dir/flags.make
-CMakeFiles/lab.dir/add.cpp.obj: C:/schollLab/MusicWorldSIM/add.cpp
-CMakeFiles/lab.dir/add.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lab.dir/add.cpp.obj"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/add.cpp.obj -MF CMakeFiles\lab.dir\add.cpp.obj.d -o CMakeFiles\lab.dir\add.cpp.obj -c C:\schollLab\MusicWorldSIM\add.cpp
+CMakeFiles/lab.dir/Fun/funSort.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Fun/funSort.cpp.obj: C:/schollLab/MusicWorldSIM/Fun/funSort.cpp
+CMakeFiles/lab.dir/Fun/funSort.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lab.dir/Fun/funSort.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Fun/funSort.cpp.obj -MF CMakeFiles\lab.dir\Fun\funSort.cpp.obj.d -o CMakeFiles\lab.dir\Fun\funSort.cpp.obj -c C:\schollLab\MusicWorldSIM\Fun\funSort.cpp
 
-CMakeFiles/lab.dir/add.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/add.cpp.i"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\add.cpp > CMakeFiles\lab.dir\add.cpp.i
+CMakeFiles/lab.dir/Fun/funSort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Fun/funSort.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Fun\funSort.cpp > CMakeFiles\lab.dir\Fun\funSort.cpp.i
 
-CMakeFiles/lab.dir/add.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/add.cpp.s"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\add.cpp -o CMakeFiles\lab.dir\add.cpp.s
+CMakeFiles/lab.dir/Fun/funSort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Fun/funSort.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Fun\funSort.cpp -o CMakeFiles\lab.dir\Fun\funSort.cpp.s
 
-CMakeFiles/lab.dir/sort.cpp.obj: CMakeFiles/lab.dir/flags.make
-CMakeFiles/lab.dir/sort.cpp.obj: C:/schollLab/MusicWorldSIM/sort.cpp
-CMakeFiles/lab.dir/sort.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lab.dir/sort.cpp.obj"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/sort.cpp.obj -MF CMakeFiles\lab.dir\sort.cpp.obj.d -o CMakeFiles\lab.dir\sort.cpp.obj -c C:\schollLab\MusicWorldSIM\sort.cpp
+CMakeFiles/lab.dir/Fun/funEdit.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Fun/funEdit.cpp.obj: C:/schollLab/MusicWorldSIM/Fun/funEdit.cpp
+CMakeFiles/lab.dir/Fun/funEdit.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lab.dir/Fun/funEdit.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Fun/funEdit.cpp.obj -MF CMakeFiles\lab.dir\Fun\funEdit.cpp.obj.d -o CMakeFiles\lab.dir\Fun\funEdit.cpp.obj -c C:\schollLab\MusicWorldSIM\Fun\funEdit.cpp
 
-CMakeFiles/lab.dir/sort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/sort.cpp.i"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\sort.cpp > CMakeFiles\lab.dir\sort.cpp.i
+CMakeFiles/lab.dir/Fun/funEdit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Fun/funEdit.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Fun\funEdit.cpp > CMakeFiles\lab.dir\Fun\funEdit.cpp.i
 
-CMakeFiles/lab.dir/sort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/sort.cpp.s"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\sort.cpp -o CMakeFiles\lab.dir\sort.cpp.s
+CMakeFiles/lab.dir/Fun/funEdit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Fun/funEdit.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Fun\funEdit.cpp -o CMakeFiles\lab.dir\Fun\funEdit.cpp.s
 
-CMakeFiles/lab.dir/edit.cpp.obj: CMakeFiles/lab.dir/flags.make
-CMakeFiles/lab.dir/edit.cpp.obj: C:/schollLab/MusicWorldSIM/edit.cpp
-CMakeFiles/lab.dir/edit.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/lab.dir/edit.cpp.obj"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/edit.cpp.obj -MF CMakeFiles\lab.dir\edit.cpp.obj.d -o CMakeFiles\lab.dir\edit.cpp.obj -c C:\schollLab\MusicWorldSIM\edit.cpp
+CMakeFiles/lab.dir/Class/ClassMusic.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Class/ClassMusic.cpp.obj: C:/schollLab/MusicWorldSIM/Class/ClassMusic.cpp
+CMakeFiles/lab.dir/Class/ClassMusic.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/lab.dir/Class/ClassMusic.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Class/ClassMusic.cpp.obj -MF CMakeFiles\lab.dir\Class\ClassMusic.cpp.obj.d -o CMakeFiles\lab.dir\Class\ClassMusic.cpp.obj -c C:\schollLab\MusicWorldSIM\Class\ClassMusic.cpp
 
-CMakeFiles/lab.dir/edit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/edit.cpp.i"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\edit.cpp > CMakeFiles\lab.dir\edit.cpp.i
+CMakeFiles/lab.dir/Class/ClassMusic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Class/ClassMusic.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Class\ClassMusic.cpp > CMakeFiles\lab.dir\Class\ClassMusic.cpp.i
 
-CMakeFiles/lab.dir/edit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/edit.cpp.s"
-	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\edit.cpp -o CMakeFiles\lab.dir\edit.cpp.s
+CMakeFiles/lab.dir/Class/ClassMusic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Class/ClassMusic.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Class\ClassMusic.cpp -o CMakeFiles\lab.dir\Class\ClassMusic.cpp.s
+
+CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj: C:/schollLab/MusicWorldSIM/Class/ClassAlbum.cpp
+CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj -MF CMakeFiles\lab.dir\Class\ClassAlbum.cpp.obj.d -o CMakeFiles\lab.dir\Class\ClassAlbum.cpp.obj -c C:\schollLab\MusicWorldSIM\Class\ClassAlbum.cpp
+
+CMakeFiles/lab.dir/Class/ClassAlbum.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Class/ClassAlbum.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Class\ClassAlbum.cpp > CMakeFiles\lab.dir\Class\ClassAlbum.cpp.i
+
+CMakeFiles/lab.dir/Class/ClassAlbum.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Class/ClassAlbum.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Class\ClassAlbum.cpp -o CMakeFiles\lab.dir\Class\ClassAlbum.cpp.s
+
+CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj: C:/schollLab/MusicWorldSIM/Class/ClassMusician.cpp
+CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj -MF CMakeFiles\lab.dir\Class\ClassMusician.cpp.obj.d -o CMakeFiles\lab.dir\Class\ClassMusician.cpp.obj -c C:\schollLab\MusicWorldSIM\Class\ClassMusician.cpp
+
+CMakeFiles/lab.dir/Class/ClassMusician.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Class/ClassMusician.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Class\ClassMusician.cpp > CMakeFiles\lab.dir\Class\ClassMusician.cpp.i
+
+CMakeFiles/lab.dir/Class/ClassMusician.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Class/ClassMusician.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Class\ClassMusician.cpp -o CMakeFiles\lab.dir\Class\ClassMusician.cpp.s
+
+CMakeFiles/lab.dir/Class/ClassPerson.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Class/ClassPerson.cpp.obj: C:/schollLab/MusicWorldSIM/Class/ClassPerson.cpp
+CMakeFiles/lab.dir/Class/ClassPerson.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/lab.dir/Class/ClassPerson.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Class/ClassPerson.cpp.obj -MF CMakeFiles\lab.dir\Class\ClassPerson.cpp.obj.d -o CMakeFiles\lab.dir\Class\ClassPerson.cpp.obj -c C:\schollLab\MusicWorldSIM\Class\ClassPerson.cpp
+
+CMakeFiles/lab.dir/Class/ClassPerson.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Class/ClassPerson.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Class\ClassPerson.cpp > CMakeFiles\lab.dir\Class\ClassPerson.cpp.i
+
+CMakeFiles/lab.dir/Class/ClassPerson.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Class/ClassPerson.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Class\ClassPerson.cpp -o CMakeFiles\lab.dir\Class\ClassPerson.cpp.s
+
+CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj: C:/schollLab/MusicWorldSIM/Class/ClassProducent.cpp
+CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj -MF CMakeFiles\lab.dir\Class\ClassProducent.cpp.obj.d -o CMakeFiles\lab.dir\Class\ClassProducent.cpp.obj -c C:\schollLab\MusicWorldSIM\Class\ClassProducent.cpp
+
+CMakeFiles/lab.dir/Class/ClassProducent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Class/ClassProducent.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Class\ClassProducent.cpp > CMakeFiles\lab.dir\Class\ClassProducent.cpp.i
+
+CMakeFiles/lab.dir/Class/ClassProducent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Class/ClassProducent.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Class\ClassProducent.cpp -o CMakeFiles\lab.dir\Class\ClassProducent.cpp.s
 
 # Object files for target lab
 lab_OBJECTS = \
-"CMakeFiles/lab.dir/main.cpp.obj" \
-"CMakeFiles/lab.dir/init.cpp.obj" \
-"CMakeFiles/lab.dir/optiFun.cpp.obj" \
-"CMakeFiles/lab.dir/menu.cpp.obj" \
-"CMakeFiles/lab.dir/create.cpp.obj" \
-"CMakeFiles/lab.dir/randData.cpp.obj" \
-"CMakeFiles/lab.dir/delete.cpp.obj" \
-"CMakeFiles/lab.dir/print.cpp.obj" \
-"CMakeFiles/lab.dir/add.cpp.obj" \
-"CMakeFiles/lab.dir/sort.cpp.obj" \
-"CMakeFiles/lab.dir/edit.cpp.obj"
+"CMakeFiles/lab.dir/base/baseMain.cpp.obj" \
+"CMakeFiles/lab.dir/Fun/funInit.cpp.obj" \
+"CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj" \
+"CMakeFiles/lab.dir/Fun/funCreate.cpp.obj" \
+"CMakeFiles/lab.dir/Fun/funRandData.cpp.obj" \
+"CMakeFiles/lab.dir/Fun/funDelete.cpp.obj" \
+"CMakeFiles/lab.dir/Fun/funPrint.cpp.obj" \
+"CMakeFiles/lab.dir/Fun/funAdd.cpp.obj" \
+"CMakeFiles/lab.dir/Fun/funSort.cpp.obj" \
+"CMakeFiles/lab.dir/Fun/funEdit.cpp.obj" \
+"CMakeFiles/lab.dir/Class/ClassMusic.cpp.obj" \
+"CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj" \
+"CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj" \
+"CMakeFiles/lab.dir/Class/ClassPerson.cpp.obj" \
+"CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj"
 
 # External object files for target lab
 lab_EXTERNAL_OBJECTS =
 
-lab.exe: CMakeFiles/lab.dir/main.cpp.obj
-lab.exe: CMakeFiles/lab.dir/init.cpp.obj
-lab.exe: CMakeFiles/lab.dir/optiFun.cpp.obj
-lab.exe: CMakeFiles/lab.dir/menu.cpp.obj
-lab.exe: CMakeFiles/lab.dir/create.cpp.obj
-lab.exe: CMakeFiles/lab.dir/randData.cpp.obj
-lab.exe: CMakeFiles/lab.dir/delete.cpp.obj
-lab.exe: CMakeFiles/lab.dir/print.cpp.obj
-lab.exe: CMakeFiles/lab.dir/add.cpp.obj
-lab.exe: CMakeFiles/lab.dir/sort.cpp.obj
-lab.exe: CMakeFiles/lab.dir/edit.cpp.obj
+lab.exe: CMakeFiles/lab.dir/base/baseMain.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Fun/funInit.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Fun/funCreate.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Fun/funRandData.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Fun/funDelete.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Fun/funPrint.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Fun/funAdd.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Fun/funSort.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Fun/funEdit.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Class/ClassMusic.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Class/ClassPerson.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj
 lab.exe: CMakeFiles/lab.dir/build.make
 lab.exe: CMakeFiles/lab.dir/linklibs.rsp
 lab.exe: CMakeFiles/lab.dir/objects1.rsp
 lab.exe: CMakeFiles/lab.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable lab.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable lab.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\lab.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

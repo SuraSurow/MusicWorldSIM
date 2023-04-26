@@ -1,0 +1,19 @@
+//
+// Created by surow on 22/04/2023.
+//
+#include "ClassProducent.h"
+void Producent::set_expertiseArea ( string _str ){ expertiseArea=std::move(_str);}
+void Producent::set_hasGrammyAward ( size_t _num){hasGrammyAward=_num;}
+void Producent::set_FavoriteBPM ( size_t _num){FavoriteBPM=_num;}
+void Producent::set_numOfProductions ( size_t _num){numOfProductions=_num;}
+void Producent::set_coWorker ( Musician & obj){coWorker= &obj ;}
+//--------------------------------
+string Producent::gets_expertiseArea () const { return expertiseArea;}
+size_t Producent::gets_hasGrammyAward() const { return hasGrammyAward;}
+size_t Producent::gets_FavoriteBPM() const { return FavoriteBPM;}
+size_t Producent::gets_numOfProductions() const { return numOfProductions;}
+Musician* Producent::gets_coWorker ( ) const { if(coWorker!=nullptr)return coWorker;
+    return nullptr;
+}
+
+

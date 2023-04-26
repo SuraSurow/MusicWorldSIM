@@ -3,4 +3,4 @@ project(lab)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(lab main.cpp headFile.h init.cpp optiFun.cpp menu.cpp create.cpp create.cpp randData.cpp delete.cpp print.cpp print.cpp add.cpp create.h add.h delete.h init.h optiFun.h print.h randData.h struct.h sort.h sort.cpp edit.h edit.cpp)
+add_executable(lab base/baseMain.cpp head/headHeadFile.h Fun/funInit.cpp Fun/funOptiFun.cpp Fun/funCreate.cpp Fun/funCreate.cpp Fun/funRandData.cpp Fun/funDelete.cpp Fun/funPrint.cpp Fun/funPrint.cpp Fun/funAdd.cpp Fun/funCreate.h Fun/funAdd.h Fun/funDelete.h Fun/funInit.h Fun/funOptiFun.h Fun/funPrint.h Fun/funRandData.h base/baseStruct.h Fun/funSort.h Fun/funSort.cpp Fun/funEdit.h Fun/funEdit.cpp Class/ClassMusic.h Class/ClassMusic.cpp Class/ClassAlbum.cpp Class/ClassAlbum.h Class/ClassMusician.cpp Class/ClassMusician.h Class/ClassPerson.h Class/ClassPerson.cpp Class/ClassProducent.h Class/ClassProducent.cpp)

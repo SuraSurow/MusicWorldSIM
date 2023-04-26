@@ -128,269 +128,365 @@ lab/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/build
 .PHONY : lab/fast
 
-add.obj: add.cpp.obj
-.PHONY : add.obj
+Class/ClassAlbum.obj: Class/ClassAlbum.cpp.obj
+.PHONY : Class/ClassAlbum.obj
 
 # target to build an object file
-add.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/add.cpp.obj
-.PHONY : add.cpp.obj
+Class/ClassAlbum.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj
+.PHONY : Class/ClassAlbum.cpp.obj
 
-add.i: add.cpp.i
-.PHONY : add.i
+Class/ClassAlbum.i: Class/ClassAlbum.cpp.i
+.PHONY : Class/ClassAlbum.i
 
 # target to preprocess a source file
-add.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/add.cpp.i
-.PHONY : add.cpp.i
+Class/ClassAlbum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassAlbum.cpp.i
+.PHONY : Class/ClassAlbum.cpp.i
 
-add.s: add.cpp.s
-.PHONY : add.s
+Class/ClassAlbum.s: Class/ClassAlbum.cpp.s
+.PHONY : Class/ClassAlbum.s
 
 # target to generate assembly for a file
-add.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/add.cpp.s
-.PHONY : add.cpp.s
+Class/ClassAlbum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassAlbum.cpp.s
+.PHONY : Class/ClassAlbum.cpp.s
 
-create.obj: create.cpp.obj
-.PHONY : create.obj
+Class/ClassMusic.obj: Class/ClassMusic.cpp.obj
+.PHONY : Class/ClassMusic.obj
 
 # target to build an object file
-create.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/create.cpp.obj
-.PHONY : create.cpp.obj
+Class/ClassMusic.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassMusic.cpp.obj
+.PHONY : Class/ClassMusic.cpp.obj
 
-create.i: create.cpp.i
-.PHONY : create.i
+Class/ClassMusic.i: Class/ClassMusic.cpp.i
+.PHONY : Class/ClassMusic.i
 
 # target to preprocess a source file
-create.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/create.cpp.i
-.PHONY : create.cpp.i
+Class/ClassMusic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassMusic.cpp.i
+.PHONY : Class/ClassMusic.cpp.i
 
-create.s: create.cpp.s
-.PHONY : create.s
+Class/ClassMusic.s: Class/ClassMusic.cpp.s
+.PHONY : Class/ClassMusic.s
 
 # target to generate assembly for a file
-create.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/create.cpp.s
-.PHONY : create.cpp.s
+Class/ClassMusic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassMusic.cpp.s
+.PHONY : Class/ClassMusic.cpp.s
 
-delete.obj: delete.cpp.obj
-.PHONY : delete.obj
+Class/ClassMusician.obj: Class/ClassMusician.cpp.obj
+.PHONY : Class/ClassMusician.obj
 
 # target to build an object file
-delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/delete.cpp.obj
-.PHONY : delete.cpp.obj
+Class/ClassMusician.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj
+.PHONY : Class/ClassMusician.cpp.obj
 
-delete.i: delete.cpp.i
-.PHONY : delete.i
+Class/ClassMusician.i: Class/ClassMusician.cpp.i
+.PHONY : Class/ClassMusician.i
 
 # target to preprocess a source file
-delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/delete.cpp.i
-.PHONY : delete.cpp.i
+Class/ClassMusician.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassMusician.cpp.i
+.PHONY : Class/ClassMusician.cpp.i
 
-delete.s: delete.cpp.s
-.PHONY : delete.s
+Class/ClassMusician.s: Class/ClassMusician.cpp.s
+.PHONY : Class/ClassMusician.s
 
 # target to generate assembly for a file
-delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/delete.cpp.s
-.PHONY : delete.cpp.s
+Class/ClassMusician.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassMusician.cpp.s
+.PHONY : Class/ClassMusician.cpp.s
 
-edit.obj: edit.cpp.obj
-.PHONY : edit.obj
+Class/ClassPerson.obj: Class/ClassPerson.cpp.obj
+.PHONY : Class/ClassPerson.obj
 
 # target to build an object file
-edit.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/edit.cpp.obj
-.PHONY : edit.cpp.obj
+Class/ClassPerson.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassPerson.cpp.obj
+.PHONY : Class/ClassPerson.cpp.obj
 
-edit.i: edit.cpp.i
-.PHONY : edit.i
+Class/ClassPerson.i: Class/ClassPerson.cpp.i
+.PHONY : Class/ClassPerson.i
 
 # target to preprocess a source file
-edit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/edit.cpp.i
-.PHONY : edit.cpp.i
+Class/ClassPerson.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassPerson.cpp.i
+.PHONY : Class/ClassPerson.cpp.i
 
-edit.s: edit.cpp.s
-.PHONY : edit.s
+Class/ClassPerson.s: Class/ClassPerson.cpp.s
+.PHONY : Class/ClassPerson.s
 
 # target to generate assembly for a file
-edit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/edit.cpp.s
-.PHONY : edit.cpp.s
+Class/ClassPerson.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassPerson.cpp.s
+.PHONY : Class/ClassPerson.cpp.s
 
-init.obj: init.cpp.obj
-.PHONY : init.obj
+Class/ClassProducent.obj: Class/ClassProducent.cpp.obj
+.PHONY : Class/ClassProducent.obj
 
 # target to build an object file
-init.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/init.cpp.obj
-.PHONY : init.cpp.obj
+Class/ClassProducent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj
+.PHONY : Class/ClassProducent.cpp.obj
 
-init.i: init.cpp.i
-.PHONY : init.i
+Class/ClassProducent.i: Class/ClassProducent.cpp.i
+.PHONY : Class/ClassProducent.i
 
 # target to preprocess a source file
-init.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/init.cpp.i
-.PHONY : init.cpp.i
+Class/ClassProducent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassProducent.cpp.i
+.PHONY : Class/ClassProducent.cpp.i
 
-init.s: init.cpp.s
-.PHONY : init.s
+Class/ClassProducent.s: Class/ClassProducent.cpp.s
+.PHONY : Class/ClassProducent.s
 
 # target to generate assembly for a file
-init.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/init.cpp.s
-.PHONY : init.cpp.s
+Class/ClassProducent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassProducent.cpp.s
+.PHONY : Class/ClassProducent.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+Fun/funAdd.obj: Fun/funAdd.cpp.obj
+.PHONY : Fun/funAdd.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+Fun/funAdd.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funAdd.cpp.obj
+.PHONY : Fun/funAdd.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+Fun/funAdd.i: Fun/funAdd.cpp.i
+.PHONY : Fun/funAdd.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/main.cpp.i
-.PHONY : main.cpp.i
+Fun/funAdd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funAdd.cpp.i
+.PHONY : Fun/funAdd.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+Fun/funAdd.s: Fun/funAdd.cpp.s
+.PHONY : Fun/funAdd.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/main.cpp.s
-.PHONY : main.cpp.s
+Fun/funAdd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funAdd.cpp.s
+.PHONY : Fun/funAdd.cpp.s
 
-menu.obj: menu.cpp.obj
-.PHONY : menu.obj
+Fun/funCreate.obj: Fun/funCreate.cpp.obj
+.PHONY : Fun/funCreate.obj
 
 # target to build an object file
-menu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/menu.cpp.obj
-.PHONY : menu.cpp.obj
+Fun/funCreate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funCreate.cpp.obj
+.PHONY : Fun/funCreate.cpp.obj
 
-menu.i: menu.cpp.i
-.PHONY : menu.i
+Fun/funCreate.i: Fun/funCreate.cpp.i
+.PHONY : Fun/funCreate.i
 
 # target to preprocess a source file
-menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/menu.cpp.i
-.PHONY : menu.cpp.i
+Fun/funCreate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funCreate.cpp.i
+.PHONY : Fun/funCreate.cpp.i
 
-menu.s: menu.cpp.s
-.PHONY : menu.s
+Fun/funCreate.s: Fun/funCreate.cpp.s
+.PHONY : Fun/funCreate.s
 
 # target to generate assembly for a file
-menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/menu.cpp.s
-.PHONY : menu.cpp.s
+Fun/funCreate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funCreate.cpp.s
+.PHONY : Fun/funCreate.cpp.s
 
-optiFun.obj: optiFun.cpp.obj
-.PHONY : optiFun.obj
+Fun/funDelete.obj: Fun/funDelete.cpp.obj
+.PHONY : Fun/funDelete.obj
 
 # target to build an object file
-optiFun.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/optiFun.cpp.obj
-.PHONY : optiFun.cpp.obj
+Fun/funDelete.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funDelete.cpp.obj
+.PHONY : Fun/funDelete.cpp.obj
 
-optiFun.i: optiFun.cpp.i
-.PHONY : optiFun.i
+Fun/funDelete.i: Fun/funDelete.cpp.i
+.PHONY : Fun/funDelete.i
 
 # target to preprocess a source file
-optiFun.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/optiFun.cpp.i
-.PHONY : optiFun.cpp.i
+Fun/funDelete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funDelete.cpp.i
+.PHONY : Fun/funDelete.cpp.i
 
-optiFun.s: optiFun.cpp.s
-.PHONY : optiFun.s
+Fun/funDelete.s: Fun/funDelete.cpp.s
+.PHONY : Fun/funDelete.s
 
 # target to generate assembly for a file
-optiFun.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/optiFun.cpp.s
-.PHONY : optiFun.cpp.s
+Fun/funDelete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funDelete.cpp.s
+.PHONY : Fun/funDelete.cpp.s
 
-print.obj: print.cpp.obj
-.PHONY : print.obj
+Fun/funEdit.obj: Fun/funEdit.cpp.obj
+.PHONY : Fun/funEdit.obj
 
 # target to build an object file
-print.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/print.cpp.obj
-.PHONY : print.cpp.obj
+Fun/funEdit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funEdit.cpp.obj
+.PHONY : Fun/funEdit.cpp.obj
 
-print.i: print.cpp.i
-.PHONY : print.i
+Fun/funEdit.i: Fun/funEdit.cpp.i
+.PHONY : Fun/funEdit.i
 
 # target to preprocess a source file
-print.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/print.cpp.i
-.PHONY : print.cpp.i
+Fun/funEdit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funEdit.cpp.i
+.PHONY : Fun/funEdit.cpp.i
 
-print.s: print.cpp.s
-.PHONY : print.s
+Fun/funEdit.s: Fun/funEdit.cpp.s
+.PHONY : Fun/funEdit.s
 
 # target to generate assembly for a file
-print.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/print.cpp.s
-.PHONY : print.cpp.s
+Fun/funEdit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funEdit.cpp.s
+.PHONY : Fun/funEdit.cpp.s
 
-randData.obj: randData.cpp.obj
-.PHONY : randData.obj
+Fun/funInit.obj: Fun/funInit.cpp.obj
+.PHONY : Fun/funInit.obj
 
 # target to build an object file
-randData.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/randData.cpp.obj
-.PHONY : randData.cpp.obj
+Fun/funInit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funInit.cpp.obj
+.PHONY : Fun/funInit.cpp.obj
 
-randData.i: randData.cpp.i
-.PHONY : randData.i
+Fun/funInit.i: Fun/funInit.cpp.i
+.PHONY : Fun/funInit.i
 
 # target to preprocess a source file
-randData.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/randData.cpp.i
-.PHONY : randData.cpp.i
+Fun/funInit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funInit.cpp.i
+.PHONY : Fun/funInit.cpp.i
 
-randData.s: randData.cpp.s
-.PHONY : randData.s
+Fun/funInit.s: Fun/funInit.cpp.s
+.PHONY : Fun/funInit.s
 
 # target to generate assembly for a file
-randData.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/randData.cpp.s
-.PHONY : randData.cpp.s
+Fun/funInit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funInit.cpp.s
+.PHONY : Fun/funInit.cpp.s
 
-sort.obj: sort.cpp.obj
-.PHONY : sort.obj
+Fun/funOptiFun.obj: Fun/funOptiFun.cpp.obj
+.PHONY : Fun/funOptiFun.obj
 
 # target to build an object file
-sort.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/sort.cpp.obj
-.PHONY : sort.cpp.obj
+Fun/funOptiFun.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj
+.PHONY : Fun/funOptiFun.cpp.obj
 
-sort.i: sort.cpp.i
-.PHONY : sort.i
+Fun/funOptiFun.i: Fun/funOptiFun.cpp.i
+.PHONY : Fun/funOptiFun.i
 
 # target to preprocess a source file
-sort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/sort.cpp.i
-.PHONY : sort.cpp.i
+Fun/funOptiFun.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funOptiFun.cpp.i
+.PHONY : Fun/funOptiFun.cpp.i
 
-sort.s: sort.cpp.s
-.PHONY : sort.s
+Fun/funOptiFun.s: Fun/funOptiFun.cpp.s
+.PHONY : Fun/funOptiFun.s
 
 # target to generate assembly for a file
-sort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/sort.cpp.s
-.PHONY : sort.cpp.s
+Fun/funOptiFun.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funOptiFun.cpp.s
+.PHONY : Fun/funOptiFun.cpp.s
+
+Fun/funPrint.obj: Fun/funPrint.cpp.obj
+.PHONY : Fun/funPrint.obj
+
+# target to build an object file
+Fun/funPrint.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funPrint.cpp.obj
+.PHONY : Fun/funPrint.cpp.obj
+
+Fun/funPrint.i: Fun/funPrint.cpp.i
+.PHONY : Fun/funPrint.i
+
+# target to preprocess a source file
+Fun/funPrint.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funPrint.cpp.i
+.PHONY : Fun/funPrint.cpp.i
+
+Fun/funPrint.s: Fun/funPrint.cpp.s
+.PHONY : Fun/funPrint.s
+
+# target to generate assembly for a file
+Fun/funPrint.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funPrint.cpp.s
+.PHONY : Fun/funPrint.cpp.s
+
+Fun/funRandData.obj: Fun/funRandData.cpp.obj
+.PHONY : Fun/funRandData.obj
+
+# target to build an object file
+Fun/funRandData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funRandData.cpp.obj
+.PHONY : Fun/funRandData.cpp.obj
+
+Fun/funRandData.i: Fun/funRandData.cpp.i
+.PHONY : Fun/funRandData.i
+
+# target to preprocess a source file
+Fun/funRandData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funRandData.cpp.i
+.PHONY : Fun/funRandData.cpp.i
+
+Fun/funRandData.s: Fun/funRandData.cpp.s
+.PHONY : Fun/funRandData.s
+
+# target to generate assembly for a file
+Fun/funRandData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funRandData.cpp.s
+.PHONY : Fun/funRandData.cpp.s
+
+Fun/funSort.obj: Fun/funSort.cpp.obj
+.PHONY : Fun/funSort.obj
+
+# target to build an object file
+Fun/funSort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funSort.cpp.obj
+.PHONY : Fun/funSort.cpp.obj
+
+Fun/funSort.i: Fun/funSort.cpp.i
+.PHONY : Fun/funSort.i
+
+# target to preprocess a source file
+Fun/funSort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funSort.cpp.i
+.PHONY : Fun/funSort.cpp.i
+
+Fun/funSort.s: Fun/funSort.cpp.s
+.PHONY : Fun/funSort.s
+
+# target to generate assembly for a file
+Fun/funSort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funSort.cpp.s
+.PHONY : Fun/funSort.cpp.s
+
+base/baseMain.obj: base/baseMain.cpp.obj
+.PHONY : base/baseMain.obj
+
+# target to build an object file
+base/baseMain.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/base/baseMain.cpp.obj
+.PHONY : base/baseMain.cpp.obj
+
+base/baseMain.i: base/baseMain.cpp.i
+.PHONY : base/baseMain.i
+
+# target to preprocess a source file
+base/baseMain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/base/baseMain.cpp.i
+.PHONY : base/baseMain.cpp.i
+
+base/baseMain.s: base/baseMain.cpp.s
+.PHONY : base/baseMain.s
+
+# target to generate assembly for a file
+base/baseMain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/base/baseMain.cpp.s
+.PHONY : base/baseMain.cpp.s
 
 # Help Target
 help:
@@ -401,39 +497,51 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... lab
-	@echo ... add.obj
-	@echo ... add.i
-	@echo ... add.s
-	@echo ... create.obj
-	@echo ... create.i
-	@echo ... create.s
-	@echo ... delete.obj
-	@echo ... delete.i
-	@echo ... delete.s
-	@echo ... edit.obj
-	@echo ... edit.i
-	@echo ... edit.s
-	@echo ... init.obj
-	@echo ... init.i
-	@echo ... init.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... menu.obj
-	@echo ... menu.i
-	@echo ... menu.s
-	@echo ... optiFun.obj
-	@echo ... optiFun.i
-	@echo ... optiFun.s
-	@echo ... print.obj
-	@echo ... print.i
-	@echo ... print.s
-	@echo ... randData.obj
-	@echo ... randData.i
-	@echo ... randData.s
-	@echo ... sort.obj
-	@echo ... sort.i
-	@echo ... sort.s
+	@echo ... Class/ClassAlbum.obj
+	@echo ... Class/ClassAlbum.i
+	@echo ... Class/ClassAlbum.s
+	@echo ... Class/ClassMusic.obj
+	@echo ... Class/ClassMusic.i
+	@echo ... Class/ClassMusic.s
+	@echo ... Class/ClassMusician.obj
+	@echo ... Class/ClassMusician.i
+	@echo ... Class/ClassMusician.s
+	@echo ... Class/ClassPerson.obj
+	@echo ... Class/ClassPerson.i
+	@echo ... Class/ClassPerson.s
+	@echo ... Class/ClassProducent.obj
+	@echo ... Class/ClassProducent.i
+	@echo ... Class/ClassProducent.s
+	@echo ... Fun/funAdd.obj
+	@echo ... Fun/funAdd.i
+	@echo ... Fun/funAdd.s
+	@echo ... Fun/funCreate.obj
+	@echo ... Fun/funCreate.i
+	@echo ... Fun/funCreate.s
+	@echo ... Fun/funDelete.obj
+	@echo ... Fun/funDelete.i
+	@echo ... Fun/funDelete.s
+	@echo ... Fun/funEdit.obj
+	@echo ... Fun/funEdit.i
+	@echo ... Fun/funEdit.s
+	@echo ... Fun/funInit.obj
+	@echo ... Fun/funInit.i
+	@echo ... Fun/funInit.s
+	@echo ... Fun/funOptiFun.obj
+	@echo ... Fun/funOptiFun.i
+	@echo ... Fun/funOptiFun.s
+	@echo ... Fun/funPrint.obj
+	@echo ... Fun/funPrint.i
+	@echo ... Fun/funPrint.s
+	@echo ... Fun/funRandData.obj
+	@echo ... Fun/funRandData.i
+	@echo ... Fun/funRandData.s
+	@echo ... Fun/funSort.obj
+	@echo ... Fun/funSort.i
+	@echo ... Fun/funSort.s
+	@echo ... base/baseMain.obj
+	@echo ... base/baseMain.i
+	@echo ... base/baseMain.s
 .PHONY : help
 
 

@@ -84,70 +84,97 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/schollLab/MusicWorldSIM/add.cpp">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassAlbum.cpp">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/add.h">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassAlbum.h">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/create.cpp">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassMusic.cpp">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/create.h">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassMusic.h">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/delete.cpp">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassMusician.cpp">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/delete.h">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassMusician.h">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/edit.cpp">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassPerson.cpp">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/edit.h">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassPerson.h">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/headFile.h">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassProducent.cpp">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/init.cpp">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassProducent.h">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/init.h">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funAdd.cpp">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/main.cpp">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funAdd.h">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/menu.cpp">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funCreate.cpp">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/optiFun.cpp">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funCreate.h">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/optiFun.h">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funDelete.cpp">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/print.cpp">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funDelete.h">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/print.h">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funEdit.cpp">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/randData.cpp">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funEdit.h">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/randData.h">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funInit.cpp">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/sort.cpp">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funInit.h">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/sort.h">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funOptiFun.cpp">
 			<Option target="lab"/>
 		</Unit>
-		<Unit filename="C:/schollLab/MusicWorldSIM/struct.h">
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funOptiFun.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funPrint.cpp">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funPrint.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funRandData.cpp">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funRandData.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funSort.cpp">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funSort.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/base/baseMain.cpp">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/base/baseStruct.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/head/headHeadFile.h">
 			<Option target="lab"/>
 		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/CMakeLists.txt">
