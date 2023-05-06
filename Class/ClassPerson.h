@@ -17,7 +17,9 @@ private:
     size_t month{} ;
     size_t day{} ;
 public:
+
     virtual void doSomething() = 0;
+
     Person( string  name , string  surname, size_t  age , size_t  year, size_t  month , size_t  day)
             : name(std::move(name)) ,
               surname(std::move(surname)),

@@ -278,6 +278,34 @@ CMakeFiles/lab.dir/Class/ClassProducent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Class/ClassProducent.cpp.s"
 	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Class\ClassProducent.cpp -o CMakeFiles\lab.dir\Class\ClassProducent.cpp.s
 
+CMakeFiles/lab.dir/Class/ClassBeat.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Class/ClassBeat.cpp.obj: C:/schollLab/MusicWorldSIM/Class/ClassBeat.cpp
+CMakeFiles/lab.dir/Class/ClassBeat.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/lab.dir/Class/ClassBeat.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Class/ClassBeat.cpp.obj -MF CMakeFiles\lab.dir\Class\ClassBeat.cpp.obj.d -o CMakeFiles\lab.dir\Class\ClassBeat.cpp.obj -c C:\schollLab\MusicWorldSIM\Class\ClassBeat.cpp
+
+CMakeFiles/lab.dir/Class/ClassBeat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Class/ClassBeat.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Class\ClassBeat.cpp > CMakeFiles\lab.dir\Class\ClassBeat.cpp.i
+
+CMakeFiles/lab.dir/Class/ClassBeat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Class/ClassBeat.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Class\ClassBeat.cpp -o CMakeFiles\lab.dir\Class\ClassBeat.cpp.s
+
+CMakeFiles/lab.dir/Class/ClassMusicText.cpp.obj: CMakeFiles/lab.dir/flags.make
+CMakeFiles/lab.dir/Class/ClassMusicText.cpp.obj: C:/schollLab/MusicWorldSIM/Class/ClassMusicText.cpp
+CMakeFiles/lab.dir/Class/ClassMusicText.cpp.obj: CMakeFiles/lab.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/lab.dir/Class/ClassMusicText.cpp.obj"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab.dir/Class/ClassMusicText.cpp.obj -MF CMakeFiles\lab.dir\Class\ClassMusicText.cpp.obj.d -o CMakeFiles\lab.dir\Class\ClassMusicText.cpp.obj -c C:\schollLab\MusicWorldSIM\Class\ClassMusicText.cpp
+
+CMakeFiles/lab.dir/Class/ClassMusicText.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab.dir/Class/ClassMusicText.cpp.i"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\schollLab\MusicWorldSIM\Class\ClassMusicText.cpp > CMakeFiles\lab.dir\Class\ClassMusicText.cpp.i
+
+CMakeFiles/lab.dir/Class/ClassMusicText.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab.dir/Class/ClassMusicText.cpp.s"
+	C:\Users\surow\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\schollLab\MusicWorldSIM\Class\ClassMusicText.cpp -o CMakeFiles\lab.dir\Class\ClassMusicText.cpp.s
+
 # Object files for target lab
 lab_OBJECTS = \
 "CMakeFiles/lab.dir/base/baseMain.cpp.obj" \
@@ -294,7 +322,9 @@ lab_OBJECTS = \
 "CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj" \
 "CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj" \
 "CMakeFiles/lab.dir/Class/ClassPerson.cpp.obj" \
-"CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj"
+"CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj" \
+"CMakeFiles/lab.dir/Class/ClassBeat.cpp.obj" \
+"CMakeFiles/lab.dir/Class/ClassMusicText.cpp.obj"
 
 # External object files for target lab
 lab_EXTERNAL_OBJECTS =
@@ -314,11 +344,13 @@ lab.exe: CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj
 lab.exe: CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj
 lab.exe: CMakeFiles/lab.dir/Class/ClassPerson.cpp.obj
 lab.exe: CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Class/ClassBeat.cpp.obj
+lab.exe: CMakeFiles/lab.dir/Class/ClassMusicText.cpp.obj
 lab.exe: CMakeFiles/lab.dir/build.make
 lab.exe: CMakeFiles/lab.dir/linklibs.rsp
 lab.exe: CMakeFiles/lab.dir/objects1.rsp
 lab.exe: CMakeFiles/lab.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable lab.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\schollLab\MusicWorldSIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable lab.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\lab.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

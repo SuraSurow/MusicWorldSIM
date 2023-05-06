@@ -64,11 +64,11 @@ void edit( Musician* _creator , Album ** _album , Music ** _musicDisc ,Producent
     }
 
 }
-void edit ( Musician * _creator, const size_t &choiceObj)
+void edit ( Musician * musician, const size_t &choiceObj)
 {
-    printHowEdit(_creator);
+    printHowEdit(musician);
     cout << "\n\nenter:";
-    editPressing (_creator,choiceObj);
+    editPressing (musician, choiceObj);
 }
 
 void edit ( Album ** _album, const size_t &choiceObj)
@@ -94,7 +94,7 @@ void edit ( Producent ** _prod , const size_t &choiceObj)
 
 
 
-void editPressing ( Musician * _creator, const size_t &choiceObj)
+void editPressing ( Musician * _musician, const size_t &choiceObj)
 {
     string str;
     cin.ignore();
@@ -116,10 +116,11 @@ void editPressing ( Musician * _creator, const size_t &choiceObj)
                 std::stringstream stream(substrString);
                 stream >> bufNum;
                 switch(countDetail) {
-                    case 3: {_creator[choiceObj].set_age(bufNum);break;}
-                    case 4: {_creator[choiceObj].set_year(bufNum);break;}
-                    case 5: {_creator[choiceObj].set_month(bufNum);break;}
-                    case 6: {_creator[choiceObj].set_day(bufNum);break;}
+                    case 3: {_musician[choiceObj].set_age(bufNum);break;}
+                    case 4: {_musician[choiceObj].set_year(bufNum);break;}
+                    case 5: {_musician[choiceObj].set_month(bufNum);break;}
+                    case 6: {_musician[choiceObj].set_day(bufNum);break;}
+                    case 9: {_musician[choiceObj].set_workExp(bufNum);break;}
                     default : {cout <<std::endl<<"ERROR";break;}
                 }
             }
@@ -127,8 +128,10 @@ void editPressing ( Musician * _creator, const size_t &choiceObj)
                 string substrString;
                 substrString=str.substr(i-ActuaLenght,ActuaLenght);
                 switch(countDetail){
-                    case 1:{_creator[choiceObj].set_name(substrString);break;}
-                    case 2:{_creator[choiceObj].set_surname(substrString);break;}
+                    case 1:{_musician[choiceObj].set_name(substrString);break;}
+                    case 2:{_musician[choiceObj].set_surname(substrString);break;}
+                    case 7:{_musician[choiceObj].set_distCompany(substrString);break;}
+                    case 8:{_musician[choiceObj].set_nickName(substrString);break;}
                     default : {cout <<std::endl<<"ERROR";break;}
                 }
             }

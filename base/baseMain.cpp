@@ -11,6 +11,10 @@ int main()
     preestart();
     size_t size = 0;
     get_size(&size);
+
+    Person  ** pPerson = nullptr;//Pokazanie Polimorfizmu na tablicy classy Abstract :)
+    // W celu przebadania Polomofrizmu zapraszam do Case:CREATE_V2
+
     Musician * _creator = nullptr;
     Album ** _album = nullptr;
     Music ** _musicDisc = nullptr;
@@ -24,6 +28,7 @@ int main()
                 cout
                         << " !!! Exit !!!"
                         << "\n Thanks you for use application";
+                printProcess("END");
                 return EXIT_SUCCESS;
             }
             case CREATE : {
@@ -31,6 +36,7 @@ int main()
                 create ( _album  , &size);
                 create ( _musicDisc  , &size);
                 create(_prod ,&size);
+                printProcess("CREATE");
                 break;
             }
             case INITIALIZE : {
@@ -44,17 +50,19 @@ int main()
                 cout << "\n!!!Oto Ostatni w Clasie Album object , za pomoca prywatnego wskaznika!!!";
                 Album* _lastObj=Album::gets_lastObj();
                 print(_lastObj);
+                printProcess("INIT");
                 break;
             }
             case PRINT : {
                 cout << "\n\n\tMUZYCY (MUSICIAN)\n\n";
-                print(_creator,&size);//print zmieniony!!!!!
+                print(_creator,&size);//doSomething zmieniony!!!!!
                 cout << "\n\n\tALBUMY (ALBUMS)\n\n";
                 print(_album,&size);
                 cout << "\n\n\tPLYTY MUZYCZNE (SONG DISCS)\n\n";
                 print(_musicDisc,&size);
                 cout << "\n\n\tPRODUCENCI (MUSIC PRODUCENT)\n\n";
                 print (_prod,&size);
+                printProcess("PRINT");
                 break;
 
             }
@@ -67,8 +75,9 @@ int main()
                 add(_musicDisc,&size_temp,&size_new);
                 add (_prod,&size_temp,&size_new);
                 size = size_new;
+                printProcess("ADD");
                 break;
-            }// tutaj skonczylem ,
+            }
             case DELETE : {
                 size_t size_new = 0;
                 get_size(&size_new);
@@ -77,6 +86,7 @@ int main()
                 del(_musicDisc,&size,&size_new);
                 del(_prod,&size,&size_new);
                 size = size_new;
+                printProcess("DELETE");
                 break;
             }
             case SORT : {
@@ -84,19 +94,26 @@ int main()
                 sort(_album,&size);
                 sort(_musicDisc,&size);
                 sort(_prod,&size);
+                printProcess("SORT");
                 break;
             }
             case EDIT: {
                 edit(_creator,_album,_musicDisc,_prod,size);
+                printProcess("EDIT");
+                break;
+            }
+            case CREATE_V2 : {
+                create (pPerson,&size);
+                printProcess("CREATE 'POLIMORFIZM' ");
                 break;
             }
             default : {
-                cout << "\nERROR, probably you write bad index, try again";
+                fflush(stdin);
+                wrongInput();
                 pressEnter();
             }
         }
-
-
+        fflush(stdin);
     }while(choiceIndex != 0);
 
     return EXIT_SUCCESS;

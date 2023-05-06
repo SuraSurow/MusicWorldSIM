@@ -18,7 +18,7 @@ private:
     size_t  secondMusic{} ;
     size_t yearMusic{} ;
     static Music* lastMusic;
-//( const string & name , const string & surname , const string & nameMusic , const string & typeMusic , size_t secondMusic , size_t yearMusic ):
+//( const string & type , const string & surname , const string & nameMusic , const string & typeMusic , size_t secondMusic , size_t yearMusic ):
 public:
     Music ( string  nameCre , string  surnameCre , string  nameMusic , string  typeMusic , size_t secondMusic , size_t yearMusic ):
             nameCre(std::move(nameCre)),

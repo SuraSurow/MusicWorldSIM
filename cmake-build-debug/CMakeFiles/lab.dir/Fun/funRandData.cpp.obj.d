@@ -221,9 +221,12 @@ CMakeFiles/lab.dir/Fun/funRandData.cpp.obj: \
  C:/schollLab/MusicWorldSIM/Class/ClassAlbum.h \
  C:/schollLab/MusicWorldSIM/Class/ClassMusician.h \
  C:/schollLab/MusicWorldSIM/Class/ClassPerson.h \
+ C:/schollLab/MusicWorldSIM/Class/ClassBeat.h \
  C:/schollLab/MusicWorldSIM/Class/ClassMusician.h \
  C:/schollLab/MusicWorldSIM/Class/ClassPerson.h \
  C:/schollLab/MusicWorldSIM/Class/ClassProducent.h \
+ C:/schollLab/MusicWorldSIM/Class/ClassMusicText.h \
+ C:/schollLab/MusicWorldSIM/Class/ClassBeat.h \
  C:/schollLab/MusicWorldSIM/Fun/funAdd.h \
  C:/schollLab/MusicWorldSIM/Fun/funDelete.h \
  C:/schollLab/MusicWorldSIM/Fun/funInit.h \

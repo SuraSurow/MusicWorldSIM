@@ -45,11 +45,9 @@ public:
         set_numOfProductions(0);
         Musician * coWorker = nullptr;
     }
-    void doSomething(){
-        cout << endl << "Tworze podklad muzyczny oraz bity";
-        cout << endl << "(Create backgroud music and beats)";
-        cout << endl;
-    }
+
+    void doSomething ()override;
+
 
     //  declatarion
     void set_expertiseArea ( string _str );

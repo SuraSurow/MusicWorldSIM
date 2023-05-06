@@ -13,3 +13,5 @@ size_t Person::gets_age ()const{return age;}
 size_t Person::gets_year () const{return year;}
 size_t Person::gets_month () const{return month;}
 size_t Person::gets_day () const{return day;}
+
+void Person::doSomething (){}

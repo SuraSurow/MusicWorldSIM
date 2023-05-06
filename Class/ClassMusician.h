@@ -10,6 +10,7 @@ using namespace std;
 #include <iostream>
 #include <string>
 #include "ClassPerson.h"
+#include "ClassBeat.h"
 
 
 class Musician : public Person{
@@ -37,11 +38,10 @@ public:
         set_workExp(0);
 
     }
-    void doSomething(){
-        cout << endl << "Duzo Spiewam (a lot of Singing) !!!!!!!!!!!";
-        cout << endl << "LALALALALA ,TARARA RIRARA";
-        cout << endl;
-    }
+
+    void doSomething() override;
+
+
 
     //  declatarion
     void set_distCompany(string _str);

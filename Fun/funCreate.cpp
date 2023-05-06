@@ -12,7 +12,6 @@ void create ( Musician *& _creatorS , const size_t *size )
 {
     _creatorS = new Musician[*size];
 }
-
 void create ( Album **& _albumS , const size_t *size )
 {
     _albumS = new Album * [ *size ] ;
@@ -20,10 +19,7 @@ void create ( Album **& _albumS , const size_t *size )
     {
         _albumS [ x ] = new Album ;
     }
-
-
 }
-
 void create ( Music **& _musicDiscES , const size_t *size )
 {
     _musicDiscES = new Music * [ *size ] ;
@@ -41,17 +37,45 @@ void create ( Producent **& _producent , const size_t *size )
     }
 }
 
+void create ( Musician *& _musician )
+{
+    _musician = new Musician ;
+}
+void create ( Producent *& _prod )
+{
+    _prod = new Producent ;
+}
 
 
 
 
+void create ( Person **& pPerson , const size_t *size )
+{
+    pPerson = new Person * [ *size ];
+    int choice = 0;
+    size_t _sizeProd=0;
+    cout << "\nMENU (aby zaprezentowac Virtual Method)\n";
+    howMany("Producent","Musician");
+    index(&_sizeProd);
+    if ( _sizeProd >= *size) { _sizeProd = *size; }
+    int i = 0;
+    for ( ; i < _sizeProd ; i++) { pPerson[i] = new Producent; cout << i ;}
+    cout << "elo";
+    for ( ; i < *size ; i++) { pPerson[i] = new Musician; }
+    do {
+        cout <<"\n\tMENU:\n\t0.EXIT"
+             << "\n\t1.Print Special Skills.(USE VIRTUAL METHOD!!!!!)"
+             << "\n\n ''Tutaj mozemy stworzyc Obiekt Abstrakcyjne 'Person' posiadajaca"
+             << "\n subklasy 'Musician' i 'Producent'   '' \n" ;
+        index(&choice);
+        switch(choice) {
+            case 1: { for( i = 0  ; i < *size ; i++) { pPerson[i]->doSomething(); }}
+            case 0 : { break;}
+            default: { wrongInput(); }
+        }
+    }while (choice!=0);
 
-
-
-
-
-
-
+}
 
 
 

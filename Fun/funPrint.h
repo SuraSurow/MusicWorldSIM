@@ -25,5 +25,11 @@ void printHowEdit ( Album ** _album);
 void printHowEdit( Music ** _musicDisc);
 void printHowEdit( Producent ** _prod);
 void printHowEdit();
+void PolimorfisMenu();
+void printProcess(string _str);
+void wrongInput();
+void howMany(string);
+void howMany(string ,string);
+
 
 #endif //LAB_FUNPRINT_H

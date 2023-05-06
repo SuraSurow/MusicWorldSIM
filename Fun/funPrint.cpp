@@ -122,7 +122,8 @@ void print ( Album *_album )
                  << "Month -> -> " << _prod->gets_month() << "\n"
                  << "Day -> " << _prod->gets_day() << "\n"
                  << "ExpertiseArea ->" << _prod->gets_expertiseArea() << "\n"
-                 << "Grammy Award ->" << _prod->gets_FavoriteBPM() << "\n"
+                 << "Grammy Awards ->" << _prod->gets_hasGrammyAward() << "\n"
+                 << "Favorite BMP (Beat Per Minute) ->" << _prod->gets_FavoriteBPM() << "\n"
                  << "Number of Production ->" << _prod->gets_numOfProductions() << "\n"
                  <<"----------------------------------";
      }
@@ -144,8 +145,6 @@ void start ()
             << "\n\t-Dodac ( add )"
             << "\n\t-Usunac ( delete )"
             << "\n\t-Sortowac ( sort )"
-            << "\n\t-Zestawiac Dane ( data sheet )"
-            << "\n\n\t!!! Tworcow  (  artist's )\t!!!"
             << "\n\t!!! Albumy Muzyczne ( music Album's )\t\t!!!"
             << "\n\t!!! Utwory Muzyczne ( music song's )\t\t!!!"
             << "\n\t!!! (NEW) Producentow (  Producent )\t\t!!!"
@@ -165,6 +164,7 @@ void menu_show_content()
             << "\n\t5. Usunac ( delete )"
             << "\n\t6. Sortowac ( sort )"
             << "\n\t7. Edytowac ( edit )"
+            << "\n\t8. Tworzyc ( edit ) (!! Tutaj Pokazlem Polimorfizm !!!) "
             ;
 }
 
@@ -173,7 +173,8 @@ void preestart()
     cout
             << "\nPrzed uzytkowaniem oprogramowania nalezy stworzyc obiekty"
             << "( Objects must be created before using the software ) "
-            << "\n\n-Musician , Producent"
+            << "\n\n-Musician\n-"
+               "Producent"
             << "\n-Album"
             << "\n-Disc"
             << "\nWprowadz Liczbe obiektow"
@@ -284,4 +285,24 @@ void printHowEdit(){
 }
 
 
+
+
+void wrongInput()
+{
+    cout << "\nYou probably type wrong index number \n !!! please try again !!!";
+}
+
+void howMany(string _str){
+    cout << "\n Please write how many '" << _str << "' do you want ?";
+
+}
+
+void howMany(string _str1 ,string _str2) {
+    cout << "\n Please write how many '" << _str1 <<"' (" << _str2 << ") = (ALL Minus " << _str1 << ") Do you want ?";
+}
+
+
+void printProcess(string _str ){
+    cout << "\n- - - - - [PROCESS OF " << _str << " END] - - - - - ";
+}
 

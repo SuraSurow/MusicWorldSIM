@@ -8,6 +8,8 @@
 #include "../Class/ClassMusician.h"
 #include "../Class/ClassPerson.h"
 #include "../Class/ClassProducent.h"
+#include "../Class/ClassMusicText.h"
+#include "../Class/ClassBeat.h"
 
 #define EXIT 0
 #define CREATE 1
@@ -19,6 +21,7 @@
 #define EDIT 7
 #define MIN 1
 #define MAX 100
+#define CREATE_V2 8
 
 
 

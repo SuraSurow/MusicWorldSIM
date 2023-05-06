@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj"
   "CMakeFiles/lab.dir/Class/ClassAlbum.cpp.obj.d"
+  "CMakeFiles/lab.dir/Class/ClassBeat.cpp.obj"
+  "CMakeFiles/lab.dir/Class/ClassBeat.cpp.obj.d"
   "CMakeFiles/lab.dir/Class/ClassMusic.cpp.obj"
   "CMakeFiles/lab.dir/Class/ClassMusic.cpp.obj.d"
+  "CMakeFiles/lab.dir/Class/ClassMusicText.cpp.obj"
+  "CMakeFiles/lab.dir/Class/ClassMusicText.cpp.obj.d"
   "CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj"
   "CMakeFiles/lab.dir/Class/ClassMusician.cpp.obj.d"
   "CMakeFiles/lab.dir/Class/ClassPerson.cpp.obj"

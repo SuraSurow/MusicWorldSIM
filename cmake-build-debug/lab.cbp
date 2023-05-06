@@ -90,10 +90,22 @@
 		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassAlbum.h">
 			<Option target="lab"/>
 		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassBeat.cpp">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassBeat.h">
+			<Option target="lab"/>
+		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassMusic.cpp">
 			<Option target="lab"/>
 		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassMusic.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassMusicText.cpp">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassMusicText.h">
 			<Option target="lab"/>
 		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/Class/ClassMusician.cpp">

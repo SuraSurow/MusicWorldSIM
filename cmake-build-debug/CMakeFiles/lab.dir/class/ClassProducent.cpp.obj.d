@@ -149,4 +149,5 @@ CMakeFiles/lab.dir/Class/ClassProducent.cpp.obj: \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
  C:\schollLab\MusicWorldSIM\Class\ClassPerson.h \
- C:\schollLab\MusicWorldSIM\Class\ClassMusician.h
+ C:\schollLab\MusicWorldSIM\Class\ClassMusician.h \
+ C:\schollLab\MusicWorldSIM\Class\ClassBeat.h

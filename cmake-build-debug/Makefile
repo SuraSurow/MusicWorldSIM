@@ -152,6 +152,30 @@ Class/ClassAlbum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassAlbum.cpp.s
 .PHONY : Class/ClassAlbum.cpp.s
 
+Class/ClassBeat.obj: Class/ClassBeat.cpp.obj
+.PHONY : Class/ClassBeat.obj
+
+# target to build an object file
+Class/ClassBeat.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassBeat.cpp.obj
+.PHONY : Class/ClassBeat.cpp.obj
+
+Class/ClassBeat.i: Class/ClassBeat.cpp.i
+.PHONY : Class/ClassBeat.i
+
+# target to preprocess a source file
+Class/ClassBeat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassBeat.cpp.i
+.PHONY : Class/ClassBeat.cpp.i
+
+Class/ClassBeat.s: Class/ClassBeat.cpp.s
+.PHONY : Class/ClassBeat.s
+
+# target to generate assembly for a file
+Class/ClassBeat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassBeat.cpp.s
+.PHONY : Class/ClassBeat.cpp.s
+
 Class/ClassMusic.obj: Class/ClassMusic.cpp.obj
 .PHONY : Class/ClassMusic.obj
 
@@ -175,6 +199,30 @@ Class/ClassMusic.s: Class/ClassMusic.cpp.s
 Class/ClassMusic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassMusic.cpp.s
 .PHONY : Class/ClassMusic.cpp.s
+
+Class/ClassMusicText.obj: Class/ClassMusicText.cpp.obj
+.PHONY : Class/ClassMusicText.obj
+
+# target to build an object file
+Class/ClassMusicText.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassMusicText.cpp.obj
+.PHONY : Class/ClassMusicText.cpp.obj
+
+Class/ClassMusicText.i: Class/ClassMusicText.cpp.i
+.PHONY : Class/ClassMusicText.i
+
+# target to preprocess a source file
+Class/ClassMusicText.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassMusicText.cpp.i
+.PHONY : Class/ClassMusicText.cpp.i
+
+Class/ClassMusicText.s: Class/ClassMusicText.cpp.s
+.PHONY : Class/ClassMusicText.s
+
+# target to generate assembly for a file
+Class/ClassMusicText.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Class/ClassMusicText.cpp.s
+.PHONY : Class/ClassMusicText.cpp.s
 
 Class/ClassMusician.obj: Class/ClassMusician.cpp.obj
 .PHONY : Class/ClassMusician.obj
@@ -500,9 +548,15 @@ help:
 	@echo ... Class/ClassAlbum.obj
 	@echo ... Class/ClassAlbum.i
 	@echo ... Class/ClassAlbum.s
+	@echo ... Class/ClassBeat.obj
+	@echo ... Class/ClassBeat.i
+	@echo ... Class/ClassBeat.s
 	@echo ... Class/ClassMusic.obj
 	@echo ... Class/ClassMusic.i
 	@echo ... Class/ClassMusic.s
+	@echo ... Class/ClassMusicText.obj
+	@echo ... Class/ClassMusicText.i
+	@echo ... Class/ClassMusicText.s
 	@echo ... Class/ClassMusician.obj
 	@echo ... Class/ClassMusician.i
 	@echo ... Class/ClassMusician.s

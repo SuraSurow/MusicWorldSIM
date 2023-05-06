@@ -16,7 +16,7 @@ int add ( Musician *& _creator , const size_t * size , const size_t * size_new)
         }
         for (  ; i < *size_new ; i++)
         {
-            //temp[i].name = randName();
+            //temp[i].type = randName();
             init(temp[i]);
         }
         delete[] _creator;
