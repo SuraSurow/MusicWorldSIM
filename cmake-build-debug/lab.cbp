@@ -189,6 +189,12 @@
 		<Unit filename="C:/schollLab/MusicWorldSIM/head/headHeadFile.h">
 			<Option target="lab"/>
 		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/path.cpp">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/path.h">
+			<Option target="lab"/>
+		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

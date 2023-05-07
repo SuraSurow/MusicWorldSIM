@@ -10,6 +10,7 @@ int index(size_t* ptrNum);
 void pressEnter();
 int index(int * ptrNum);
 int index(size_t * ptrNum,size_t maxVal);
+
 //int joinArray(const int arr[], int size, int &result);
 //void joinArray(const size_t arr[], int size, size_t &result);
 

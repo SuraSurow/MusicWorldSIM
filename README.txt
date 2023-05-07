@@ -5,6 +5,37 @@
 
 W folderach masz pochowane odpowiedniego zastosowania pliki:
 
+
+-------------------------------------------------------------
+
+MusicWorldSIM\path.cpp
+MusicWorldSIM\path.h       Sprawdzam tutaj ścieże systemową całej APKI (dlaczego to robie
+                            napisałem niżej  )
+
+                                                 ||   ||   ||
+                                                 ||   ||   ||
+                                                \  / \  / \  /
+                                                 \/   \/   \/
+
+-------------------------------------------------------------
+MusicWorldSIM\cmake-build-debug\dataFile\examplesData
+
+     !!!! Tak wiem że miało być dodatkowych katalogów związanych z danym IDE ale dodałem je tutaj
+  !!!!  zwiazku z posiadanymi plikami path.cpp która sprawdza aktualną ścieżke systową aby można
+     !!!! było odpalać aplikacje niezależnie od polożenia na dysku , sprawdza ona ścieże do folderu cmake-build-debug
+  !!!  ponieważ tam znajduje się plik lab.exe który uruchamia cały program , pozdrawiam :D
+{
+
+albumName.txt
+beat.txt
+distCompany.txt
+expertiseArea.txt
+name.txt
+nameMusic.txt
+nickName.txt
+surname.txt
+typeMusic.txt
+}
 -------------------------------------------------------------
 MusicWorldSIM\base
 {

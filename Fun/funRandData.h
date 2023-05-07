@@ -4,7 +4,7 @@
 #ifndef LAB_FUNRANDDATA_H
 #define LAB_FUNRANDDATA_H
 
-string randName();
+string randStringData(string _path , string fileName);
 string randSurname();
 string randAlbumName();
 string randTypeMusic();

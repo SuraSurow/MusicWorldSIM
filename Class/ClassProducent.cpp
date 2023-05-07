@@ -2,6 +2,8 @@
 // Created by surow on 22/04/2023.
 //
 #include "ClassProducent.h"
+#include "../Fun/funRandData.h"
+#include "../head/headHeadFile.h"
 
 void Producent::set_expertiseArea ( string _str ){ expertiseArea=std::move(_str);}
 void Producent::set_hasGrammyAward ( size_t _num){hasGrammyAward=_num;}
@@ -19,7 +21,7 @@ Musician* Producent::gets_coWorker ( ) const { if(coWorker!=nullptr)return coWor
 
 void Producent::doSomething(){
     cout << "\n Jako ze jestem Producentem to Stworze Objekt 'beat'";
-    Beat beat ("rock",100);
+    Beat beat (randStringData(Beat_txt_path_file,"Beat.txt"), randSize_t(30,200));
     cout << "\t typ bitu: " << beat.gets_type();
     cout << "\n to wartosc BPM( Beat per minute) " << beat.gets_BPM();
     cout << "\n--------------------------";

@@ -4,49 +4,57 @@
 
 #include "../head/headHeadFile.h"
 
-string randName()
+
+
+//             ../dataFile/examplesData/
+
+string randStringData(string _path,string nameFile)
 {
-   const string  randName [12]{
-            {"Wojciech"},
-            {"Andrzej"},
-            {"Antek"},
-            {"Gerwazy"},
-            {"Bonifacy"},
-            {"Wladyslaw"},
-            {"Jabuk"},
-            {"Lech"},
-            {"Dorian"},
-            {"Oskar"},
-            {"Kazimierz"},
-            {"Radoslaw"}
-    };
-    std::default_random_engine randomGenerator(std::chrono::system_clock::now().time_since_epoch().count());
-    std::uniform_int_distribution<size_t> _rand_(0, 11);
-    size_t temp = _rand_(randomGenerator);
-    return randName[temp];
+   ifstream  file(path(_path));
+   cout <<path(_path)<<"\n";
+   if(!file){
+       cerr << "Bład Otwarcia Pliku  ' " <<nameFile<<"'"<<endl;
+       return "";//aby funckja NIC nie zwracała w razie błędu
+   }
+   size_t num = 0;
+   string strrrr;
+   while (getline(file, strrrr)){++num;}
+   file.clear();
+   file.seekg(0);
+   random_device seed;     // ziarno poczatkowe
+   mt19937 engine(seed()); // generator
+   uniform_int_distribution<size_t> uniformDist(0, num);
+   for (size_t i = 0; i < uniformDist(engine); ++i)
+   {
+        std::getline(file, strrrr);
+   }
+   return strrrr;
+
 }
 string randSurname () {
 
-    const string randSurname[12]{
-            {"Surowiecki"},
-            {"Nowak"},
-            {"Kaczor"},
-            {"Bocian"},
-            {"Kowalski"},
-            {"Slusarski"},
-            {"Karaluch"},
-            {"Brzeczyszczykiewicz"},
-            {"Konstantyniewicz"},
-            {"Mickiewicz"},
-            {"Kopernik"},
-            {"Piast"}
-    };
-    std::default_random_engine randomGenerator(std::chrono::system_clock::now().time_since_epoch().count());
-    std::uniform_int_distribution<size_t> _rand_(0, 11);
-    size_t temp = _rand_(randomGenerator);
-    return randSurname[temp];
+    ifstream  file(path("\\dataFile\\examplesData\\surname.txt"));
+    if(!file){
+        cerr << "Bład Otwarcia Pliku  ' " <<"surname.txt"<<"'"<<endl;
+        return "";//aby funckja NIC nie zwracała w razie błędu
+    }
+    size_t num_names = 0;
+    string name;
+    while (getline(file,name)){++num_names;}
+    file.clear();
+    file.seekg(0);
+    random_device seed;     // ziarno poczatkowe
+    mt19937 engine(seed()); // generator
+    uniform_int_distribution<size_t> uniformDist(0, num_names);
+    for (size_t i = 0; i < uniformDist(engine); ++i)
+    {
+        std::getline(file, name);
+    }
+    return name;
 
 }
+
+
 string randAlbumName ()
 {
     string albumName [10]{
@@ -98,10 +106,10 @@ string randNameMusic ()
             {"shirt"},{"grocery"},{"church"},{"appointment"},{"association"},
 
     };
-    std::default_random_engine randomGenerator(std::chrono::system_clock::now().time_since_epoch().count());
-    std::uniform_int_distribution<size_t> _rand_(0, 29);
-    size_t temp = _rand_(randomGenerator);
-    return randNameMusic[temp];
+    random_device seed;     // ziarno poczatkowe
+    mt19937 engine(seed()); // generator
+    uniform_int_distribution<size_t> uniformDist(0, 29);
+    return randNameMusic[uniformDist(engine)];
 
 
 }
@@ -121,7 +129,7 @@ string randExertiseArea()
 }
 
 
-
+/*
 size_t randSize_t(int min, int max)
 {
     std::default_random_engine randomGenerator(std::chrono::system_clock::now().time_since_epoch().count());
@@ -130,8 +138,13 @@ size_t randSize_t(int min, int max)
     temp = _rand_(randomGenerator);
     return temp;
 }
+*/
 
-
-
+size_t randSize_t( int min, int max) {
+    std::random_device seed;     // ziarno poczatkowe
+    std::mt19937 engine(seed()); // generator
+    std::uniform_int_distribution<size_t> uniformDist(min, max);
+    return uniformDist(engine);
+}
 
 

@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/lab.dir/Fun/funSort.cpp.obj.d"
   "CMakeFiles/lab.dir/base/baseMain.cpp.obj"
   "CMakeFiles/lab.dir/base/baseMain.cpp.obj.d"
+  "CMakeFiles/lab.dir/path.cpp.obj"
+  "CMakeFiles/lab.dir/path.cpp.obj.d"
   "lab.exe"
   "lab.exe.manifest"
   "lab.pdb"

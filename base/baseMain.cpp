@@ -44,10 +44,10 @@ int main()
                 init(_album,&size);
                 init(_musicDisc,&size);
                 init (_prod ,&size);
-                cout << "\n\n!!!Oto Ostatni w Clasie Music object , za pomoca prywatnego wskaznika!!!";
+                cout << "\n\n!!!Oto Ostatni w Clasie Music object , za pomoca prywatnego wskaznika!!!\n";
                 Music* lastObj=Music::gets_lastObj();
                 print(lastObj);
-                cout << "\n!!!Oto Ostatni w Clasie Album object , za pomoca prywatnego wskaznika!!!";
+                cout << "\n!!!Oto Ostatni w Clasie Album object , za pomoca prywatnego wskaznika!!!\n";
                 Album* _lastObj=Album::gets_lastObj();
                 print(_lastObj);
                 printProcess("INIT");

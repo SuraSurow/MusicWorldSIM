@@ -536,6 +536,30 @@ base/baseMain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/base/baseMain.cpp.s
 .PHONY : base/baseMain.cpp.s
 
+path.obj: path.cpp.obj
+.PHONY : path.obj
+
+# target to build an object file
+path.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/path.cpp.obj
+.PHONY : path.cpp.obj
+
+path.i: path.cpp.i
+.PHONY : path.i
+
+# target to preprocess a source file
+path.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/path.cpp.i
+.PHONY : path.cpp.i
+
+path.s: path.cpp.s
+.PHONY : path.s
+
+# target to generate assembly for a file
+path.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/path.cpp.s
+.PHONY : path.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -596,6 +620,9 @@ help:
 	@echo ... base/baseMain.obj
 	@echo ... base/baseMain.i
 	@echo ... base/baseMain.s
+	@echo ... path.obj
+	@echo ... path.i
+	@echo ... path.s
 .PHONY : help
 
 
