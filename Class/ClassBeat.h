@@ -16,6 +16,8 @@ private:
 
 public:
 
+    friend ostream& operator<<(ostream& os , Beat beat);
+
     Beat ( string type, size_t BPM )
             : type(std::move(type)),
               BPM(BPM) {}

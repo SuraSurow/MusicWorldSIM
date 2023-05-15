@@ -19,8 +19,13 @@ private:
     string nickName;
     size_t workExp;
 public:
+
+    friend ostream& operator<<(ostream& os ,const Musician& musician);
+
+    friend ostream& operator<<(ofstream& output, Musician& musician);
+
     Musician( const Musician& anotherOne) = default;
-    Musician( string name, string surname , size_t age , size_t year , size_t month , size_t day,
+    Musician( const string& name, string surname , size_t age , size_t year , size_t month , size_t day,
               string distributionCompany, string nickName , size_t workExp)
             : distributionCompany(std::move(distributionCompany)),
               nickName(std::move(nickName)),

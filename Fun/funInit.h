@@ -8,8 +8,8 @@ void init( Musician * _musician , const size_t * size );
 void init( Album ** _albumS , const size_t * size );
 void init ( Music ** _musicDiscES , const size_t * size );
 void init (Producent ** _prod ,const size_t * size);
-void init( Album *&  _prod );
-void init ( Music *&  _musicDiscES );
+void init( Album *&  _album );
+void init ( Music *&  _musicDisc );
 void init( Musician & _musician);
 void init (Producent *& _prod);
 

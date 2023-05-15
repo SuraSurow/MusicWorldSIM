@@ -1,0 +1,100 @@
+Antoni;Wojcik;Velvet Underground and Nico;Punk;2008;20
+;Wojcik;The Sun Sessions;Country;1998;13
+Weronika;Jankowski;Blonde on Blonde;House;2001;21
+Maksymilian;Krawczyk;The Sun Sessions;Classical;2006;17
+Jakub;Wisniewski;The Sun Sessions;Blues;2014;11
+Natalia;Wisniewski;Highway 61 Revisited;Classical;2004;22
+Maksymilian;Kowalski;The Sun Sessions;R&B;1996;27
+Weronika;Adamczyk;Pet Sounds;Hip-hop;1997;19
+Maksymilian;Jankowski;Abbey Road;Hip-hop;2010;15
+Szymon;Wojcik;Innervisions;Hip-hop;2016;20
+Laura;Lewandowski;The Great Twenty-Eight;Jazz;2005;28
+Weronika;Szymanski;Blonde on Blonde;Hip-hop;2018;14
+Amelia;Kowalski;Pet Sounds;Classical;2013;22
+Katarzyna;Lewandowski;London Calling;Blues;2001;17
+Laura;Dabrowski;London Calling;Reggae;1990;29
+Szymon;Kozlowski;Kind of Blue;Electronic;2021;20
+Dawid;Szymanski;Revolver;Folk;2005;8
+Rafal;Pawlowski;Innervisions;Classical;2013;15
+Amelia;Dudek;Born to Run;Electronic;1999;21
+Antoni;Nowak;The Great Twenty-Eight;House;2001;17
+Maksymilian;Kozlowski;Astral Weeks;Blues;2013;12
+Anna;Zajac;Revolver;Jazz;1994;20
+Laura;Szymanski;Blonde on Blonde;Hip-hop;2001;14
+Katarzyna;Wojcik;Blonde on Blonde;House;2017;18
+Laura;Szymanski;Rubber Soul;Classical;2014;19
+Maksymilian;Wisniewski;Astral Weeks;Metal;2013;28
+Katarzyna;Jankowski;Innervisions;Electronic;2013;20
+Mateusz;Wojcik;Pet Sounds;Folk;2008;27
+Maksymilian;Kozlowski;Revolver;Rock;1995;21
+Katarzyna;Pawlowski;London Calling;House;1997;22
+Szymon;Szymanski;Nevermind;Country;2018;17
+Amelia;Dabrowski;Rubber Soul;Country;2022;13
+Anna;Szymanski;Blonde on Blonde;Electronic;2002;8
+Mateusz;Krawczyk;Blonde on Blonde;Electronic;2011;12
+Szymon;Wisniewski;Blonde on Blonde;R&B;1992;14
+Antoni;Wojciechowski;Kind of Blue;R&B;2001;15
+Jakub;Wojciechowski;Kind of Blue;House;1992;19
+Magdalena;Kozlowski;Rubber Soul;Blues;2006;21
+Anna;Lewandowski;Revolver;Classical;2013;13
+Anna;Szymanski;The Sun Sessions;Reggae;2018;10
+Marcelina;Szymanski;Are You Experienced;Jazz;2017;18
+Nikodem;Dabrowski;London Calling;Pop;1999;29
+Jakub;Lewandowski;Blood on the Tracks;Pop;1997;21
+Laura;Jankowski;The Sun Sessions;Rock;2012;22
+;Lewandowski;Pet Sounds;Blues;1996;15
+Franciszek;Kaczmarek;Kind of Blue;Hip-hop;1992;8
+Weronika;Kowalski;Nevermind;Pop;1995;11
+Szymon;Adamczyk;Are You Experienced;Folk;1996;8
+Dawid;Jankowski;Velvet Underground and Nico;Blues;2014;12
+Nikodem;Adamczyk;Are You Experienced;R&B;2010;27
+Natalia;Jankowski;Born to Run;Electronic;2019;20
+Natalia;Wojcik;London Calling;House;2008;13
+Jakub;Kozlowski;London Calling;Jazz;1990;15
+Weronika;Dabrowski;Astral Weeks;Jazz;2018;22
+Weronika;Pawlowski;Born to Run;Blues;1999;15
+Weronika;Piotrowski;Velvet Underground and Nico;Classical;2017;23
+Katarzyna;Nowak;Are You Experienced;Reggae;2000;13
+Katarzyna;Lewandowski;Velvet Underground and Nico;Metal;2011;25
+Rafal;Szymanski;Velvet Underground and Nico;Classical;2008;17
+Laura;Szymanski;London Calling;Jazz;2008;29
+Szymon;Wojcik;The Sun Sessions;Metal;2007;16
+Laura;Dabrowski;Rubber Soul;Electronic;1997;15
+Szymon;Pawlowski;Astral Weeks;Country;2004;28
+Marcelina;Szymanski;Astral Weeks;Jazz;2010;27
+Anna;Dabrowski;Kind of Blue;Jazz;2006;14
+Anna;Wojciechowski;The Great Twenty-Eight;House;1995;22
+Laura;Wojcik;Innervisions;Rock;1991;18
+Weronika;Kozlowski;Rubber Soul;Electronic;2017;30
+Natalia;Dudek;Blonde on Blonde;Pop;2007;21
+Anna;Wisniewski;Highway 61 Revisited;Hip-hop;2019;11
+Jakub;Szymanski;Rubber Soul;Reggae;2011;14
+Antoni;Szymanski;The Sun Sessions;Metal;2011;17
+Mateusz;Krol;London Calling;Blues;2012;23
+Weronika;Adamczyk;Velvet Underground and Nico;R&B;2018;26
+Weronika;Wojcik;Abbey Road;Jazz;1999;21
+Weronika;Dabrowski;Highway 61 Revisited;Country;2008;21
+Antoni;Pawlowski;Kind of Blue;Indie;2012;13
+Szymon;Adamczyk;Blonde on Blonde;Classical;2002;29
+;Adamczyk;Nevermind;Pop;2016;23
+Weronika;Dabrowski;Pet Sounds;Pop;1997;16
+Maksymilian;Adamczyk;Pet Sounds;Electronic;2011;18
+Nikodem;Wisniewski;Velvet Underground and Nico;R&B;2001;23
+Mateusz;Krawczyk;The Sun Sessions;R&B;1990;24
+Anna;Szymanski;Pet Sounds;Electronic;2004;26
+Maksymilian;Czarnecki;Nevermind;Rock;2004;28
+Weronika;Szymanski;Kind of Blue;Pop;2019;15
+Maksymilian;Adamczyk;Blonde on Blonde;Classical;1997;29
+Maksymilian;Dabrowski;Kind of Blue;Jazz;2021;21
+Mateusz;Czarnecki;Blonde on Blonde;Blues;1997;10
+Szymon;Lewandowski;Revolver;R&B;1992;30
+Weronika;Wojcik;Rubber Soul;Electronic;2015;18
+Weronika;Nowak;The Sun Sessions;Pop;2013;12
+Laura;Kozlowski;Blood on the Tracks;Country;2018;22
+Jakub;Kozlowski;Pet Sounds;Blues;2003;21
+;Kowalski;Kind of Blue;Folk;2018;23
+Mateusz;Kozlowski;Rubber Soul;Folk;2003;9
+Bartosz;Szymanski;Thriller;Hip-hop;1991;21
+Antoni;Dabrowski;The Sun Sessions;Jazz;2000;16
+Laura;Kozlowski;Nevermind;Reggae;2019;30
+Laura;Kozlowski;Velvet Underground and Nico;Blues;1991;9

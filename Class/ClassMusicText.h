@@ -11,6 +11,7 @@ private:
     size_t countChar;
 
 public:
+    friend ostream& operator<< (ostream& os , MusicText text);
 
     MusicText ( string name, size_t countChar )
             : name(std::move(name)),

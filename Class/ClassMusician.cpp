@@ -20,3 +20,29 @@ void Musician::doSomething ( ) {
     cout << "\n--------------------------";
 
 }
+
+ostream& operator<<(ofstream& output , Musician& musician){
+    output << musician.gets_name() << ";"
+           << musician.gets_surname()<< ";"
+           <<musician.gets_age()<< ";"
+           <<musician.gets_year()<< ";"
+           <<musician.gets_month()<< ";"
+           <<musician.gets_day()<< ";"
+           <<musician.gets_distCompany()<< ";"
+           <<musician.gets_nickName()<< ";"
+           <<musician.gets_workExp()<<endl;
+    return output;
+}
+
+ostream& operator<<(ostream& os,const Musician& musician) {
+    os << "Name:" << musician.gets_name() << "\tSurname:" << musician.gets_surname() << endl;
+    os << "Age:" << musician.gets_age() << "\tYear:" << musician.gets_year() << " \tMonth:" << musician.gets_month()
+       << " \tDay:" << musician.gets_day() << endl;
+    os << "Distribution Company:\t" << musician.gets_distCompany() << endl;
+    os << "Also Knows Us:\t" << musician.gets_nickName() << endl;
+    os << "Work Experiense:\t" << musician.gets_workExp() << endl;
+    return os;
+}
+
+
+//ostream& operator<<(ofstream& output, Musician& musician)

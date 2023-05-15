@@ -5,39 +5,18 @@
 
 void print ( Musician * _musician , const  size_t *size)
 {
-    for (int i = 0 ; i < *size ; i++)
-    {
-        cout
-                << "\nNo. " << i << "\n"
-                << "Name -> " << _musician[i].gets_name() << "\n"
-                << "Surname -> " << _musician[i].gets_surname() << "\n"
-                << "Age -> " << _musician[i].gets_age() << "\n"
-                << "Year -> " << _musician[i].gets_year() << "\n"
-                << "Month -> " << _musician[i].gets_month() << "\n"
-                << "Day-> " << _musician[i].gets_day() << "\n"
-                << "Distribution Company-> " << _musician[i].gets_distCompany() << "\n"
-                << "NickNake (AKA) " << _musician[i].gets_nickName() << "\n"
-                << "Work Experience " << _musician[i].gets_workExp() << "\n"
-        <<"----------------------------------";
+    for (int i = 0; i < *size; i++) {
+        cout << "\nNo. " << i << "\n";
+        cout << _musician[i] << endl;
     }
 }
 
 void print ( Album ** _album , const size_t * size )
-
-
 {
     for (int i = 0 ; i < *size ; i++)
     {
-        cout
-        <<"\nNo. "<<i<<"\n"
-        <<"Name Creator -> " << _album[i]->gets_nameCre() << "\n"
-        <<"Surname Creator -> " << _album[i]->gets_surnameCre() << "\n"
-        <<"Name Album -> " << _album[i]->gets_nameAl()<< "\n"
-        <<"Type Music -> " << _album[i]->gets_typeAl() << "\n"
-        <<"Year create -> " << _album[i]->gets_yearCre() << "\n"
-        <<"Count of song-> " << _album[i]->gets_countSong() << "\n"
-        <<"----------------------------------";
-
+        cout <<"\nNo. " << i << "\n";
+        cout << *_album[i] << endl;
     }
 
 }
@@ -46,91 +25,38 @@ void print ( Music  ** _musicDisc , const  size_t * size )
 {
     for (int i = 0 ; i < *size ; i++)
     {
-
-        cout
-        <<"\nNo. "<<i<<"\n"
-        <<"Name Musician -> " << _musicDisc[i]->gets_nameCre() << "\n"
-        <<"Surname Musician -> " << _musicDisc[i]->gets_surnameCre() << "\n"
-        <<"Name song -> " << _musicDisc[i]->gets_nameMusic()<< "\n"
-        <<"Type Music -> " << _musicDisc[i]->gets_typeMusic() << "\n"
-        <<"Year create -> " <<  _musicDisc[i]->gets_yearMusic() << "\n"
-        <<"Time (second)-> " <<_musicDisc[i]->gets_secondMusic() << "\n"
-        <<"----------------------------------";
+        cout << "\nNo. " << i << "\n";
+        cout << *_musicDisc[i] << endl;
     }
 
 
 }
 
 void print ( Producent ** _prod , const size_t * size )
-
-
 {
-    for (int i = 0 ; i < *size ; i++)
-    {
-        cout
-                << "\nNo. " << i << "\n"
-                << "Name Producent -> " << _prod[i]->gets_name() << "\n"
-                << "Surname Producent -> " << _prod[i]->gets_surname() << "\n"
-                << "Age -> " << _prod[i]->gets_age() << "\n"
-                << "Year -> " << _prod[i]->gets_year() << "\n"
-                << "Month -> -> " << _prod[i]->gets_month() << "\n"
-                << "Day -> " << _prod[i]->gets_day() << "\n"
-                << "ExpertiseArea ->" << _prod[i]->gets_expertiseArea() << "\n"
-                << "Grammy Award ->" << _prod[i]->gets_FavoriteBPM() << "\n"
-                << "Number of Production ->" << _prod[i]->gets_numOfProductions() << "\n"
-                <<"----------------------------------";
+    for (int i = 0; i < *size; i++) {
+        cout << "\nNo. " << i << "\n";
+        cout << *_prod[i] << endl;
     }
-
 }
 
 
-void print ( Music  * _musicDisc )
+
+void print ( Music  & _musicDisc )
 {
-    cout
-
-                <<"Name Musician -> " << _musicDisc->gets_nameCre() << "\n"
-                <<"Surname Musician -> " << _musicDisc->gets_surnameCre() << "\n"
-                <<"Name Song -> " << _musicDisc->gets_nameMusic()<< "\n"
-                <<"Type Music -> " << _musicDisc->gets_typeMusic() << "\n"
-                <<"Year create -> " <<  _musicDisc->gets_yearMusic() << "\n"
-                <<"Time (second)-> " <<_musicDisc->gets_secondMusic() << "\n"
-                <<"----------------------------------";
-    }
+    cout << _musicDisc << endl;
+}
 
 
-void print ( Album *_album )
+void print ( Album  *& _album )
  {
-        cout
-
-                <<"Name Musician -> " << _album->gets_nameCre() << "\n"
-                <<"Surname Musician -> " << _album->gets_surnameCre() << "\n"
-                <<"Name Album -> " << _album->gets_nameAl()<< "\n"
-                <<"Type Music -> " << _album->gets_typeAl() << "\n"
-                <<"Year create -> " << _album->gets_yearCre() << "\n"
-                <<"Count of song-> " << _album->gets_countSong() << "\n"
-                <<"----------------------------------";
+        cout << _album << endl;
  }
 
- void print (Producent *_prod)
+ void print (Producent & _prod)
      {
-         cout
-
-                 << "Name Producent -> " << _prod->gets_name() << "\n"
-                 << "Surname Producent -> " << _prod->gets_surname() << "\n"
-                 << "Age -> " << _prod->gets_age() << "\n"
-                 << "Year -> " << _prod->gets_year() << "\n"
-                 << "Month -> -> " << _prod->gets_month() << "\n"
-                 << "Day -> " << _prod->gets_day() << "\n"
-                 << "ExpertiseArea ->" << _prod->gets_expertiseArea() << "\n"
-                 << "Grammy Awards ->" << _prod->gets_hasGrammyAward() << "\n"
-                 << "Favorite BMP (Beat Per Minute) ->" << _prod->gets_FavoriteBPM() << "\n"
-                 << "Number of Production ->" << _prod->gets_numOfProductions() << "\n"
-                 <<"----------------------------------";
+         cout << _prod << endl;
      }
-
-
-
-
 
 void start ()
 {

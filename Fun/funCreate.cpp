@@ -28,12 +28,12 @@ void create ( Music **& _musicDiscES , const size_t *size )
         _musicDiscES [ x ] = new Music ;
     }
 }
-void create ( Producent **& _producent , const size_t *size )
+void create ( Producent **& pProducent , const size_t *size )
 {
-    _producent = new Producent *  [ *size ] ;
+    pProducent = new Producent *  [ *size ] ;
     for ( size_t x = 0 ; x < *size ; x++ )
     {
-        _producent [ x ] = new Producent ;
+        pProducent [ x ] = new Producent ;
     }
 }
 

@@ -8,23 +8,12 @@
 //standard library
 
 
+#include "headLib.h"
 
 
-#include <iostream>
-#include <string>
-#include <cstdlib>
-#include <locale>
-#include <ctime>
-#include <random>
-#include <type_traits>
-#include <chrono>
-#include <algorithm>
-#include <sstream>
-#include <fstream>
-#include <filesystem>
 
 const std::string name_txt_path_file = R"(\dataFile\examplesData\name.txt)";
-const std::string Beat_txt_path_file = R"(\dataFile\examplesData\Beat.txt)";
+const std::string beat_txt_path_file = R"(\dataFile\examplesData\beat.txt)";
 const std::string distCompany_txt_path_file = R"(\dataFile\examplesData\distCompany.txt)";
 const std::string expertiseArea_txt_path_file = R"(\dataFile\examplesData\expertiseArea.txt)";
 const std::string nameMusic_txt_path_file = R"(\dataFile\examplesData\nameMusic.txt)";
@@ -33,8 +22,11 @@ const std::string surname_txt_path_file = R"(\dataFile\examplesData\surname.txt)
 const std::string typeMusic_txt_path_file = R"(\dataFile\examplesData\typeMusic.txt)";
 const std::string albumName_txt_path_file = R"(\dataFile\examplesData\albumName.txt)";
 
+const std::string obj_Producent_path_file = R"(\dataFile\objData\objProducent.txt)";
+const std::string obj_Musician_path_file = R"(\dataFile\objData\objMusician.txt)";
+const std::string obj_Album_path_file = R"(\dataFile\objData\objAlbum.txt)";
+const std::string obj_Music_path_file = R"(\dataFile\objData\objMusic.txt)";
 
-//own header
 
 #include "../Fun/funCreate.h"
 
@@ -53,6 +45,8 @@ const std::string albumName_txt_path_file = R"(\dataFile\examplesData\albumName.
 #include "../Fun/funEdit.h"
 
 #include "../Fun/funSort.h"
+
+#include "../Fun/funSave.h"
 
 #include "../path.h"
 

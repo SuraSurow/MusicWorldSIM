@@ -8,6 +8,7 @@
 
 using namespace std;
 #include <iostream>
+#include <ostream>
 #include <string>
 #include "ClassPerson.h"
 #include "ClassMusician.h"
@@ -18,8 +19,14 @@ private:
     size_t hasGrammyAward;
     size_t FavoriteBPM;
     size_t numOfProductions;
-    Musician * coWorker;
+    Musician * coWorker{};
 public:
+
+
+    friend ostream& operator<<(ostream& os , const Producent& prod);
+
+    friend ostream& operator<<(ofstream& output, Producent& prod);
+
     Producent( const Producent& anotherOne) = default;
     Producent( string name, string surname , size_t age , size_t year , size_t month , size_t day , string expertiseArea,
                size_t hasGrammyAward , size_t FavoriteBPM ,size_t numOfProduction)
@@ -43,12 +50,10 @@ public:
         set_hasGrammyAward(0);
         set_FavoriteBPM(0);
         set_numOfProductions(0);
-        Musician * coWorker = nullptr;
+        coWorker = new Musician;
     }
 
     void doSomething ()override;
-
-
     //  declatarion
     void set_expertiseArea ( string _str );
     void set_hasGrammyAward ( size_t _boolean);
@@ -63,5 +68,10 @@ public:
     Musician* gets_coWorker () const;
     //--------------------------------
 };
+
+
+
+
+
 
 #endif //LAB_CLASSPRODUCENT_H

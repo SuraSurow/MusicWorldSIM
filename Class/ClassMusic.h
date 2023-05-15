@@ -5,8 +5,7 @@
 #ifndef LAB_CLASSMUSIC_H
 #define LAB_CLASSMUSIC_H
 using namespace std;
-#include <iostream>
-#include <string>
+#include "../head/headLib.h"
 
 
 class Music {
@@ -20,6 +19,12 @@ private:
     static Music* lastMusic;
 //( const string & type , const string & surname , const string & nameMusic , const string & typeMusic , size_t secondMusic , size_t yearMusic ):
 public:
+    friend ostream& operator<<(ofstream& output, Music& music);
+
+    friend ostream& operator<<(ostream& os ,const Music& music);
+
+
+
     Music ( string  nameCre , string  surnameCre , string  nameMusic , string  typeMusic , size_t secondMusic , size_t yearMusic ):
             nameCre(std::move(nameCre)),
             surnameCre(std::move(surnameCre)),
@@ -41,7 +46,6 @@ public:
         lastMusic = this;
     }
     ~Music(){
-        delete lastMusic;
         lastMusic = nullptr;
     }
 
@@ -54,12 +58,12 @@ public:
     void set_secondMusic ( size_t _num ) ;
 
     //----------gets---------------
-    string gets_nameCre ();
-    string gets_surnameCre ();
-    string gets_nameMusic () ;
-    string gets_typeMusic () ;
-    [[nodiscard]] size_t gets_yearMusic () const ;
-    [[nodiscard]] size_t gets_secondMusic () const ;
+    string gets_nameCre ()const;
+    string gets_surnameCre ()const;
+    string gets_nameMusic () const;
+    string gets_typeMusic  () const ;
+    size_t gets_yearMusic () const ;
+    size_t gets_secondMusic () const ;
     static Music * gets_lastObj() ;
 
 };

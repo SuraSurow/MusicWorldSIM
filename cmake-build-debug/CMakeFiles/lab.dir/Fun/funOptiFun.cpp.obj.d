@@ -1,6 +1,7 @@
 CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj: \
  C:\schollLab\MusicWorldSIM\Fun\funOptiFun.cpp \
  C:/schollLab/MusicWorldSIM/head/headHeadFile.h \
+ C:/schollLab/MusicWorldSIM/head/headLib.h \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -234,6 +235,7 @@ CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj: \
  C:/schollLab/MusicWorldSIM/Fun/funCreate.h \
  C:/schollLab/MusicWorldSIM/base/baseStruct.h \
  C:/schollLab/MusicWorldSIM/Class/ClassMusic.h \
+ C:/schollLab/MusicWorldSIM/head/headLib.h \
  C:/schollLab/MusicWorldSIM/Class/ClassAlbum.h \
  C:/schollLab/MusicWorldSIM/Class/ClassMusician.h \
  C:/schollLab/MusicWorldSIM/Class/ClassPerson.h \
@@ -252,4 +254,5 @@ CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj: \
  C:/schollLab/MusicWorldSIM/Fun/funEdit.h \
  C:/schollLab/MusicWorldSIM/Fun/funSort.h \
  C:/schollLab/MusicWorldSIM/head/headHeadFile.h \
+ C:/schollLab/MusicWorldSIM/Fun/funSave.h \
  C:/schollLab/MusicWorldSIM/path.h

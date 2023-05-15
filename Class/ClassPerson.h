@@ -20,6 +20,7 @@ public:
 
     virtual void doSomething() = 0;
 
+
     Person( string  name , string  surname, size_t  age , size_t  year, size_t  month , size_t  day)
             : name(std::move(name)) ,
               surname(std::move(surname)),
@@ -47,12 +48,12 @@ public:
     void set_month ( size_t _num ) ;
     void set_day ( size_t _num ) ;
 
-    string gets_name () ;
-    string gets_surname () ;
-    [[nodiscard]] size_t gets_age () const ;
-    [[nodiscard]] size_t gets_year () const ;
-    [[nodiscard]] size_t gets_month () const ;
-    [[nodiscard]] size_t gets_day () const ;
+    const string gets_name () const ;
+    const string  gets_surname () const ;
+    const  size_t gets_age () const ;
+    const  size_t gets_year () const ;
+    const  size_t gets_month () const ;
+    const  size_t gets_day () const ;
 
 };
 #endif //LAB_CLASSPERSON_H

@@ -488,6 +488,30 @@ Fun/funRandData.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funRandData.cpp.s
 .PHONY : Fun/funRandData.cpp.s
 
+Fun/funSave.obj: Fun/funSave.cpp.obj
+.PHONY : Fun/funSave.obj
+
+# target to build an object file
+Fun/funSave.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funSave.cpp.obj
+.PHONY : Fun/funSave.cpp.obj
+
+Fun/funSave.i: Fun/funSave.cpp.i
+.PHONY : Fun/funSave.i
+
+# target to preprocess a source file
+Fun/funSave.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funSave.cpp.i
+.PHONY : Fun/funSave.cpp.i
+
+Fun/funSave.s: Fun/funSave.cpp.s
+.PHONY : Fun/funSave.s
+
+# target to generate assembly for a file
+Fun/funSave.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funSave.cpp.s
+.PHONY : Fun/funSave.cpp.s
+
 Fun/funSort.obj: Fun/funSort.cpp.obj
 .PHONY : Fun/funSort.obj
 
@@ -614,6 +638,9 @@ help:
 	@echo ... Fun/funRandData.obj
 	@echo ... Fun/funRandData.i
 	@echo ... Fun/funRandData.s
+	@echo ... Fun/funSave.obj
+	@echo ... Fun/funSave.i
+	@echo ... Fun/funSave.s
 	@echo ... Fun/funSort.obj
 	@echo ... Fun/funSort.i
 	@echo ... Fun/funSort.s

@@ -6,17 +6,17 @@
 
 void init( Musician * _musician , const size_t * pSize)
 {
-    for( int i = 0 ; i < (*pSize) ; i++)
-    {
-        _musician[i].set_name(randStringData(name_txt_path_file,"name.txt"));
-        _musician[i].set_surname(randStringData(surname_txt_path_file,"surname.txt"));
+    for( int i = 0 ; i < (*pSize) ; i++) {
+        _musician[i].set_name(randStringData(name_txt_path_file, "name.txt"));
+        _musician[i].set_surname(randStringData(surname_txt_path_file, "surname.txt"));
         _musician[i].set_age(randSize_t(20, 60));
         _musician[i].set_year(randSize_t(1980, 2022));
         _musician[i].set_month(randSize_t(1, 12));
         _musician[i].set_day(randSize_t(1, 28));
-        _musician[i].set_distCompany(randStringData(distCompany_txt_path_file,"distCompany.txt"));
-        _musician[i].set_nickName(randStringData(nickName_txt_path_file,"nickName.txt"));
-        _musician[i].set_workExp(randSize_t(1,20));
+        _musician[i].set_distCompany(randStringData(distCompany_txt_path_file, "distCompany.txt"));
+        _musician[i].set_nickName(randStringData(nickName_txt_path_file, "nickName.txt"));
+        _musician[i].set_workExp(randSize_t(1, 20));
+
     }
 
 }
@@ -41,24 +41,24 @@ void init (Producent ** _prod , const size_t * pSize)
     }
 }
 
-void init ( Music *& _musicDiscES)
+void init ( Music *& _musicDisc)
 {
-    _musicDiscES->set_nameCre(randStringData(name_txt_path_file,"name.txt"));
-    _musicDiscES -> set_surnameCre(randStringData(surname_txt_path_file,"surname.txt"));
-    _musicDiscES -> set_nameMusic(randStringData(nameMusic_txt_path_file,"nameMusic.txt"));
-    _musicDiscES -> set_typeMusic(randStringData(typeMusic_txt_path_file,"typeMusic.txt"));
-    _musicDiscES -> set_secondMusic(randSize_t(1,600));
-    _musicDiscES -> set_yearMusic(randSize_t(1980,2022));
+    _musicDisc->set_nameCre(randStringData(name_txt_path_file, "name.txt"));
+    _musicDisc -> set_surnameCre(randStringData(surname_txt_path_file, "surname.txt"));
+    _musicDisc -> set_nameMusic(randStringData(nameMusic_txt_path_file, "nameMusic.txt"));
+    _musicDisc -> set_typeMusic(randStringData(typeMusic_txt_path_file, "typeMusic.txt"));
+    _musicDisc -> set_secondMusic(randSize_t(1, 600));
+    _musicDisc -> set_yearMusic(randSize_t(1980, 2022));
 }
 
-void init ( Album *& _albumS)
+void init ( Album *& _album)
 {
-    _albumS -> set_nameAl(randStringData(albumName_txt_path_file,"albumName.txt"));
-    _albumS -> set_nameCre(randStringData(name_txt_path_file,"name.txt"));
-    _albumS -> set_surnameCre(randStringData(surname_txt_path_file,"surname.txt"));
-    _albumS -> set_typeAl(randStringData(typeMusic_txt_path_file,"typeMusic.txt"));
-    _albumS -> set_yearCre(randSize_t(1990,2022));
-    _albumS -> set_countSong(randSize_t(8,30));
+    _album -> set_nameAl(randStringData(albumName_txt_path_file, "albumName.txt"));
+    _album -> set_nameCre(randStringData(name_txt_path_file, "name.txt"));
+    _album -> set_surnameCre(randStringData(surname_txt_path_file, "surname.txt"));
+    _album -> set_typeAl(randStringData(typeMusic_txt_path_file, "typeMusic.txt"));
+    _album -> set_yearCre(randSize_t(1990, 2022));
+    _album -> set_countSong(randSize_t(8, 30));
 }
 void init ( Musician & _musician)
 {
@@ -84,5 +84,5 @@ void init ( Producent *& _prod)
     _prod -> set_hasGrammyAward(randSize_t(0,4));
     _prod -> set_FavoriteBPM(randSize_t(30,180));
     _prod -> set_numOfProductions(randSize_t(10,100));
-
+    init(*_prod->gets_coWorker());
 }
