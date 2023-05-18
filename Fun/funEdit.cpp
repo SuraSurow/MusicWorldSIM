@@ -167,7 +167,7 @@ void editPressing ( Album ** _album, const size_t &choiceObj)
                 stream >> bufNum;
                 switch(countDetail) {
                     case 5: {_album[choiceObj]->set_yearCre(bufNum);break;}
-                    case 6: {_album[choiceObj]->set_countSong(bufNum);break;}
+
                     default : {cout <<std::endl<<"ERROR";break;}
                 }
             }

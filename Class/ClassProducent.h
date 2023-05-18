@@ -20,12 +20,15 @@ private:
     size_t FavoriteBPM;
     size_t numOfProductions;
     Musician * coWorker{};
+    static bool visible;
 public:
 
 
     friend ostream& operator<<(ostream& os , const Producent& prod);
 
     friend ostream& operator<<(ofstream& output, Producent& prod);
+
+    friend ifstream& operator>>(ifstream& input, Producent& prod);
 
     Producent( const Producent& anotherOne) = default;
     Producent( string name, string surname , size_t age , size_t year , size_t month , size_t day , string expertiseArea,
@@ -60,12 +63,15 @@ public:
     void set_FavoriteBPM ( size_t _num);
     void set_numOfProductions ( size_t _num);
     void set_coWorker ( Musician & obj);
+    void set_coWorker (Musician * obj);
     //--------------------------------
     string gets_expertiseArea () const ;
     size_t gets_hasGrammyAward() const ;
     size_t gets_FavoriteBPM() const ;
     size_t gets_numOfProductions() const ;
     Musician* gets_coWorker () const;
+
+    void set_visible(bool);
     //--------------------------------
 };
 

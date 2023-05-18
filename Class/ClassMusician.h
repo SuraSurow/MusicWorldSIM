@@ -11,6 +11,7 @@ using namespace std;
 #include <string>
 #include "ClassPerson.h"
 #include "ClassBeat.h"
+#include "../head/headLib.h"
 
 
 class Musician : public Person{
@@ -18,11 +19,14 @@ private:
     string distributionCompany;
     string nickName;
     size_t workExp;
+    static bool visible;
 public:
 
     friend ostream& operator<<(ostream& os ,const Musician& musician);
 
     friend ostream& operator<<(ofstream& output, Musician& musician);
+
+    friend istream& operator>>(ifstream& input, Musician& musician);
 
     Musician( const Musician& anotherOne) = default;
     Musician( const string& name, string surname , size_t age , size_t year , size_t month , size_t day,
@@ -56,6 +60,8 @@ public:
     string gets_distCompany( ) const;
     string gets_nickName ( )const;
     size_t gets_workExp ( )const;
+
+    void set_visible(bool);
     //--------------------------------
 };
 

@@ -14,5 +14,12 @@ void create( Person **& pPerson, const size_t *size);
 void create ( Producent *& _producent );
 void create ( Musician *& _musician );
 
+void create ( Musician *& _creator );
+void create ( Album *& _album );
+void create ( Music *& _musicDisc );
+void create ( Album *& _albumS , const size_t size );
+void create ( Music *& _musicDiscES , const size_t size );
+void create ( Musician **& _creatorS , const size_t size );
+
 
 #endif //LAB_FUNCREATE_H

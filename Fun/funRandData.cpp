@@ -10,7 +10,6 @@
 
 string randStringData(string _path,string nameFile) {
     ifstream file(path(_path));
-    cout << path(_path) << "\n";
     if ( !file ) {
         cerr << "Bład Otwarcia Pliku  ' " << nameFile << "'" << endl;
         return "";//aby funckja NIC nie zwracała w razie błędu

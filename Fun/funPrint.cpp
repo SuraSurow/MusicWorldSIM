@@ -50,7 +50,7 @@ void print ( Music  & _musicDisc )
 
 void print ( Album  *& _album )
  {
-        cout << _album << endl;
+        cout << *_album << endl;
  }
 
  void print (Producent & _prod)
@@ -91,6 +91,8 @@ void menu_show_content()
             << "\n\t6. Sortowac ( sort )"
             << "\n\t7. Edytowac ( edit )"
             << "\n\t8. Tworzyc ( edit ) (!! Tutaj Pokazlem Polimorfizm !!!) "
+            << "\n\t9. Zapisać do Pliku ( Save to file ) "
+            << "\n\t10. Wczytać dane z Pliku ( load from file to obj ) "
             ;
 }
 
@@ -144,8 +146,7 @@ void printClass( Album ** _album)
             <<"\n2.Surname Musician"
             <<"\n3.Name Album"
             <<"\n4.Type of Album"
-            <<"\n5.Year of Album"
-            <<"\n6.Count of Song";
+            <<"\n5.Year of Album";
 
 }
 void printClass( Music ** _musicDisc)
@@ -204,7 +205,7 @@ void printHowEdit(){
     cout << "\nIf you wanna change data in object you have to listen simple principle";
     cout << "\nThis is example, you have object Person";
     cout << "\nList of data: 1._name , 2.age";
-    cout << "\nfor a change rules you must write for examples ";
+    cout << "\nfor obj_Musician_path_file change rules you must write for examples ";
     cout << "\n\n\t <_name><X><age>";
     cout << "\n\n\t X is what ever you want (space , semicolon , multiplication , nevermind but NOT number and char alphabet!!!)";
     cout << "\n\nSecond , this is object's list";

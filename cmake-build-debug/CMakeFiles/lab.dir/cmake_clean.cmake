@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/lab.dir/Fun/funEdit.cpp.obj.d"
   "CMakeFiles/lab.dir/Fun/funInit.cpp.obj"
   "CMakeFiles/lab.dir/Fun/funInit.cpp.obj.d"
+  "CMakeFiles/lab.dir/Fun/funLoad.cpp.obj"
+  "CMakeFiles/lab.dir/Fun/funLoad.cpp.obj.d"
   "CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj"
   "CMakeFiles/lab.dir/Fun/funOptiFun.cpp.obj.d"
   "CMakeFiles/lab.dir/Fun/funPrint.cpp.obj"

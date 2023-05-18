@@ -48,6 +48,8 @@ const std::string obj_Music_path_file = R"(\dataFile\objData\objMusic.txt)";
 
 #include "../Fun/funSave.h"
 
+#include "../Fun/funLoad.h"
+
 #include "../path.h"
 
 

@@ -51,14 +51,14 @@ void init ( Music *& _musicDisc)
     _musicDisc -> set_yearMusic(randSize_t(1980, 2022));
 }
 
-void init ( Album *& _album)
+void init(Album*& _album)
 {
-    _album -> set_nameAl(randStringData(albumName_txt_path_file, "albumName.txt"));
-    _album -> set_nameCre(randStringData(name_txt_path_file, "name.txt"));
-    _album -> set_surnameCre(randStringData(surname_txt_path_file, "surname.txt"));
-    _album -> set_typeAl(randStringData(typeMusic_txt_path_file, "typeMusic.txt"));
-    _album -> set_yearCre(randSize_t(1990, 2022));
-    _album -> set_countSong(randSize_t(8, 30));
+    _album->set_nameAl(randStringData(albumName_txt_path_file, "albumName.txt"));
+    _album->set_nameCre(randStringData(name_txt_path_file, "name.txt"));
+    _album->set_surnameCre(randStringData(surname_txt_path_file, "surname.txt"));
+    _album->set_typeAl(randStringData(typeMusic_txt_path_file, "typeMusic.txt"));
+    _album->set_yearCre(randSize_t(1990, 2022));
+
 }
 void init ( Musician & _musician)
 {

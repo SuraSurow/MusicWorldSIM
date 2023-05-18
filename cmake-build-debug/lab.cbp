@@ -156,6 +156,12 @@
 		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funInit.h">
 			<Option target="lab"/>
 		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funLoad.cpp">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funLoad.h">
+			<Option target="lab"/>
+		</Unit>
 		<Unit filename="C:/schollLab/MusicWorldSIM/Fun/funOptiFun.cpp">
 			<Option target="lab"/>
 		</Unit>

@@ -416,6 +416,30 @@ Fun/funInit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funInit.cpp.s
 .PHONY : Fun/funInit.cpp.s
 
+Fun/funLoad.obj: Fun/funLoad.cpp.obj
+.PHONY : Fun/funLoad.obj
+
+# target to build an object file
+Fun/funLoad.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funLoad.cpp.obj
+.PHONY : Fun/funLoad.cpp.obj
+
+Fun/funLoad.i: Fun/funLoad.cpp.i
+.PHONY : Fun/funLoad.i
+
+# target to preprocess a source file
+Fun/funLoad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funLoad.cpp.i
+.PHONY : Fun/funLoad.cpp.i
+
+Fun/funLoad.s: Fun/funLoad.cpp.s
+.PHONY : Fun/funLoad.s
+
+# target to generate assembly for a file
+Fun/funLoad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/Fun/funLoad.cpp.s
+.PHONY : Fun/funLoad.cpp.s
+
 Fun/funOptiFun.obj: Fun/funOptiFun.cpp.obj
 .PHONY : Fun/funOptiFun.obj
 
@@ -629,6 +653,9 @@ help:
 	@echo ... Fun/funInit.obj
 	@echo ... Fun/funInit.i
 	@echo ... Fun/funInit.s
+	@echo ... Fun/funLoad.obj
+	@echo ... Fun/funLoad.i
+	@echo ... Fun/funLoad.s
 	@echo ... Fun/funOptiFun.obj
 	@echo ... Fun/funOptiFun.i
 	@echo ... Fun/funOptiFun.s

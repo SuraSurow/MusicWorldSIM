@@ -1,4 +1,6 @@
 #include "ClassMusic.h"
+#include "../head/headLib.h"
+
 
 void Music::set_nameCre ( string _str ) { nameCre = std::move(_str);}
 void Music::set_surnameCre ( string _str ) { surnameCre = std::move(_str);}
@@ -39,6 +41,31 @@ ostream& operator<<(ostream& os,const  Music& music) {
     return os;
 }
 
+istream& operator>>(ifstream& input, Music& music) {
+    string line;
+    getline(input, line);
+    stringstream ss(line);
+    string nameCre , surnameCre , nameMusic , typeMusic;
+    size_t secondMusic , yearMusic;
+    // Odczytaj poszczególne części linii i przypisz do odpowiednich zmiennych
+    getline(ss,nameCre,';');
+    getline(ss,surnameCre,';');
+    getline(ss,nameMusic,';');
+    getline(ss,typeMusic,';');
+    ss >> secondMusic ;ss.ignore();
+    ss >> yearMusic;
+    music.set_nameCre(nameCre);
+    music.set_surnameCre(surnameCre);
+    music.set_nameMusic(nameMusic);
+    music.set_typeMusic(typeMusic);
+    music.set_secondMusic(secondMusic);
+    music.set_yearMusic(yearMusic);
+    return input;
+}
+
+void Music::set_visible ( bool ) {
+
+}
 
 
 

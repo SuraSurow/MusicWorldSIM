@@ -62,6 +62,27 @@ void get_size( size_t *size)
 }
 
 
+size_t countLineFILE( const std::string& filename) {
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        std::cout << "Nie można otworzyć pliku " << filename << std::endl;
+        return 0;
+    }
+
+    int lineCount = 0;
+    std::string line;
+    while (std::getline(file, line)) {
+        lineCount++;
+    }
+
+    file.clear();
+    file.seekg(0, std::ios::beg);
+    file.close();
+
+    return lineCount;
+}
+
+
 
 /*
  void print_size (size_t *size)

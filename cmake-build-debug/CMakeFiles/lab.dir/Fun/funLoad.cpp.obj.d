@@ -1,5 +1,5 @@
-CMakeFiles/lab.dir/Fun/funSort.cpp.obj: \
- C:\schollLab\MusicWorldSIM\Fun\funSort.cpp \
+CMakeFiles/lab.dir/Fun/funLoad.cpp.obj: \
+ C:\schollLab\MusicWorldSIM\Fun\funLoad.cpp \
  C:/schollLab/MusicWorldSIM/head/headHeadFile.h \
  C:/schollLab/MusicWorldSIM/head/headLib.h \
  C:/Users/surow/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \

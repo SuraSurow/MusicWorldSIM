@@ -80,11 +80,8 @@ void create ( Person **& pPerson , const size_t *size )
 
 
 //tworzenie pojedynczych objektow
-/*
-void create ( Musician *& _creator )
-{
-    _creator = new Musician ;
-}
+
+
 
 void create ( Album *& _album )
 {
@@ -115,4 +112,4 @@ void create ( Musician **& _creatorS , const size_t size )
         _creatorS [ x ] = new Musician ;
     }
 }
- */
+

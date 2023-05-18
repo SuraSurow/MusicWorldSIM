@@ -7,10 +7,11 @@
 using namespace std;
 #include <iostream>
 #include <string>
+#include "../head/headLib.h"
 
 class Person{
 private:
-    string name ;
+    basic_string<char> name ;
     string surname;
     size_t age{} ;
     size_t year{} ;
@@ -18,7 +19,10 @@ private:
     size_t day{} ;
 public:
 
+
+
     virtual void doSomething() = 0;
+
 
 
     Person( string  name , string  surname, size_t  age , size_t  year, size_t  month , size_t  day)
@@ -56,4 +60,6 @@ public:
     const  size_t gets_day () const ;
 
 };
+
+
 #endif //LAB_CLASSPERSON_H

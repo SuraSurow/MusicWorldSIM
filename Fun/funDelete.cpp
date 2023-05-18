@@ -4,11 +4,11 @@
 
 #include "../head/headHeadFile.h"
 //                                     20              10
-int del ( Musician *& _musician , const size_t *size , const size_t *size_new ) {
-    if ( *size_new <= *size ) {
-        auto *temp = new Musician[*size_new];
+int del ( Musician *& _musician , const size_t &size , const size_t &size_new ) {
+    if ( size_new <= size ) {
+        auto *temp = new Musician[size_new];
         int i;
-        for ( i = 0 ; i < *size_new ; i++ ) {
+        for ( i = 0 ; i < size_new ; i++ ) {
             temp[ i ].set_age(_musician[ i ].gets_age());
             temp[ i ].set_year(_musician[ i ].gets_year());
             temp[ i ].set_day(_musician[ i ].gets_day());
@@ -21,39 +21,36 @@ int del ( Musician *& _musician , const size_t *size , const size_t *size_new ) 
 
         }
         delete[] _musician;
-        _musician = nullptr;
         _musician = temp;
         return 0;
     }
     return EXIT_FAILURE;
 }
 
-int del( Album **& _album, const size_t * size , const size_t * size_new) {
-    if(*size_new<=*size) {
-        auto **temp = new Album *[*size_new];
+int del( Album **& _album, const size_t & size , const size_t & size_new) {
+    if(size_new<=size) {
+        auto **temp = new Album *[size_new];
         int i = 0;
-        for ( ; i < *size_new ; i++ ) {
+        for ( ; i < size_new ; i++ ) {
             temp[ i ] = new Album;
             temp[ i ]->set_surnameCre(_album[ i ]->gets_surnameCre());
             temp[ i ]->set_nameCre( _album[ i ]->gets_nameCre());
             temp[ i ]->set_yearCre(_album[ i ]->gets_yearCre());
             temp[ i ]->set_typeAl(_album[ i ]->gets_typeAl());
-            temp[ i ]->set_countSong(_album[ i ]->gets_countSong());
             temp[ i ]->set_nameAl(_album[ i ]->gets_nameAl());
         }
         delete[] _album;
-        _album = nullptr;
         _album = temp;
         return EXIT_SUCCESS;
     }
     return EXIT_FAILURE;
 }
 
-int del( Music **& _musicDisc, const size_t * size , const size_t * size_new) {
-    if(*size_new<=*size) {
-        auto **temp = new Music *[*size_new];
+int del( Music **& _musicDisc, const size_t & size , const size_t & size_new) {
+    if(size_new<=size) {
+        auto **temp = new Music *[size_new];
         int i = 0;
-        for ( ; i < *size_new ; i++ ) {
+        for ( ; i < size_new ; i++ ) {
             temp[ i ] = new Music;
             temp[ i ]->set_surnameCre(_musicDisc[ i ]->gets_surnameCre());
             temp[ i ]->set_nameCre(_musicDisc[ i ]->gets_nameCre());
@@ -63,18 +60,17 @@ int del( Music **& _musicDisc, const size_t * size , const size_t * size_new) {
             temp[ i ]->set_yearMusic( _musicDisc[ i ]->gets_yearMusic());
         }
         delete[] _musicDisc;
-        _musicDisc = nullptr;
         _musicDisc = temp;
         return EXIT_SUCCESS;
     }
     return EXIT_FAILURE;
 }
 
-int del( Producent **& _prod, const size_t * size , const size_t * size_new) {
-    if(*size_new<=*size) {
-        auto **temp = new Producent *[*size_new];
+int del( Producent **& _prod, const size_t & size , const size_t & size_new) {
+    if(size_new<=size) {
+        auto **temp = new Producent *[size_new];
         int i = 0;
-        for ( ; i < *size_new ; i++ ) {
+        for ( ; i < size_new ; i++ ) {
             temp[ i ] = new Producent;
             temp[ i ]->set_name(_prod[ i ]->gets_name());
             temp[ i ]->set_surname(_prod[ i ]->gets_surname());
@@ -89,7 +85,6 @@ int del( Producent **& _prod, const size_t * size , const size_t * size_new) {
 
         }
         delete[] _prod;
-        _prod = nullptr;
         _prod = temp;
         return EXIT_SUCCESS;
     }

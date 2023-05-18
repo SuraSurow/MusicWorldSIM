@@ -17,13 +17,18 @@ private:
     size_t  secondMusic{} ;
     size_t yearMusic{} ;
     static Music* lastMusic;
+    static bool visible;
 //( const string & type , const string & surname , const string & nameMusic , const string & typeMusic , size_t secondMusic , size_t yearMusic ):
 public:
     friend ostream& operator<<(ofstream& output, Music& music);
 
     friend ostream& operator<<(ostream& os ,const Music& music);
 
+    friend istream& operator>>(ifstream& input, Music& music);
 
+
+
+    Music(const string& _songName) : nameMusic(_songName) {}
 
     Music ( string  nameCre , string  surnameCre , string  nameMusic , string  typeMusic , size_t secondMusic , size_t yearMusic ):
             nameCre(std::move(nameCre)),
@@ -65,6 +70,8 @@ public:
     size_t gets_yearMusic () const ;
     size_t gets_secondMusic () const ;
     static Music * gets_lastObj() ;
+
+    void set_visible(bool);
 
 };
 

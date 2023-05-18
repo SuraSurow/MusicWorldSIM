@@ -45,7 +45,7 @@ int main()
                 Music lastObj = *Music::gets_lastObj();
                 print(lastObj);
                 cout << "\n!!!Oto Ostatni w Clasie Album object , za pomoca prywatnego wskaznika!!!\n";
-                Album * _lastObj = Album::gets_lastObj();
+                Album  *_lastObj = Album::gets_lastObj();
                 print( _lastObj);
                 printProcess("INIT");
                 break;
@@ -67,10 +67,10 @@ int main()
                 size_t size_new=0;
                 get_size(&size_new);
                 size_t size_temp = size;
-                add (_musician , &size_temp, &size_new );
-                add( _album ,&size_temp ,&size_new);
-                add(_music, &size_temp, &size_new);
-                add (_prod,&size_temp,&size_new);
+                add (_musician , size_temp, size_new );
+                add( _album ,size_temp ,size_new);
+                add(_music, size_temp, size_new);
+                add (_prod,size_temp,size_new);
                 size = size_new;
                 printProcess("ADD");
                 break;
@@ -78,10 +78,10 @@ int main()
             case DELETE : {
                 size_t size_new = 0;
                 get_size(&size_new);
-                del(_musician, &size, &size_new);
-                del(_album,&size,&size_new);
-                del(_music, &size, &size_new);
-                del(_prod,&size,&size_new);
+                del(_musician, size, size_new);
+                del(_album,size,size_new);
+                del(_music, size, size_new);
+                del(_prod,size,size_new);
                 size = size_new;
                 printProcess("DELETE");
                 break;
@@ -105,16 +105,6 @@ int main()
                 break;
             }
             case SAVE : {
-
-                /*
-                ofstream file(path(obj_Producent_path_file));
-                cout << size;
-                for (int i = 0 ; i < size;i++) {
-                    file << *_prod[ i ];  // zapisuje informacje do pliku
-                }
-                file.close();
-                break;
-                 */
                 ofstream file_prod(path(obj_Producent_path_file));
                 ofstream file_musician(path(obj_Musician_path_file));
                 ofstream file_album(path(obj_Album_path_file));
@@ -123,7 +113,36 @@ int main()
                 save(file_musician,_musician,size);
                 save(file_album,_album,size);
                 save(file_music, _music, size);
+
                 break;
+            }
+            case LOAD :
+            {
+                size_t size_new = 0;
+               size_new = countLineFILE(path(obj_Producent_path_file));
+               cout << size_new;
+               size_t size_temp = size;
+               if(size_new > size )
+               {
+                   add(_prod, size_temp, size_new);
+                   add(_musician, size_temp, size_new);
+                   add(_album, size_temp, size_new);
+                   add(_music, size_temp, size_new);
+               }
+
+               else if(size_new < size )
+               {
+                   del(_prod,size,size_new);
+                   del(_musician, size, size_new);
+                   del(_album,size,size_new);
+                   del(_music, size, size_new);
+               }
+               size = size_new;
+               load(_prod,size);
+               load(_musician,size);
+               load(_album,size);
+               load(_music,size);
+               break;
             }
             default : {
                 fflush(stdin);
