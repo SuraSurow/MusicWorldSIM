@@ -27,6 +27,10 @@ public:
     friend istream& operator>>(ifstream& input, Music& music);
 
 
+    Music* operator->() {
+        return this;
+    }
+
 
     Music(const string& _songName) : nameMusic(_songName) {}
 

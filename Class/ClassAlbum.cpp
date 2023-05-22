@@ -67,8 +67,41 @@ istream& operator>>(ifstream& input, Album& album) {
   return input;
 }
 
-/*
-void Album::set_visible ( bool ) {
 
+
+
+
+
+
+
+
+
+ArrayAlbum::ArrayAlbum ( Album ** _ptr , size_t _size = 0 ) {
+    size = _size;
+    ptr = nullptr;
+    if (_size != 0 || _size > 0) {
+        ptr = new Album*[_size];
+        for (int i = 0; i < _size; i++)
+            ptr[i] = _ptr[i];
+    }
 }
-*/
+Album *& ArrayAlbum::operator[](size_t index)
+{
+    if (index < 0 || index >= size) {
+        cout << "ERROR , OUT OF MEMORY 'index out of tab!!!' ";
+        exit(0);
+    }
+    return ptr[index];
+}
+
+void ArrayAlbum::print() const
+{
+    for (int i = 0; i < size; i++) {
+        cout <<"Name Creator: " << ptr[i]->gets_nameCre() << "\n"
+        << "Surname Creator: " << ptr[i]->gets_surnameCre() << "\n"
+        << "Name Album: " << ptr[i]->gets_nameAl() << "\n"
+        << "Type Music: " << ptr[i]->gets_typeAl() << "\n"
+        << "Year create: " << ptr[i]->gets_yearCre() << "\n"
+        << "--------------------------------\n";
+    }
+}

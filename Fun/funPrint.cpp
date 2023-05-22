@@ -2,6 +2,7 @@
 // Created by surow on 16/03/2023.
 //
 #include "../head/headHeadFile.h"
+#include "../Class/ClassAlbum.h"
 
 void print ( Musician * _musician , const  size_t *size)
 {
@@ -13,11 +14,11 @@ void print ( Musician * _musician , const  size_t *size)
 
 void print ( Album ** _album , const size_t * size )
 {
-    for (int i = 0 ; i < *size ; i++)
-    {
-        cout <<"\nNo. " << i << "\n";
-        cout << *_album[i] << endl;
-    }
+    ArrayAlbum albumArr(_album,*size); // wykonalem tutaj za pomoca przeciązenia operatora
+    //subscribs ' [] ' aby tworzyc tablice obiektu  Album, mam w tej klasie zaimplementowane sprawdzanie
+    //czy nie wychodzimy poza zakres tablicy co powoduje że nie ma mozliwośći wycieku danych !!!
+    albumArr.print();// dzieki temu nie wyjdzie poza skale
+    cout << endl;
 
 }
 

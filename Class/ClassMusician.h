@@ -28,6 +28,10 @@ public:
 
     friend istream& operator>>(ifstream& input, Musician& musician);
 
+    Musician* operator->() {
+        return this;
+    }
+
     Musician( const Musician& anotherOne) = default;
     Musician( const string& name, string surname , size_t age , size_t year , size_t month , size_t day,
               string distributionCompany, string nickName , size_t workExp)

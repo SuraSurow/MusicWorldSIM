@@ -30,6 +30,10 @@ public:
 
     friend ifstream& operator>>(ifstream& input, Producent& prod);
 
+    Producent* operator->() {
+        return this;
+    }
+
     Producent( const Producent& anotherOne) = default;
     Producent( string name, string surname , size_t age , size_t year , size_t month , size_t day , string expertiseArea,
                size_t hasGrammyAward , size_t FavoriteBPM ,size_t numOfProduction)

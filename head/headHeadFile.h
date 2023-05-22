@@ -12,6 +12,8 @@
 
 
 
+
+
 const std::string name_txt_path_file = R"(\dataFile\examplesData\name.txt)";
 const std::string beat_txt_path_file = R"(\dataFile\examplesData\beat.txt)";
 const std::string distCompany_txt_path_file = R"(\dataFile\examplesData\distCompany.txt)";

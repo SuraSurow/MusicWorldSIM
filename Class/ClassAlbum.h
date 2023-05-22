@@ -27,6 +27,13 @@ public:
     friend istream& operator>>(ifstream& input, Album& album);
 
 
+    Album*operator->()
+    {
+        return this;
+    }
+
+
+
     Album(string nameCre, string surnameCre, string nameAl, string typeAl, size_t yearCre) :
             nameCre(std::move(nameCre)),
             surnameCre(std::move(surnameCre)),
@@ -71,4 +78,25 @@ public:
 
     void set_visible(bool);
 };
+
+
+
+class ArrayAlbum {
+private:
+    Album ** ptr;
+    size_t size;
+public:
+    ArrayAlbum(Album** _ptr,size_t _size);
+    ~ArrayAlbum() {ptr = nullptr;}
+
+    Album*& operator[](size_t);
+
+    void print()const;
+
+};
+
+
+
+
+
 #endif //LAB_CLASSALBUM_H

@@ -20,6 +20,10 @@ private:
 public:
 
 
+    virtual Person* operator->() {
+        return this;
+    }
+
 
     virtual void doSomething() = 0;
 

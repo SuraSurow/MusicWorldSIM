@@ -1,2 +1,2 @@
-Oliwia;Wojcik;77;1960;11;9;Audio mixing;2;75;76;none;none;0;0;0;0;none;none;0
-Natalia;Dabrowski;69;1978;2;19;Sound engineering;0;76;21;none;none;0;0;0;0;none;none;0
+Katarzyna;Jankowski;54;1986;10;20;Music composition;0;62;82;Mateusz;Kozlowski;43;2020;5;21;Groove Distribution;The Groove Guru;3
+Anna;Pawlowski;68;1999;2;15;Sound engineering;4;164;92;Marcelina;Wisniewski;51;2014;12;5;Crescendo Distribution;Ace Rhythm;17

@@ -1,2 +1,2 @@
-Maksymilian;Nowak;28;1989;4;22;Harmony Heights Records;The Velvet Voice;5
-Szymon;Nowak;38;1984;4;12;Global Groove Distribution;Soulful Singer;8
+Mateusz;Kozlowski;36;2015;5;11;Riff Raff Records;DJ Blitz;4
+Mateusz;Lewandowski;47;2002;9;3;Riff Raff Records;Lil Spark;7

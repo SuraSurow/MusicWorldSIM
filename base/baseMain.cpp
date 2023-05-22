@@ -48,6 +48,8 @@ int main()
                 Album  *_lastObj = Album::gets_lastObj();
                 print( _lastObj);
                 printProcess("INIT");
+
+
                 break;
             }
             case PRINT : {
