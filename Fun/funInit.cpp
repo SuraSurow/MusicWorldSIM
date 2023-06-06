@@ -3,6 +3,24 @@
 //
 #include "../head/headHeadFile.h"
 
+void init(vector<Musician>& musicians, const size_t* pSize)
+{
+    for (int i = 0; i < (*pSize); i++) {
+        Musician musician;
+        musician.set_name(randStringData(name_txt_path_file, "name.txt"));
+        musician.set_surname(randStringData(surname_txt_path_file, "surname.txt"));
+        musician.set_age(randSize_t(20, 60));
+        musician.set_year(randSize_t(1980, 2022));
+        musician.set_month(randSize_t(1, 12));
+        musician.set_day(randSize_t(1, 28));
+        musician.set_distCompany(randStringData(distCompany_txt_path_file, "distCompany.txt"));
+        musician.set_nickName(randStringData(nickName_txt_path_file, "nickName.txt"));
+        musician.set_workExp(randSize_t(1, 20));
+
+        musicians.push_back(musician);
+    }
+}
+
 
 void init( Musician * _musician , const size_t * pSize)
 {

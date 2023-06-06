@@ -12,7 +12,8 @@ int main()
     size_t size = 0;
     get_size(&size);
     Person  ** pPerson = nullptr;
-    Musician * _musician = nullptr;
+    //Musician * _musician = nullptr;
+    vector<Musician>musician;
     Album ** _album = nullptr;
     Music ** _music = nullptr;
     Producent ** _prod = nullptr;
@@ -29,7 +30,8 @@ int main()
                 return EXIT_SUCCESS;
             }
             case CREATE : {
-                create (_musician , &size);
+                //create (_musician , &size);
+                create(musician , &size );
                 create ( _album  , &size);
                 create (_music  , &size);
                 create(_prod ,&size);//<----------
@@ -37,7 +39,8 @@ int main()
                 break;
             }
             case INITIALIZE : {
-                init(_musician, &size);
+                //init(_musician, &size);
+                init(musician,&size);
                 init(_album,&size);
                 init(_music, &size);
                 init (_prod ,&size);
@@ -54,7 +57,8 @@ int main()
             }
             case PRINT : {
                 cout << "\n\n\tMUZYCY (MUSICIAN)\n\n";
-                print(_musician, &size);//doSomething zmieniony!!!!!
+                //print(_musician, &size);//doSomething zmieniony!!!!!
+                print(musician);
                 cout << "\n\n\tALBUMY (ALBUMS)\n\n";
                 print(_album,&size);
                 cout << "\n\n\tPLYTY MUZYCZNE (SONG DISCS)\n\n";
@@ -69,7 +73,8 @@ int main()
                 size_t size_new=0;
                 get_size(&size_new);
                 size_t size_temp = size;
-                add (_musician , size_temp, size_new );
+                //add (_musician , size_temp, size_new );
+                add (musician,size_temp,size_new);
                 add( _album ,size_temp ,size_new);
                 add(_music, size_temp, size_new);
                 add (_prod,size_temp,size_new);
@@ -80,7 +85,8 @@ int main()
             case DELETE : {
                 size_t size_new = 0;
                 get_size(&size_new);
-                del(_musician, size, size_new);
+                //del(_musician, size, size_new);
+                del(musician,size,size_new);
                 del(_album,size,size_new);
                 del(_music, size, size_new);
                 del(_prod,size,size_new);
@@ -89,7 +95,8 @@ int main()
                 break;
             }
             case SORT : {
-                sort (_musician , &size);
+                //sort (_musician , &size);
+                sort(musician);
                 sort(_album,&size);
                 sort(_music, &size);
                 sort(_prod,&size);
@@ -97,7 +104,8 @@ int main()
                 break;
             }
             case EDIT: {
-                edit(_musician, _album, _music, _prod, size);
+                //edit(_musician, _album, _music, _prod, size);
+                edit(musician, _album, _music, _prod, size);
                 printProcess("EDIT");
                 break;
             }
@@ -112,7 +120,7 @@ int main()
                 ofstream file_album(path(obj_Album_path_file));
                 ofstream file_music(path(obj_Music_path_file));
                 save(file_prod,_prod,size);
-                save(file_musician,_musician,size);
+                //save(file_musician,_musician,size);
                 save(file_album,_album,size);
                 save(file_music, _music, size);
 
@@ -127,7 +135,7 @@ int main()
                if(size_new > size )
                {
                    add(_prod, size_temp, size_new);
-                   add(_musician, size_temp, size_new);
+                   //add(_musician, size_temp, size_new);
                    add(_album, size_temp, size_new);
                    add(_music, size_temp, size_new);
                }
@@ -135,13 +143,13 @@ int main()
                else if(size_new < size )
                {
                    del(_prod,size,size_new);
-                   del(_musician, size, size_new);
+                   //del(_musician, size, size_new);
                    del(_album,size,size_new);
                    del(_music, size, size_new);
                }
                size = size_new;
                load(_prod,size);
-               load(_musician,size);
+               //load(_musician,size);
                load(_album,size);
                load(_music,size);
                break;

@@ -70,3 +70,19 @@ void load( Musician *& musician, size_t & size)
 
 
 }
+
+void load(vector<Musician>& musicians, size_t& size)
+{
+    std::ifstream input(path(obj_Producent_path_file));
+    if (input) {
+        Musician musician;
+        while (input >> musician) {
+            musicians.push_back(musician);
+        }
+        size = musicians.size();
+    }
+    else {
+        cerr << "ERROR: cannot open file 'objMusician.txt'" << endl;
+    }
+    input.close();
+}

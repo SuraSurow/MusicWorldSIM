@@ -7,6 +7,9 @@
 
 void load( Producent **& prod , size_t & size);
 void load( Musician *& prod , size_t & size);
+
+void load( Musician *& prod , size_t & size);
+void load(vector<Musician>& musicians, size_t& size);
 void load( Album **& prod , size_t & size);
 void load( Music **& music , size_t & size);
 

@@ -21,5 +21,7 @@ void create ( Album *& _albumS , const size_t size );
 void create ( Music *& _musicDiscES , const size_t size );
 void create ( Musician **& _creatorS , const size_t size );
 
+void create(std::vector<Musician>& creators, const size_t* size);
+
 
 #endif //LAB_FUNCREATE_H

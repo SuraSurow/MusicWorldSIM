@@ -12,6 +12,14 @@ void print ( Musician * _musician , const  size_t *size)
     }
 }
 
+void print(const vector<Musician>& musicians)
+{
+    for (size_t i = 0; i < musicians.size(); i++) {
+        cout << "\nNo. " << i << "\n";
+        cout << musicians[i] << endl;
+    }
+}
+
 void print ( Album ** _album , const size_t * size )
 {
     ArrayAlbum albumArr(_album,*size); // wykonalem tutaj za pomoca przeciązenia operatora
@@ -140,6 +148,26 @@ void printClass( Musician * musician)
     <<"\n9.Work Experiense";
 
 }
+
+//-----------------------------
+void printClass( const std::vector<Musician>& musicians)
+{
+    cout
+            <<"\n1.Name Musician"
+            <<"\n2.Surname Musician"
+            <<"\n3.Age Musician"
+            <<"\n4.Year of Brith"
+            <<"\n5.Month of Brith"
+            <<"\n6.Day of Brith"
+            <<"\n7.Distribution Company"
+            <<"\n8.Nickname"
+            <<"\n9.Work Experiense";
+
+}
+
+//-----------------------------
+
+
 void printClass( Album ** _album)
 {
     cout
@@ -182,6 +210,12 @@ void printHowEdit ( Musician * _creator)
 {
     printHowEdit();
     printClass(_creator);
+}
+
+void printHowEdit(const vector<Musician>& musicians)
+{
+    printHowEdit();
+    printClass(musicians);
 }
 
 void printHowEdit ( Album ** _album)

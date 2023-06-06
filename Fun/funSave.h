@@ -9,4 +9,6 @@ void save(ofstream& file , Musician *& prod , size_t & size);
 void save(ofstream& file , Album **& prod , size_t & size);
 void save(ofstream& file , Music **& prod , size_t & size);
 
+
+void save(ofstream& file, vector<Musician>& musicians);
 #endif //LAB_FUNSAVE_H

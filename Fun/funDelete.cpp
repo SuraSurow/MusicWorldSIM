@@ -3,7 +3,38 @@
 //
 
 #include "../head/headHeadFile.h"
+//
 //                                     20              10
+
+int del(std::vector<Musician>& musicians, const size_t& size, const size_t& size_new)
+{
+    if (size_new <= size)
+    {
+        std::vector<Musician> temp(size_new);
+
+        for (size_t i = 0; i < size_new; i++)
+        {
+            temp[i].set_age(musicians[i].gets_age());
+            temp[i].set_year(musicians[i].gets_year());
+            temp[i].set_day(musicians[i].gets_day());
+            temp[i].set_month(musicians[i].gets_month());
+            temp[i].set_surname(musicians[i].gets_surname());
+            temp[i].set_name(musicians[i].gets_name());
+            temp[i].set_distCompany(musicians[i].gets_distCompany());
+            temp[i].set_workExp(musicians[i].gets_workExp());
+            temp[i].set_nickName(musicians[i].gets_nickName());
+        }
+
+        musicians = temp;
+        return 0;
+    }
+
+    return EXIT_FAILURE;
+}
+
+
+
+
 int del ( Musician *& _musician , const size_t &size , const size_t &size_new ) {
     if ( size_new <= size ) {
         auto *temp = new Musician[size_new];

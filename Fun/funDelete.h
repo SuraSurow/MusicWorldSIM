@@ -9,4 +9,5 @@ int del( Album **& _albumS , const size_t& size, const size_t & size_new );
 int del( Music **& _musicDiscES , const size_t & size , const size_t &size_new);
 int del (Producent **& _prod , const size_t & size , const size_t & size_new_new);
 
+int del(std::vector<Musician>& musicians, const size_t& size, const size_t& size_new);
 #endif //LAB_FUNDELETE_H

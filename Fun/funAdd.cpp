@@ -27,6 +27,34 @@ int add ( Musician *& _creator , const size_t & size , const size_t & size_new)
     return EXIT_FAILURE;
 }
 
+
+
+int add(std::vector<Musician>& creators, const size_t& size, const size_t& size_new)
+{
+    if (size_new >= size)
+    {
+        std::vector<Musician> temp(size_new);
+
+        for (size_t i = 0; i < size; i++)
+        {
+            temp[i] = creators[i];
+        }
+
+        for (size_t i = size; i < size_new; i++)
+        {
+            // Inicjalizacja wartości dla nowych elementów
+            init(temp[i]);
+        }
+
+        creators = temp;
+        return 0;
+    }
+
+    return EXIT_FAILURE;
+}
+
+
+
 int add ( Album **& _album , const size_t & size , const size_t &size_new) {
     if(size_new>=size) {
         auto ** temp = new Album * [ size_new ] ;

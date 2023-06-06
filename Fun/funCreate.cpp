@@ -12,6 +12,12 @@ void create ( Musician *& _creatorS , const size_t *size )
 {
     _creatorS = new Musician[*size];
 }
+
+void create (std::vector<Musician>& creators, const size_t*  size)
+{
+    creators.resize(*size);
+}
+
 void create ( Album **& _albumS , const size_t *size )
 {
     _albumS = new Album * [ *size ] ;

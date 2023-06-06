@@ -28,6 +28,12 @@ public:
 
     friend istream& operator>>(ifstream& input, Musician& musician);
 
+    friend istream& operator>>(ifstream& input, vector<Musician>& musicians);
+
+    friend ostream& operator<<(ostream& os, const vector<Musician>& musicians);
+
+    friend ostream& operator<<(ofstream& output, vector<Musician>& musicians);
+
     Musician* operator->() {
         return this;
     }

@@ -15,6 +15,22 @@ void sort ( Musician * _creator , const size_t *size){
         }
     }
 }
+
+void sort(vector<Musician>& musicians)
+{
+    cout << "\nWYKONAWCY\nSortowanie wg wieku od najmłodszego do najstarszego\n";
+    for (size_t i = 0; i < musicians.size() - 1; i++)
+    {
+        for (size_t j = 0; j < musicians.size() - 1; j++)
+        {
+            if (musicians[j].gets_age() > musicians[j + 1].gets_age())
+            {
+                std::swap(musicians[j], musicians[j + 1]);
+            }
+        }
+    }
+}
+
 void sort ( Album ** _album , const size_t *size){
     cout << "\nALBUMY\nSortuje wg roku urodzenia wykonawcy od najmiejszego do najwiekszego\n";
     for(int i = 0 ; i < *size-1 ; i ++ )

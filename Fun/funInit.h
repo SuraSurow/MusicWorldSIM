@@ -5,6 +5,8 @@
 #define LAB_FUNINIT_H
 
 void init( Musician * _musician , const size_t * size );
+void init(vector<Musician>& musicians, const size_t* pSize);
+
 void init( Album ** _albumS , const size_t * size );
 void init ( Music ** _musicDiscES , const size_t * size );
 void init (Producent ** _prod ,const size_t * size);
